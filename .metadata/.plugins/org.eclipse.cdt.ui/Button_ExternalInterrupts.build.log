@@ -1,0 +1,39 @@
+
+**** Build of configuration Debug for project Button_ExternalInterrupts ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../Button_ExternalInterrupts.syscfg"
+Invoking: SysConfig
+"C:/ti/ccs1031/ccs/utils/sysconfig_1.8.1/sysconfig_cli.bat" -s "C:/ti/simplelink_msp432p4_sdk_3_40_01_02/.metadata/product.json" --script "E:/TI/MSP432/MSP432_CSS_WorkSpace/Button_ExternalInterrupts/Button_ExternalInterrupts.syscfg" -o "syscfg"
+Running script...
+Validating...
+Generating Code (Button_ExternalInterrupts.syscfg)...
+Writing E:\TI\MSP432\MSP432_CSS_WorkSpace\Button_ExternalInterrupts\Debug\syscfg\ti_drivers_config.c...
+Writing E:\TI\MSP432\MSP432_CSS_WorkSpace\Button_ExternalInterrupts\Debug\syscfg\ti_drivers_config.h...
+Writing E:\TI\MSP432\MSP432_CSS_WorkSpace\Button_ExternalInterrupts\Debug\syscfg\syscfg_c.rov.xs...
+Finished building: "../Button_ExternalInterrupts.syscfg"
+ 
+Building file: "../Button_ExternalInterrupts.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/Button_ExternalInterrupts" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/Button_ExternalInterrupts/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="Button_ExternalInterrupts.d_raw" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/Button_ExternalInterrupts/Debug/syscfg"  "../Button_ExternalInterrupts.c"
+Finished building: "../Button_ExternalInterrupts.c"
+ 
+Building file: "syscfg/ti_drivers_config.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/Button_ExternalInterrupts" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/Button_ExternalInterrupts/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="syscfg/ti_drivers_config.d_raw" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/Button_ExternalInterrupts/Debug/syscfg" --obj_directory="syscfg"  "syscfg/ti_drivers_config.c"
+Finished building: "syscfg/ti_drivers_config.c"
+ 
+Building file: "../main_nortos.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/Button_ExternalInterrupts" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/Button_ExternalInterrupts/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="main_nortos.d_raw" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/Button_ExternalInterrupts/Debug/syscfg"  "../main_nortos.c"
+Finished building: "../main_nortos.c"
+ 
+Building target: "Button_ExternalInterrupts.out"
+Invoking: Arm Linker
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"Button_ExternalInterrupts.map" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" -i"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/lib" --diag_suppress=10063 --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Button_ExternalInterrupts_linkInfo.xml" --entry_point=resetISR --rom_model -o "Button_ExternalInterrupts.out" "./Button_ExternalInterrupts.obj" "./syscfg/ti_drivers_config.obj" "./main_nortos.obj" "../MSP_EXP432P401R_NoRTOS.cmd"  -l"ti/display/lib/display.aem4f" -l"ti/grlib/lib/ccs/m4f/grlib.a" -l"third_party/spiffs/lib/ccs/m4f/spiffs.a" -l"ti/drivers/lib/drivers_msp432p401x.aem4f" -l"third_party/fatfs/lib/ccs/m4f/fatfs.a" -l"lib/nortos_msp432p401x.aem4f" -l"ti/devices/msp432p4xx/driverlib/ccs/msp432p4xx_driverlib.lib" -llibc.a 
+<Linking>
+Finished building target: "Button_ExternalInterrupts.out"
+ 
+
+**** Build Finished ****

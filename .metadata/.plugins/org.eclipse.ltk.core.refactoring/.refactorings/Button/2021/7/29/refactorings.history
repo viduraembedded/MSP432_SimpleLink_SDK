@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;Button/Blink.syscfg&apos; to &apos;Button.syscfg&apos;" description="Rename resource &apos;Blink.syscfg&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Blink.syscfg" name="Button.syscfg" stamp="1625978952222" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;Button/blink.c&apos; to &apos;Button.c&apos;" description="Rename resource &apos;blink.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="blink.c" name="Button.c" stamp="1625978962951" updateReferences="true"/>
+</session>
