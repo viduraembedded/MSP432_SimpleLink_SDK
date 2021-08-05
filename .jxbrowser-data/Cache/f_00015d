@@ -1,0 +1,529 @@
+[
+  {
+    "text": "adcbufcontinuous",
+    "type": "folder",
+    "numChildren": 6,
+    "numChildrenLocal": 36,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02",
+    "url": "/api/resources?path=Software/SimpleLink%20MSP432P4%20SDK/Examples/Development%20Tools/MSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)/TI%20Drivers&package=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::sysconfig__1.8.1::tirtos_tivac__2.16.00.08::tm4c__2.1.4.178::xdctools__3.62.00.08",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02",
+    "removeofflineLink": "api/resources?package=com.ti.SIMPLELINK_ACADEMY_MSP432SDK__3.30.01.00::com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::sysconfig__1.8.1::tirtos_tivac__2.16.00.08::tm4c__2.1.4.178::xdctools__3.62.00.08&path=Software/SimpleLink MSP432P4 SDK/Examples/Development Tools/MSP432P401R LaunchPad - Red 2.x (Red)/TI Drivers/adcbufcontinuous&removeoffline=true",
+    "overviewLink": "C:/ti//simplelink_msp432p4_sdk_3_40_01_02/examples/rtos/MSP_EXP432P401R/drivers/adcbufcontinuous/README.html",
+    "packageOrder": 374
+  },
+  {
+    "text": "adcbufdifferential",
+    "type": "folder",
+    "numChildren": 6,
+    "numChildrenLocal": 38,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02",
+    "url": "/api/resources?path=Software/SimpleLink%20MSP432P4%20SDK/Examples/Development%20Tools/MSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)/TI%20Drivers&package=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::sysconfig__1.8.1::tirtos_tivac__2.16.00.08::tm4c__2.1.4.178::xdctools__3.62.00.08",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02",
+    "removeofflineLink": "api/resources?package=com.ti.SIMPLELINK_ACADEMY_MSP432SDK__3.30.01.00::com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::sysconfig__1.8.1::tirtos_tivac__2.16.00.08::tm4c__2.1.4.178::xdctools__3.62.00.08&path=Software/SimpleLink MSP432P4 SDK/Examples/Development Tools/MSP432P401R LaunchPad - Red 2.x (Red)/TI Drivers/adcbufdifferential&removeoffline=true",
+    "overviewLink": "C:/ti//simplelink_msp432p4_sdk_3_40_01_02/examples/rtos/MSP_EXP432P401R/drivers/adcbufdifferential/README.html",
+    "packageOrder": 374
+  },
+  {
+    "text": "adcbufmultichannel",
+    "type": "folder",
+    "numChildren": 6,
+    "numChildrenLocal": 38,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02",
+    "url": "/api/resources?path=Software/SimpleLink%20MSP432P4%20SDK/Examples/Development%20Tools/MSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)/TI%20Drivers&package=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::sysconfig__1.8.1::tirtos_tivac__2.16.00.08::tm4c__2.1.4.178::xdctools__3.62.00.08",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02",
+    "removeofflineLink": "api/resources?package=com.ti.SIMPLELINK_ACADEMY_MSP432SDK__3.30.01.00::com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::sysconfig__1.8.1::tirtos_tivac__2.16.00.08::tm4c__2.1.4.178::xdctools__3.62.00.08&path=Software/SimpleLink MSP432P4 SDK/Examples/Development Tools/MSP432P401R LaunchPad - Red 2.x (Red)/TI Drivers/adcbufmultichannel&removeoffline=true",
+    "overviewLink": "C:/ti//simplelink_msp432p4_sdk_3_40_01_02/examples/rtos/MSP_EXP432P401R/drivers/adcbufmultichannel/README.html",
+    "packageOrder": 374
+  },
+  {
+    "text": "adcbuftemperature",
+    "type": "folder",
+    "numChildren": 6,
+    "numChildrenLocal": 38,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02",
+    "url": "/api/resources?path=Software/SimpleLink%20MSP432P4%20SDK/Examples/Development%20Tools/MSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)/TI%20Drivers&package=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::sysconfig__1.8.1::tirtos_tivac__2.16.00.08::tm4c__2.1.4.178::xdctools__3.62.00.08",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02",
+    "removeofflineLink": "api/resources?package=com.ti.SIMPLELINK_ACADEMY_MSP432SDK__3.30.01.00::com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::sysconfig__1.8.1::tirtos_tivac__2.16.00.08::tm4c__2.1.4.178::xdctools__3.62.00.08&path=Software/SimpleLink MSP432P4 SDK/Examples/Development Tools/MSP432P401R LaunchPad - Red 2.x (Red)/TI Drivers/adcbuftemperature&removeoffline=true",
+    "overviewLink": "C:/ti//simplelink_msp432p4_sdk_3_40_01_02/examples/rtos/MSP_EXP432P401R/drivers/adcbuftemperature/README.html",
+    "packageOrder": 374
+  },
+  {
+    "text": "adcsinglechannel",
+    "type": "folder",
+    "numChildren": 6,
+    "numChildrenLocal": 36,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02",
+    "url": "/api/resources?path=Software/SimpleLink%20MSP432P4%20SDK/Examples/Development%20Tools/MSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)/TI%20Drivers&package=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::sysconfig__1.8.1::tirtos_tivac__2.16.00.08::tm4c__2.1.4.178::xdctools__3.62.00.08",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02",
+    "removeofflineLink": "api/resources?package=com.ti.SIMPLELINK_ACADEMY_MSP432SDK__3.30.01.00::com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::sysconfig__1.8.1::tirtos_tivac__2.16.00.08::tm4c__2.1.4.178::xdctools__3.62.00.08&path=Software/SimpleLink MSP432P4 SDK/Examples/Development Tools/MSP432P401R LaunchPad - Red 2.x (Red)/TI Drivers/adcsinglechannel&removeoffline=true",
+    "overviewLink": "C:/ti//simplelink_msp432p4_sdk_3_40_01_02/examples/rtos/MSP_EXP432P401R/drivers/adcsinglechannel/README.html",
+    "packageOrder": 374
+  },
+  {
+    "text": "buttonled",
+    "type": "folder",
+    "numChildren": 6,
+    "numChildrenLocal": 36,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02",
+    "url": "/api/resources?path=Software/SimpleLink%20MSP432P4%20SDK/Examples/Development%20Tools/MSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)/TI%20Drivers&package=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::sysconfig__1.8.1::tirtos_tivac__2.16.00.08::tm4c__2.1.4.178::xdctools__3.62.00.08",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02",
+    "removeofflineLink": "api/resources?package=com.ti.SIMPLELINK_ACADEMY_MSP432SDK__3.30.01.00::com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::sysconfig__1.8.1::tirtos_tivac__2.16.00.08::tm4c__2.1.4.178::xdctools__3.62.00.08&path=Software/SimpleLink MSP432P4 SDK/Examples/Development Tools/MSP432P401R LaunchPad - Red 2.x (Red)/TI Drivers/buttonled&removeoffline=true",
+    "overviewLink": "C:/ti//simplelink_msp432p4_sdk_3_40_01_02/examples/rtos/MSP_EXP432P401R/drivers/buttonled/README.html",
+    "packageOrder": 374
+  },
+  {
+    "text": "capturepwmdisplay",
+    "type": "folder",
+    "numChildren": 6,
+    "numChildrenLocal": 36,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02",
+    "url": "/api/resources?path=Software/SimpleLink%20MSP432P4%20SDK/Examples/Development%20Tools/MSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)/TI%20Drivers&package=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::sysconfig__1.8.1::tirtos_tivac__2.16.00.08::tm4c__2.1.4.178::xdctools__3.62.00.08",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02",
+    "removeofflineLink": "api/resources?package=com.ti.SIMPLELINK_ACADEMY_MSP432SDK__3.30.01.00::com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::sysconfig__1.8.1::tirtos_tivac__2.16.00.08::tm4c__2.1.4.178::xdctools__3.62.00.08&path=Software/SimpleLink MSP432P4 SDK/Examples/Development Tools/MSP432P401R LaunchPad - Red 2.x (Red)/TI Drivers/capturepwmdisplay&removeoffline=true",
+    "overviewLink": "C:/ti//simplelink_msp432p4_sdk_3_40_01_02/examples/rtos/MSP_EXP432P401R/drivers/capturepwmdisplay/README.html",
+    "packageOrder": 374
+  },
+  {
+    "text": "display",
+    "type": "folder",
+    "numChildren": 9,
+    "numChildrenLocal": 65,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02",
+    "url": "/api/resources?path=Software/SimpleLink%20MSP432P4%20SDK/Examples/Development%20Tools/MSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)/TI%20Drivers&package=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::sysconfig__1.8.1::tirtos_tivac__2.16.00.08::tm4c__2.1.4.178::xdctools__3.62.00.08",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02",
+    "removeofflineLink": "api/resources?package=com.ti.SIMPLELINK_ACADEMY_MSP432SDK__3.30.01.00::com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::sysconfig__1.8.1::tirtos_tivac__2.16.00.08::tm4c__2.1.4.178::xdctools__3.62.00.08&path=Software/SimpleLink MSP432P4 SDK/Examples/Development Tools/MSP432P401R LaunchPad - Red 2.x (Red)/TI Drivers/display&removeoffline=true",
+    "overviewLink": "C:/ti//simplelink_msp432p4_sdk_3_40_01_02/examples/nortos/MSP_EXP432P401R/drivers/display/README.html",
+    "packageOrder": 374
+  },
+  {
+    "text": "empty",
+    "type": "folder",
+    "numChildren": 6,
+    "numChildrenLocal": 36,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02",
+    "url": "/api/resources?path=Software/SimpleLink%20MSP432P4%20SDK/Examples/Development%20Tools/MSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)/TI%20Drivers&package=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::sysconfig__1.8.1::tirtos_tivac__2.16.00.08::tm4c__2.1.4.178::xdctools__3.62.00.08",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02",
+    "removeofflineLink": "api/resources?package=com.ti.SIMPLELINK_ACADEMY_MSP432SDK__3.30.01.00::com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::sysconfig__1.8.1::tirtos_tivac__2.16.00.08::tm4c__2.1.4.178::xdctools__3.62.00.08&path=Software/SimpleLink MSP432P4 SDK/Examples/Development Tools/MSP432P401R LaunchPad - Red 2.x (Red)/TI Drivers/empty&removeoffline=true",
+    "overviewLink": "C:/ti//simplelink_msp432p4_sdk_3_40_01_02/examples/rtos/MSP_EXP432P401R/drivers/empty/README.html",
+    "packageOrder": 374
+  },
+  {
+    "text": "empty_legacy",
+    "type": "folder",
+    "numChildren": 6,
+    "numChildrenLocal": 69,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02",
+    "url": "/api/resources?path=Software/SimpleLink%20MSP432P4%20SDK/Examples/Development%20Tools/MSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)/TI%20Drivers&package=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::sysconfig__1.8.1::tirtos_tivac__2.16.00.08::tm4c__2.1.4.178::xdctools__3.62.00.08",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02",
+    "removeofflineLink": "api/resources?package=com.ti.SIMPLELINK_ACADEMY_MSP432SDK__3.30.01.00::com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::sysconfig__1.8.1::tirtos_tivac__2.16.00.08::tm4c__2.1.4.178::xdctools__3.62.00.08&path=Software/SimpleLink MSP432P4 SDK/Examples/Development Tools/MSP432P401R LaunchPad - Red 2.x (Red)/TI Drivers/empty_legacy&removeoffline=true",
+    "overviewLink": "C:/ti//simplelink_msp432p4_sdk_3_40_01_02/examples/rtos/MSP_EXP432P401R/drivers/empty_legacy/README.html",
+    "packageOrder": 374
+  },
+  {
+    "text": "fatsd",
+    "type": "folder",
+    "numChildren": 3,
+    "numChildrenLocal": 25,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02",
+    "url": "/api/resources?path=Software/SimpleLink%20MSP432P4%20SDK/Examples/Development%20Tools/MSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)/TI%20Drivers&package=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::sysconfig__1.8.1::tirtos_tivac__2.16.00.08::tm4c__2.1.4.178::xdctools__3.62.00.08",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02",
+    "removeofflineLink": "api/resources?package=com.ti.SIMPLELINK_ACADEMY_MSP432SDK__3.30.01.00::com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::sysconfig__1.8.1::tirtos_tivac__2.16.00.08::tm4c__2.1.4.178::xdctools__3.62.00.08&path=Software/SimpleLink MSP432P4 SDK/Examples/Development Tools/MSP432P401R LaunchPad - Red 2.x (Red)/TI Drivers/fatsd&removeoffline=true",
+    "overviewLink": "C:/ti//simplelink_msp432p4_sdk_3_40_01_02/examples/nortos/MSP_EXP432P401R/drivers/fatsd/README.html",
+    "packageOrder": 374
+  },
+  {
+    "text": "fatsdraw",
+    "type": "folder",
+    "numChildren": 9,
+    "numChildrenLocal": 53,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02",
+    "url": "/api/resources?path=Software/SimpleLink%20MSP432P4%20SDK/Examples/Development%20Tools/MSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)/TI%20Drivers&package=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::sysconfig__1.8.1::tirtos_tivac__2.16.00.08::tm4c__2.1.4.178::xdctools__3.62.00.08",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02",
+    "removeofflineLink": "api/resources?package=com.ti.SIMPLELINK_ACADEMY_MSP432SDK__3.30.01.00::com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::sysconfig__1.8.1::tirtos_tivac__2.16.00.08::tm4c__2.1.4.178::xdctools__3.62.00.08&path=Software/SimpleLink MSP432P4 SDK/Examples/Development Tools/MSP432P401R LaunchPad - Red 2.x (Red)/TI Drivers/fatsdraw&removeoffline=true",
+    "overviewLink": "C:/ti//simplelink_msp432p4_sdk_3_40_01_02/examples/nortos/MSP_EXP432P401R/drivers/fatsdraw/README.html",
+    "packageOrder": 374
+  },
+  {
+    "text": "gpiointerrupt",
+    "type": "folder",
+    "numChildren": 9,
+    "numChildrenLocal": 53,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02",
+    "url": "/api/resources?path=Software/SimpleLink%20MSP432P4%20SDK/Examples/Development%20Tools/MSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)/TI%20Drivers&package=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::sysconfig__1.8.1::tirtos_tivac__2.16.00.08::tm4c__2.1.4.178::xdctools__3.62.00.08",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02",
+    "removeofflineLink": "api/resources?package=com.ti.SIMPLELINK_ACADEMY_MSP432SDK__3.30.01.00::com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::sysconfig__1.8.1::tirtos_tivac__2.16.00.08::tm4c__2.1.4.178::xdctools__3.62.00.08&path=Software/SimpleLink MSP432P4 SDK/Examples/Development Tools/MSP432P401R LaunchPad - Red 2.x (Red)/TI Drivers/gpiointerrupt&removeoffline=true",
+    "overviewLink": "C:/ti//simplelink_msp432p4_sdk_3_40_01_02/examples/nortos/MSP_EXP432P401R/drivers/gpiointerrupt/README.html",
+    "packageOrder": 374
+  },
+  {
+    "text": "i2cmasterexample1",
+    "type": "folder",
+    "numChildren": 6,
+    "numChildrenLocal": 36,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02",
+    "url": "/api/resources?path=Software/SimpleLink%20MSP432P4%20SDK/Examples/Development%20Tools/MSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)/TI%20Drivers&package=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::sysconfig__1.8.1::tirtos_tivac__2.16.00.08::tm4c__2.1.4.178::xdctools__3.62.00.08",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02",
+    "removeofflineLink": "api/resources?package=com.ti.SIMPLELINK_ACADEMY_MSP432SDK__3.30.01.00::com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::sysconfig__1.8.1::tirtos_tivac__2.16.00.08::tm4c__2.1.4.178::xdctools__3.62.00.08&path=Software/SimpleLink MSP432P4 SDK/Examples/Development Tools/MSP432P401R LaunchPad - Red 2.x (Red)/TI Drivers/i2cmasterexample1&removeoffline=true",
+    "overviewLink": "C:/ti//simplelink_msp432p4_sdk_3_40_01_02/examples/rtos/MSP_EXP432P401R/drivers/i2cmasterexample1/README.html",
+    "packageOrder": 374
+  },
+  {
+    "text": "i2copt3001_cpp",
+    "type": "folder",
+    "numChildren": 4,
+    "numChildrenLocal": 42,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02",
+    "url": "/api/resources?path=Software/SimpleLink%20MSP432P4%20SDK/Examples/Development%20Tools/MSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)/TI%20Drivers&package=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::sysconfig__1.8.1::tirtos_tivac__2.16.00.08::tm4c__2.1.4.178::xdctools__3.62.00.08",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02",
+    "removeofflineLink": "api/resources?package=com.ti.SIMPLELINK_ACADEMY_MSP432SDK__3.30.01.00::com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::sysconfig__1.8.1::tirtos_tivac__2.16.00.08::tm4c__2.1.4.178::xdctools__3.62.00.08&path=Software/SimpleLink MSP432P4 SDK/Examples/Development Tools/MSP432P401R LaunchPad - Red 2.x (Red)/TI Drivers/i2copt3001_cpp&removeoffline=true",
+    "overviewLink": "C:/ti//simplelink_msp432p4_sdk_3_40_01_02/examples/rtos/MSP_EXP432P401R/drivers/i2copt3001_cpp/README.html",
+    "packageOrder": 374
+  },
+  {
+    "text": "i2cslaveexample1",
+    "type": "folder",
+    "numChildren": 6,
+    "numChildrenLocal": 36,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02",
+    "url": "/api/resources?path=Software/SimpleLink%20MSP432P4%20SDK/Examples/Development%20Tools/MSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)/TI%20Drivers&package=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::sysconfig__1.8.1::tirtos_tivac__2.16.00.08::tm4c__2.1.4.178::xdctools__3.62.00.08",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02",
+    "removeofflineLink": "api/resources?package=com.ti.SIMPLELINK_ACADEMY_MSP432SDK__3.30.01.00::com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::sysconfig__1.8.1::tirtos_tivac__2.16.00.08::tm4c__2.1.4.178::xdctools__3.62.00.08&path=Software/SimpleLink MSP432P4 SDK/Examples/Development Tools/MSP432P401R LaunchPad - Red 2.x (Red)/TI Drivers/i2cslaveexample1&removeoffline=true",
+    "overviewLink": "C:/ti//simplelink_msp432p4_sdk_3_40_01_02/examples/rtos/MSP_EXP432P401R/drivers/i2cslaveexample1/README.html",
+    "packageOrder": 374
+  },
+  {
+    "text": "i2ctmp",
+    "type": "folder",
+    "numChildren": 6,
+    "numChildrenLocal": 36,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02",
+    "url": "/api/resources?path=Software/SimpleLink%20MSP432P4%20SDK/Examples/Development%20Tools/MSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)/TI%20Drivers&package=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::sysconfig__1.8.1::tirtos_tivac__2.16.00.08::tm4c__2.1.4.178::xdctools__3.62.00.08",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02",
+    "removeofflineLink": "api/resources?package=com.ti.SIMPLELINK_ACADEMY_MSP432SDK__3.30.01.00::com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::sysconfig__1.8.1::tirtos_tivac__2.16.00.08::tm4c__2.1.4.178::xdctools__3.62.00.08&path=Software/SimpleLink MSP432P4 SDK/Examples/Development Tools/MSP432P401R LaunchPad - Red 2.x (Red)/TI Drivers/i2ctmp&removeoffline=true",
+    "overviewLink": "C:/ti//simplelink_msp432p4_sdk_3_40_01_02/examples/rtos/MSP_EXP432P401R/drivers/i2ctmp/README.html",
+    "packageOrder": 374
+  },
+  {
+    "text": "nvsinternal",
+    "type": "folder",
+    "numChildren": 9,
+    "numChildrenLocal": 53,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02",
+    "url": "/api/resources?path=Software/SimpleLink%20MSP432P4%20SDK/Examples/Development%20Tools/MSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)/TI%20Drivers&package=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::sysconfig__1.8.1::tirtos_tivac__2.16.00.08::tm4c__2.1.4.178::xdctools__3.62.00.08",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02",
+    "removeofflineLink": "api/resources?package=com.ti.SIMPLELINK_ACADEMY_MSP432SDK__3.30.01.00::com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::sysconfig__1.8.1::tirtos_tivac__2.16.00.08::tm4c__2.1.4.178::xdctools__3.62.00.08&path=Software/SimpleLink MSP432P4 SDK/Examples/Development Tools/MSP432P401R LaunchPad - Red 2.x (Red)/TI Drivers/nvsinternal&removeoffline=true",
+    "overviewLink": "C:/ti//simplelink_msp432p4_sdk_3_40_01_02/examples/nortos/MSP_EXP432P401R/drivers/nvsinternal/README.html",
+    "packageOrder": 374
+  },
+  {
+    "text": "powerdeepsleep",
+    "type": "folder",
+    "numChildren": 6,
+    "numChildrenLocal": 36,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02",
+    "url": "/api/resources?path=Software/SimpleLink%20MSP432P4%20SDK/Examples/Development%20Tools/MSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)/TI%20Drivers&package=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::sysconfig__1.8.1::tirtos_tivac__2.16.00.08::tm4c__2.1.4.178::xdctools__3.62.00.08",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02",
+    "removeofflineLink": "api/resources?package=com.ti.SIMPLELINK_ACADEMY_MSP432SDK__3.30.01.00::com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::sysconfig__1.8.1::tirtos_tivac__2.16.00.08::tm4c__2.1.4.178::xdctools__3.62.00.08&path=Software/SimpleLink MSP432P4 SDK/Examples/Development Tools/MSP432P401R LaunchPad - Red 2.x (Red)/TI Drivers/powerdeepsleep&removeoffline=true",
+    "overviewLink": "C:/ti//simplelink_msp432p4_sdk_3_40_01_02/examples/rtos/MSP_EXP432P401R/drivers/powerdeepsleep/README.html",
+    "packageOrder": 374
+  },
+  {
+    "text": "powerperformance",
+    "type": "folder",
+    "numChildren": 6,
+    "numChildrenLocal": 36,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02",
+    "url": "/api/resources?path=Software/SimpleLink%20MSP432P4%20SDK/Examples/Development%20Tools/MSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)/TI%20Drivers&package=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::sysconfig__1.8.1::tirtos_tivac__2.16.00.08::tm4c__2.1.4.178::xdctools__3.62.00.08",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02",
+    "removeofflineLink": "api/resources?package=com.ti.SIMPLELINK_ACADEMY_MSP432SDK__3.30.01.00::com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::sysconfig__1.8.1::tirtos_tivac__2.16.00.08::tm4c__2.1.4.178::xdctools__3.62.00.08&path=Software/SimpleLink MSP432P4 SDK/Examples/Development Tools/MSP432P401R LaunchPad - Red 2.x (Red)/TI Drivers/powerperformance&removeoffline=true",
+    "overviewLink": "C:/ti//simplelink_msp432p4_sdk_3_40_01_02/examples/rtos/MSP_EXP432P401R/drivers/powerperformance/README.html",
+    "packageOrder": 374
+  },
+  {
+    "text": "powershutdown",
+    "type": "folder",
+    "numChildren": 6,
+    "numChildrenLocal": 36,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02",
+    "url": "/api/resources?path=Software/SimpleLink%20MSP432P4%20SDK/Examples/Development%20Tools/MSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)/TI%20Drivers&package=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::sysconfig__1.8.1::tirtos_tivac__2.16.00.08::tm4c__2.1.4.178::xdctools__3.62.00.08",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02",
+    "removeofflineLink": "api/resources?package=com.ti.SIMPLELINK_ACADEMY_MSP432SDK__3.30.01.00::com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::sysconfig__1.8.1::tirtos_tivac__2.16.00.08::tm4c__2.1.4.178::xdctools__3.62.00.08&path=Software/SimpleLink MSP432P4 SDK/Examples/Development Tools/MSP432P401R LaunchPad - Red 2.x (Red)/TI Drivers/powershutdown&removeoffline=true",
+    "overviewLink": "C:/ti//simplelink_msp432p4_sdk_3_40_01_02/examples/rtos/MSP_EXP432P401R/drivers/powershutdown/README.html",
+    "packageOrder": 374
+  },
+  {
+    "text": "powersleep",
+    "type": "folder",
+    "numChildren": 6,
+    "numChildrenLocal": 36,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02",
+    "url": "/api/resources?path=Software/SimpleLink%20MSP432P4%20SDK/Examples/Development%20Tools/MSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)/TI%20Drivers&package=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::sysconfig__1.8.1::tirtos_tivac__2.16.00.08::tm4c__2.1.4.178::xdctools__3.62.00.08",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02",
+    "removeofflineLink": "api/resources?package=com.ti.SIMPLELINK_ACADEMY_MSP432SDK__3.30.01.00::com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::sysconfig__1.8.1::tirtos_tivac__2.16.00.08::tm4c__2.1.4.178::xdctools__3.62.00.08&path=Software/SimpleLink MSP432P4 SDK/Examples/Development Tools/MSP432P401R LaunchPad - Red 2.x (Red)/TI Drivers/powersleep&removeoffline=true",
+    "overviewLink": "C:/ti//simplelink_msp432p4_sdk_3_40_01_02/examples/rtos/MSP_EXP432P401R/drivers/powersleep/README.html",
+    "packageOrder": 374
+  },
+  {
+    "text": "pwmled2",
+    "type": "folder",
+    "numChildren": 9,
+    "numChildrenLocal": 53,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02",
+    "url": "/api/resources?path=Software/SimpleLink%20MSP432P4%20SDK/Examples/Development%20Tools/MSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)/TI%20Drivers&package=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::sysconfig__1.8.1::tirtos_tivac__2.16.00.08::tm4c__2.1.4.178::xdctools__3.62.00.08",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02",
+    "removeofflineLink": "api/resources?package=com.ti.SIMPLELINK_ACADEMY_MSP432SDK__3.30.01.00::com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::sysconfig__1.8.1::tirtos_tivac__2.16.00.08::tm4c__2.1.4.178::xdctools__3.62.00.08&path=Software/SimpleLink MSP432P4 SDK/Examples/Development Tools/MSP432P401R LaunchPad - Red 2.x (Red)/TI Drivers/pwmled2&removeoffline=true",
+    "overviewLink": "C:/ti//simplelink_msp432p4_sdk_3_40_01_02/examples/nortos/MSP_EXP432P401R/drivers/pwmled2/README.html",
+    "packageOrder": 374
+  },
+  {
+    "text": "sdraw",
+    "type": "folder",
+    "numChildren": 9,
+    "numChildrenLocal": 60,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02",
+    "url": "/api/resources?path=Software/SimpleLink%20MSP432P4%20SDK/Examples/Development%20Tools/MSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)/TI%20Drivers&package=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::sysconfig__1.8.1::tirtos_tivac__2.16.00.08::tm4c__2.1.4.178::xdctools__3.62.00.08",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02",
+    "removeofflineLink": "api/resources?package=com.ti.SIMPLELINK_ACADEMY_MSP432SDK__3.30.01.00::com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::sysconfig__1.8.1::tirtos_tivac__2.16.00.08::tm4c__2.1.4.178::xdctools__3.62.00.08&path=Software/SimpleLink MSP432P4 SDK/Examples/Development Tools/MSP432P401R LaunchPad - Red 2.x (Red)/TI Drivers/sdraw&removeoffline=true",
+    "overviewLink": "C:/ti//simplelink_msp432p4_sdk_3_40_01_02/examples/nortos/MSP_EXP432P401R/drivers/sdraw/README.html",
+    "packageOrder": 374
+  },
+  {
+    "text": "spiffsinternal",
+    "type": "folder",
+    "numChildren": 9,
+    "numChildrenLocal": 53,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02",
+    "url": "/api/resources?path=Software/SimpleLink%20MSP432P4%20SDK/Examples/Development%20Tools/MSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)/TI%20Drivers&package=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::sysconfig__1.8.1::tirtos_tivac__2.16.00.08::tm4c__2.1.4.178::xdctools__3.62.00.08",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02",
+    "removeofflineLink": "api/resources?package=com.ti.SIMPLELINK_ACADEMY_MSP432SDK__3.30.01.00::com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::sysconfig__1.8.1::tirtos_tivac__2.16.00.08::tm4c__2.1.4.178::xdctools__3.62.00.08&path=Software/SimpleLink MSP432P4 SDK/Examples/Development Tools/MSP432P401R LaunchPad - Red 2.x (Red)/TI Drivers/spiffsinternal&removeoffline=true",
+    "overviewLink": "C:/ti//simplelink_msp432p4_sdk_3_40_01_02/examples/nortos/MSP_EXP432P401R/drivers/spiffsinternal/README.html",
+    "packageOrder": 374
+  },
+  {
+    "text": "spiloopback",
+    "type": "folder",
+    "numChildren": 6,
+    "numChildrenLocal": 44,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02",
+    "url": "/api/resources?path=Software/SimpleLink%20MSP432P4%20SDK/Examples/Development%20Tools/MSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)/TI%20Drivers&package=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::sysconfig__1.8.1::tirtos_tivac__2.16.00.08::tm4c__2.1.4.178::xdctools__3.62.00.08",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02",
+    "removeofflineLink": "api/resources?package=com.ti.SIMPLELINK_ACADEMY_MSP432SDK__3.30.01.00::com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::sysconfig__1.8.1::tirtos_tivac__2.16.00.08::tm4c__2.1.4.178::xdctools__3.62.00.08&path=Software/SimpleLink MSP432P4 SDK/Examples/Development Tools/MSP432P401R LaunchPad - Red 2.x (Red)/TI Drivers/spiloopback&removeoffline=true",
+    "overviewLink": "C:/ti//simplelink_msp432p4_sdk_3_40_01_02/examples/rtos/MSP_EXP432P401R/drivers/spiloopback/README.html",
+    "packageOrder": 374
+  },
+  {
+    "text": "spimaster",
+    "type": "folder",
+    "numChildren": 6,
+    "numChildrenLocal": 36,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02",
+    "url": "/api/resources?path=Software/SimpleLink%20MSP432P4%20SDK/Examples/Development%20Tools/MSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)/TI%20Drivers&package=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::sysconfig__1.8.1::tirtos_tivac__2.16.00.08::tm4c__2.1.4.178::xdctools__3.62.00.08",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02",
+    "removeofflineLink": "api/resources?package=com.ti.SIMPLELINK_ACADEMY_MSP432SDK__3.30.01.00::com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::sysconfig__1.8.1::tirtos_tivac__2.16.00.08::tm4c__2.1.4.178::xdctools__3.62.00.08&path=Software/SimpleLink MSP432P4 SDK/Examples/Development Tools/MSP432P401R LaunchPad - Red 2.x (Red)/TI Drivers/spimaster&removeoffline=true",
+    "overviewLink": "C:/ti//simplelink_msp432p4_sdk_3_40_01_02/examples/rtos/MSP_EXP432P401R/drivers/spimaster/README.html",
+    "packageOrder": 374
+  },
+  {
+    "text": "spislave",
+    "type": "folder",
+    "numChildren": 6,
+    "numChildrenLocal": 36,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02",
+    "url": "/api/resources?path=Software/SimpleLink%20MSP432P4%20SDK/Examples/Development%20Tools/MSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)/TI%20Drivers&package=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::sysconfig__1.8.1::tirtos_tivac__2.16.00.08::tm4c__2.1.4.178::xdctools__3.62.00.08",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02",
+    "removeofflineLink": "api/resources?package=com.ti.SIMPLELINK_ACADEMY_MSP432SDK__3.30.01.00::com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::sysconfig__1.8.1::tirtos_tivac__2.16.00.08::tm4c__2.1.4.178::xdctools__3.62.00.08&path=Software/SimpleLink MSP432P4 SDK/Examples/Development Tools/MSP432P401R LaunchPad - Red 2.x (Red)/TI Drivers/spislave&removeoffline=true",
+    "overviewLink": "C:/ti//simplelink_msp432p4_sdk_3_40_01_02/examples/rtos/MSP_EXP432P401R/drivers/spislave/README.html",
+    "packageOrder": 374
+  },
+  {
+    "text": "timerled",
+    "type": "folder",
+    "numChildren": 6,
+    "numChildrenLocal": 36,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02",
+    "url": "/api/resources?path=Software/SimpleLink%20MSP432P4%20SDK/Examples/Development%20Tools/MSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)/TI%20Drivers&package=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::sysconfig__1.8.1::tirtos_tivac__2.16.00.08::tm4c__2.1.4.178::xdctools__3.62.00.08",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02",
+    "removeofflineLink": "api/resources?package=com.ti.SIMPLELINK_ACADEMY_MSP432SDK__3.30.01.00::com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::sysconfig__1.8.1::tirtos_tivac__2.16.00.08::tm4c__2.1.4.178::xdctools__3.62.00.08&path=Software/SimpleLink MSP432P4 SDK/Examples/Development Tools/MSP432P401R LaunchPad - Red 2.x (Red)/TI Drivers/timerled&removeoffline=true",
+    "overviewLink": "C:/ti//simplelink_msp432p4_sdk_3_40_01_02/examples/rtos/MSP_EXP432P401R/drivers/timerled/README.html",
+    "packageOrder": 374
+  },
+  {
+    "text": "uartecho",
+    "type": "folder",
+    "numChildren": 9,
+    "numChildrenLocal": 53,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02",
+    "url": "/api/resources?path=Software/SimpleLink%20MSP432P4%20SDK/Examples/Development%20Tools/MSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)/TI%20Drivers&package=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::sysconfig__1.8.1::tirtos_tivac__2.16.00.08::tm4c__2.1.4.178::xdctools__3.62.00.08",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02",
+    "removeofflineLink": "api/resources?package=com.ti.SIMPLELINK_ACADEMY_MSP432SDK__3.30.01.00::com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::sysconfig__1.8.1::tirtos_tivac__2.16.00.08::tm4c__2.1.4.178::xdctools__3.62.00.08&path=Software/SimpleLink MSP432P4 SDK/Examples/Development Tools/MSP432P401R LaunchPad - Red 2.x (Red)/TI Drivers/uartecho&removeoffline=true",
+    "overviewLink": "C:/ti//simplelink_msp432p4_sdk_3_40_01_02/examples/nortos/MSP_EXP432P401R/drivers/uartecho/README.html",
+    "packageOrder": 374
+  },
+  {
+    "text": "watchdog",
+    "type": "folder",
+    "numChildren": 9,
+    "numChildrenLocal": 53,
+    "children": true,
+    "state": {
+      "opened": false
+    },
+    "packageUId": "com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02",
+    "url": "/api/resources?path=Software/SimpleLink%20MSP432P4%20SDK/Examples/Development%20Tools/MSP432P401R%20LaunchPad%20-%20Red%202.x%20(Red)/TI%20Drivers&package=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::sysconfig__1.8.1::tirtos_tivac__2.16.00.08::tm4c__2.1.4.178::xdctools__3.62.00.08",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02",
+    "removeofflineLink": "api/resources?package=com.ti.SIMPLELINK_ACADEMY_MSP432SDK__3.30.01.00::com.ti.SIMPLELINK_MSP432_SDK__3.40.01.02::sysconfig__1.8.1::tirtos_tivac__2.16.00.08::tm4c__2.1.4.178::xdctools__3.62.00.08&path=Software/SimpleLink MSP432P4 SDK/Examples/Development Tools/MSP432P401R LaunchPad - Red 2.x (Red)/TI Drivers/watchdog&removeoffline=true",
+    "overviewLink": "C:/ti//simplelink_msp432p4_sdk_3_40_01_02/examples/nortos/MSP_EXP432P401R/drivers/watchdog/README.html",
+    "packageOrder": 374
+  }
+]

@@ -972,3 +972,1727 @@ Finished building target: "Button_ExternalInterrupts.out"
  
 
 **** Build Finished ****
+
+**** Clean-only build of configuration Debug for project Button ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 clean -O 
+ 
+DEL /F  "syscfg\ti_drivers_config.h" "syscfg\syscfg_c.rov.xs"  "Button.hex"  "syscfg\ti_drivers_config.c"  "Button.out" 
+DEL /F "Button.obj" "syscfg\ti_drivers_config.obj" "main_nortos.obj" 
+DEL /F "Button.d" "syscfg\ti_drivers_config.d" "main_nortos.d" 
+RMDIR /S/Q  "syscfg\" 
+Could Not Find E:\ARM_Cortex-M\MSP432_CCS_Workspace\Button\Debug\Button.hex
+Finished clean
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Button ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../Button.syscfg"
+Invoking: SysConfig
+"C:/ti/ccs1031/ccs/utils/sysconfig_1.8.1/sysconfig_cli.bat" -s "C:/ti/simplelink_msp432p4_sdk_3_40_01_02/.metadata/product.json" --script "E:/ARM_Cortex-M/MSP432_CCS_Workspace/Button/Button.syscfg" -o "syscfg"
+Running script...
+Validating...
+Generating Code (Button.syscfg)...
+Writing E:\ARM_Cortex-M\MSP432_CCS_Workspace\Button\Debug\syscfg\ti_drivers_config.c...
+Writing E:\ARM_Cortex-M\MSP432_CCS_Workspace\Button\Debug\syscfg\ti_drivers_config.h...
+Writing E:\ARM_Cortex-M\MSP432_CCS_Workspace\Button\Debug\syscfg\syscfg_c.rov.xs...
+Finished building: "../Button.syscfg"
+ 
+Building file: "../main_nortos.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/ARM_Cortex-M/MSP432_CCS_Workspace/Button" --include_path="E:/ARM_Cortex-M/MSP432_CCS_Workspace/Button/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="main_nortos.d_raw" --include_path="E:/ARM_Cortex-M/MSP432_CCS_Workspace/Button/Debug/syscfg"  "../main_nortos.c"
+Finished building: "../main_nortos.c"
+ 
+Building file: "../Button.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/ARM_Cortex-M/MSP432_CCS_Workspace/Button" --include_path="E:/ARM_Cortex-M/MSP432_CCS_Workspace/Button/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="Button.d_raw" --include_path="E:/ARM_Cortex-M/MSP432_CCS_Workspace/Button/Debug/syscfg"  "../Button.c"
+Finished building: "../Button.c"
+ 
+Building file: "syscfg/ti_drivers_config.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/ARM_Cortex-M/MSP432_CCS_Workspace/Button" --include_path="E:/ARM_Cortex-M/MSP432_CCS_Workspace/Button/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="syscfg/ti_drivers_config.d_raw" --include_path="E:/ARM_Cortex-M/MSP432_CCS_Workspace/Button/Debug/syscfg" --obj_directory="syscfg"  "syscfg/ti_drivers_config.c"
+Finished building: "syscfg/ti_drivers_config.c"
+ 
+Building target: "Button.out"
+Invoking: Arm Linker
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"Button.map" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" -i"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/lib" --diag_suppress=10063 --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Button_linkInfo.xml" --entry_point=resetISR --rom_model -o "Button.out" "./Button.obj" "./syscfg/ti_drivers_config.obj" "./main_nortos.obj" "../MSP_EXP432P401R_NoRTOS.cmd"  -l"ti/display/lib/display.aem4f" -l"ti/grlib/lib/ccs/m4f/grlib.a" -l"third_party/spiffs/lib/ccs/m4f/spiffs.a" -l"ti/drivers/lib/drivers_msp432p401x.aem4f" -l"third_party/fatfs/lib/ccs/m4f/fatfs.a" -l"lib/nortos_msp432p401x.aem4f" -l"ti/devices/msp432p4xx/driverlib/ccs/msp432p4xx_driverlib.lib" -llibc.a 
+<Linking>
+Finished building target: "Button.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Button ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../Button.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/ARM_Cortex-M/MSP432_CCS_Workspace/Button" --include_path="E:/ARM_Cortex-M/MSP432_CCS_Workspace/Button/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="Button.d_raw" --include_path="E:/ARM_Cortex-M/MSP432_CCS_Workspace/Button/Debug/syscfg"  "../Button.c"
+Finished building: "../Button.c"
+ 
+Building target: "Button.out"
+Invoking: Arm Linker
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"Button.map" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" -i"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/lib" --diag_suppress=10063 --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Button_linkInfo.xml" --entry_point=resetISR --rom_model -o "Button.out" "./Button.obj" "./syscfg/ti_drivers_config.obj" "./main_nortos.obj" "../MSP_EXP432P401R_NoRTOS.cmd"  -l"ti/display/lib/display.aem4f" -l"ti/grlib/lib/ccs/m4f/grlib.a" -l"third_party/spiffs/lib/ccs/m4f/spiffs.a" -l"ti/drivers/lib/drivers_msp432p401x.aem4f" -l"third_party/fatfs/lib/ccs/m4f/fatfs.a" -l"lib/nortos_msp432p401x.aem4f" -l"ti/devices/msp432p4xx/driverlib/ccs/msp432p4xx_driverlib.lib" -llibc.a 
+<Linking>
+Finished building target: "Button.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Button ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'Button.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Button ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../Button.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/ARM_Cortex-M/MSP432_CCS_Workspace/Button" --include_path="E:/ARM_Cortex-M/MSP432_CCS_Workspace/Button/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="Button.d_raw" --include_path="E:/ARM_Cortex-M/MSP432_CCS_Workspace/Button/Debug/syscfg"  "../Button.c"
+"../Button.c", line 100: warning #176-D: expression has no effect
+Finished building: "../Button.c"
+ 
+Building target: "Button.out"
+Invoking: Arm Linker
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"Button.map" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" -i"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/lib" --diag_suppress=10063 --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Button_linkInfo.xml" --entry_point=resetISR --rom_model -o "Button.out" "./Button.obj" "./syscfg/ti_drivers_config.obj" "./main_nortos.obj" "../MSP_EXP432P401R_NoRTOS.cmd"  -l"ti/display/lib/display.aem4f" -l"ti/grlib/lib/ccs/m4f/grlib.a" -l"third_party/spiffs/lib/ccs/m4f/spiffs.a" -l"ti/drivers/lib/drivers_msp432p401x.aem4f" -l"third_party/fatfs/lib/ccs/m4f/fatfs.a" -l"lib/nortos_msp432p401x.aem4f" -l"ti/devices/msp432p4xx/driverlib/ccs/msp432p4xx_driverlib.lib" -llibc.a 
+<Linking>
+Finished building target: "Button.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Button ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../Button.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/ARM_Cortex-M/MSP432_CCS_Workspace/Button" --include_path="E:/ARM_Cortex-M/MSP432_CCS_Workspace/Button/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="Button.d_raw" --include_path="E:/ARM_Cortex-M/MSP432_CCS_Workspace/Button/Debug/syscfg"  "../Button.c"
+"../Button.c", line 96: warning #176-D: expression has no effect
+Finished building: "../Button.c"
+ 
+Building target: "Button.out"
+Invoking: Arm Linker
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"Button.map" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" -i"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/lib" --diag_suppress=10063 --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Button_linkInfo.xml" --entry_point=resetISR --rom_model -o "Button.out" "./Button.obj" "./syscfg/ti_drivers_config.obj" "./main_nortos.obj" "../MSP_EXP432P401R_NoRTOS.cmd"  -l"ti/display/lib/display.aem4f" -l"ti/grlib/lib/ccs/m4f/grlib.a" -l"third_party/spiffs/lib/ccs/m4f/spiffs.a" -l"ti/drivers/lib/drivers_msp432p401x.aem4f" -l"third_party/fatfs/lib/ccs/m4f/fatfs.a" -l"lib/nortos_msp432p401x.aem4f" -l"ti/devices/msp432p4xx/driverlib/ccs/msp432p4xx_driverlib.lib" -llibc.a 
+<Linking>
+Finished building target: "Button.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Button ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../Button.syscfg"
+Invoking: SysConfig
+"C:/ti/ccs1031/ccs/utils/sysconfig_1.8.1/sysconfig_cli.bat" -s "C:/ti/simplelink_msp432p4_sdk_3_40_01_02/.metadata/product.json" --script "E:/ARM_Cortex-M/MSP432_CCS_Workspace/Button/Button.syscfg" -o "syscfg"
+Running script...
+Validating...
+Generating Code (Button.syscfg)...
+Writing E:\ARM_Cortex-M\MSP432_CCS_Workspace\Button\Debug\syscfg\ti_drivers_config.c...
+Writing E:\ARM_Cortex-M\MSP432_CCS_Workspace\Button\Debug\syscfg\ti_drivers_config.h...
+Writing E:\ARM_Cortex-M\MSP432_CCS_Workspace\Button\Debug\syscfg\syscfg_c.rov.xs...
+Finished building: "../Button.syscfg"
+ 
+Building file: "../Button.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/ARM_Cortex-M/MSP432_CCS_Workspace/Button" --include_path="E:/ARM_Cortex-M/MSP432_CCS_Workspace/Button/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="Button.d_raw" --include_path="E:/ARM_Cortex-M/MSP432_CCS_Workspace/Button/Debug/syscfg"  "../Button.c"
+"../Button.c", line 96: warning #176-D: expression has no effect
+Finished building: "../Button.c"
+ 
+Building file: "syscfg/ti_drivers_config.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/ARM_Cortex-M/MSP432_CCS_Workspace/Button" --include_path="E:/ARM_Cortex-M/MSP432_CCS_Workspace/Button/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="syscfg/ti_drivers_config.d_raw" --include_path="E:/ARM_Cortex-M/MSP432_CCS_Workspace/Button/Debug/syscfg" --obj_directory="syscfg"  "syscfg/ti_drivers_config.c"
+Finished building: "syscfg/ti_drivers_config.c"
+ 
+Building target: "Button.out"
+Invoking: Arm Linker
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"Button.map" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" -i"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/lib" --diag_suppress=10063 --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Button_linkInfo.xml" --entry_point=resetISR --rom_model -o "Button.out" "./Button.obj" "./syscfg/ti_drivers_config.obj" "./main_nortos.obj" "../MSP_EXP432P401R_NoRTOS.cmd"  -l"ti/display/lib/display.aem4f" -l"ti/grlib/lib/ccs/m4f/grlib.a" -l"third_party/spiffs/lib/ccs/m4f/spiffs.a" -l"ti/drivers/lib/drivers_msp432p401x.aem4f" -l"third_party/fatfs/lib/ccs/m4f/fatfs.a" -l"lib/nortos_msp432p401x.aem4f" -l"ti/devices/msp432p4xx/driverlib/ccs/msp432p4xx_driverlib.lib" -llibc.a 
+<Linking>
+Finished building target: "Button.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Button ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../Button.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/ARM_Cortex-M/MSP432_CCS_Workspace/Button" --include_path="E:/ARM_Cortex-M/MSP432_CCS_Workspace/Button/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="Button.d_raw" --include_path="E:/ARM_Cortex-M/MSP432_CCS_Workspace/Button/Debug/syscfg"  "../Button.c"
+Finished building: "../Button.c"
+ 
+Building target: "Button.out"
+Invoking: Arm Linker
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"Button.map" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" -i"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/lib" --diag_suppress=10063 --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Button_linkInfo.xml" --entry_point=resetISR --rom_model -o "Button.out" "./Button.obj" "./syscfg/ti_drivers_config.obj" "./main_nortos.obj" "../MSP_EXP432P401R_NoRTOS.cmd"  -l"ti/display/lib/display.aem4f" -l"ti/grlib/lib/ccs/m4f/grlib.a" -l"third_party/spiffs/lib/ccs/m4f/spiffs.a" -l"ti/drivers/lib/drivers_msp432p401x.aem4f" -l"third_party/fatfs/lib/ccs/m4f/fatfs.a" -l"lib/nortos_msp432p401x.aem4f" -l"ti/devices/msp432p4xx/driverlib/ccs/msp432p4xx_driverlib.lib" -llibc.a 
+<Linking>
+Finished building target: "Button.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Button ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../Button.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/ARM_Cortex-M/MSP432_CCS_Workspace/Button" --include_path="E:/ARM_Cortex-M/MSP432_CCS_Workspace/Button/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="Button.d_raw" --include_path="E:/ARM_Cortex-M/MSP432_CCS_Workspace/Button/Debug/syscfg"  "../Button.c"
+Finished building: "../Button.c"
+ 
+Building target: "Button.out"
+Invoking: Arm Linker
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"Button.map" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" -i"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/lib" --diag_suppress=10063 --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Button_linkInfo.xml" --entry_point=resetISR --rom_model -o "Button.out" "./Button.obj" "./syscfg/ti_drivers_config.obj" "./main_nortos.obj" "../MSP_EXP432P401R_NoRTOS.cmd"  -l"ti/display/lib/display.aem4f" -l"ti/grlib/lib/ccs/m4f/grlib.a" -l"third_party/spiffs/lib/ccs/m4f/spiffs.a" -l"ti/drivers/lib/drivers_msp432p401x.aem4f" -l"third_party/fatfs/lib/ccs/m4f/fatfs.a" -l"lib/nortos_msp432p401x.aem4f" -l"ti/devices/msp432p4xx/driverlib/ccs/msp432p4xx_driverlib.lib" -llibc.a 
+<Linking>
+Finished building target: "Button.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Button ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'Button.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Button ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../Button.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/ARM_Cortex-M/MSP432_CCS_Workspace/Button" --include_path="E:/ARM_Cortex-M/MSP432_CCS_Workspace/Button/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="Button.d_raw" --include_path="E:/ARM_Cortex-M/MSP432_CCS_Workspace/Button/Debug/syscfg"  "../Button.c"
+Finished building: "../Button.c"
+ 
+Building target: "Button.out"
+Invoking: Arm Linker
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"Button.map" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" -i"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/lib" --diag_suppress=10063 --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Button_linkInfo.xml" --entry_point=resetISR --rom_model -o "Button.out" "./Button.obj" "./syscfg/ti_drivers_config.obj" "./main_nortos.obj" "../MSP_EXP432P401R_NoRTOS.cmd"  -l"ti/display/lib/display.aem4f" -l"ti/grlib/lib/ccs/m4f/grlib.a" -l"third_party/spiffs/lib/ccs/m4f/spiffs.a" -l"ti/drivers/lib/drivers_msp432p401x.aem4f" -l"third_party/fatfs/lib/ccs/m4f/fatfs.a" -l"lib/nortos_msp432p401x.aem4f" -l"ti/devices/msp432p4xx/driverlib/ccs/msp432p4xx_driverlib.lib" -llibc.a 
+<Linking>
+Finished building target: "Button.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Button ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../Button.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/ARM_Cortex-M/MSP432_CCS_Workspace/Button" --include_path="E:/ARM_Cortex-M/MSP432_CCS_Workspace/Button/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="Button.d_raw" --include_path="E:/ARM_Cortex-M/MSP432_CCS_Workspace/Button/Debug/syscfg"  "../Button.c"
+Finished building: "../Button.c"
+ 
+Building target: "Button.out"
+Invoking: Arm Linker
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"Button.map" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" -i"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/lib" --diag_suppress=10063 --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Button_linkInfo.xml" --entry_point=resetISR --rom_model -o "Button.out" "./Button.obj" "./syscfg/ti_drivers_config.obj" "./main_nortos.obj" "../MSP_EXP432P401R_NoRTOS.cmd"  -l"ti/display/lib/display.aem4f" -l"ti/grlib/lib/ccs/m4f/grlib.a" -l"third_party/spiffs/lib/ccs/m4f/spiffs.a" -l"ti/drivers/lib/drivers_msp432p401x.aem4f" -l"third_party/fatfs/lib/ccs/m4f/fatfs.a" -l"lib/nortos_msp432p401x.aem4f" -l"ti/devices/msp432p4xx/driverlib/ccs/msp432p4xx_driverlib.lib" -llibc.a 
+<Linking>
+Finished building target: "Button.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Button ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../Button.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/ARM_Cortex-M/MSP432_CCS_Workspace/Button" --include_path="E:/ARM_Cortex-M/MSP432_CCS_Workspace/Button/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="Button.d_raw" --include_path="E:/ARM_Cortex-M/MSP432_CCS_Workspace/Button/Debug/syscfg"  "../Button.c"
+"../Button.c", line 101: warning #176-D: expression has no effect
+Finished building: "../Button.c"
+ 
+Building target: "Button.out"
+Invoking: Arm Linker
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"Button.map" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" -i"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/lib" --diag_suppress=10063 --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Button_linkInfo.xml" --entry_point=resetISR --rom_model -o "Button.out" "./Button.obj" "./syscfg/ti_drivers_config.obj" "./main_nortos.obj" "../MSP_EXP432P401R_NoRTOS.cmd"  -l"ti/display/lib/display.aem4f" -l"ti/grlib/lib/ccs/m4f/grlib.a" -l"third_party/spiffs/lib/ccs/m4f/spiffs.a" -l"ti/drivers/lib/drivers_msp432p401x.aem4f" -l"third_party/fatfs/lib/ccs/m4f/fatfs.a" -l"lib/nortos_msp432p401x.aem4f" -l"ti/devices/msp432p4xx/driverlib/ccs/msp432p4xx_driverlib.lib" -llibc.a 
+<Linking>
+Finished building target: "Button.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Button ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../Button.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/ARM_Cortex-M/MSP432_CCS_Workspace/Button" --include_path="E:/ARM_Cortex-M/MSP432_CCS_Workspace/Button/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="Button.d_raw" --include_path="E:/ARM_Cortex-M/MSP432_CCS_Workspace/Button/Debug/syscfg"  "../Button.c"
+Finished building: "../Button.c"
+ 
+Building target: "Button.out"
+Invoking: Arm Linker
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"Button.map" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" -i"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/lib" --diag_suppress=10063 --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Button_linkInfo.xml" --entry_point=resetISR --rom_model -o "Button.out" "./Button.obj" "./syscfg/ti_drivers_config.obj" "./main_nortos.obj" "../MSP_EXP432P401R_NoRTOS.cmd"  -l"ti/display/lib/display.aem4f" -l"ti/grlib/lib/ccs/m4f/grlib.a" -l"third_party/spiffs/lib/ccs/m4f/spiffs.a" -l"ti/drivers/lib/drivers_msp432p401x.aem4f" -l"third_party/fatfs/lib/ccs/m4f/fatfs.a" -l"lib/nortos_msp432p401x.aem4f" -l"ti/devices/msp432p4xx/driverlib/ccs/msp432p4xx_driverlib.lib" -llibc.a 
+<Linking>
+Finished building target: "Button.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project hello_MSP_EXP432P401R_tirtos_ccs ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../hello.cfg"
+Invoking: XDCtools
+"C:/ti/xdctools_3_60_02_34_core/xs" --xdcpath="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source;C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/tirtos/packages;" xdc.tools.configuro -o configPkg -t ti.targets.arm.elf.M4F -p ti.platforms.msp432:MSP432P401R -r release -c "C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS" --compileOptions "-mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path=\"E:/TI/MSP432/MSP432_CSS_WorkSpace/hello_MSP_EXP432P401R_tirtos_ccs\" --include_path=\"E:/TI/MSP432/MSP432_CSS_WorkSpace/hello_MSP_EXP432P401R_tirtos_ccs/Debug\" --include_path=\"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source\" --include_path=\"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include\" --include_path=\"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/ti/posix/ccs\" --include_path=\"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include\" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on  " "../hello.cfg"
+making package.mak (because of package.bld) ...
+generating interfaces for package configPkg (because package/package.xdc.inc is older than package.xdc) ...
+configuring hello.xem4f from package/cfg/hello_pem4f.cfg ...
+generating custom ti.sysbios library makefile ... 
+Starting build of library sources ...
+making E:/TI/MSP432/MSP432_CSS_WorkSpace/hello_MSP_EXP432P401R_tirtos_ccs/src/sysbios/sysbios.aem4f ...
+clem4f C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/tirtos/packages/ti/sysbios/BIOS.c ...
+asmem4f C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/tirtos/packages/ti/sysbios/family/arm/m3/Hwi_asm.sv7M ...
+asmem4f C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/tirtos/packages/ti/sysbios/family/arm/m3/Hwi_asm_switch.sv7M ...
+asmem4f C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/tirtos/packages/ti/sysbios/family/arm/m3/IntrinsicsSupport_asm.sv7M ...
+asmem4f C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/tirtos/packages/ti/sysbios/family/arm/m3/TaskSupport_asm.sv7M ...
+arem4f BIOS.obj m3_Hwi_asm.obj m3_Hwi_asm_switch.obj m3_IntrinsicsSupport_asm.obj m3_TaskSupport_asm.obj ...
+Build of libraries done.
+clem4f package/cfg/hello_pem4f.c ...
+Finished building: "../hello.cfg"
+ 
+        1 file(s) copied.
+making ../src/sysbios/sysbios.aem4f ...
+gmake[1]: Nothing to be done for 'all'.
+Building file: "../hello.syscfg"
+Invoking: SysConfig
+"C:/ti/ccs1031/ccs/utils/sysconfig_1.8.1/sysconfig_cli.bat" -s "C:/ti/simplelink_msp432p4_sdk_3_40_01_02/.metadata/product.json" --script "E:/TI/MSP432/MSP432_CSS_WorkSpace/hello_MSP_EXP432P401R_tirtos_ccs/hello.syscfg" -o "syscfg"
+Running script...
+Validating...
+Generating Code (hello.syscfg)...
+Writing E:\TI\MSP432\MSP432_CSS_WorkSpace\hello_MSP_EXP432P401R_tirtos_ccs\Debug\syscfg\ti_drivers_config.c...
+Writing E:\TI\MSP432\MSP432_CSS_WorkSpace\hello_MSP_EXP432P401R_tirtos_ccs\Debug\syscfg\ti_drivers_config.h...
+Writing E:\TI\MSP432\MSP432_CSS_WorkSpace\hello_MSP_EXP432P401R_tirtos_ccs\Debug\syscfg\syscfg_c.rov.xs...
+Finished building: "../hello.syscfg"
+ 
+Building file: "syscfg/ti_drivers_config.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/hello_MSP_EXP432P401R_tirtos_ccs" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/hello_MSP_EXP432P401R_tirtos_ccs/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/ti/posix/ccs" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="syscfg/ti_drivers_config.d_raw" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/hello_MSP_EXP432P401R_tirtos_ccs/Debug/syscfg" --obj_directory="syscfg" --cmd_file="configPkg/compiler.opt"  "syscfg/ti_drivers_config.c"
+Finished building: "syscfg/ti_drivers_config.c"
+ 
+Building file: "../hello.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/hello_MSP_EXP432P401R_tirtos_ccs" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/hello_MSP_EXP432P401R_tirtos_ccs/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/ti/posix/ccs" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="hello.d_raw" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/hello_MSP_EXP432P401R_tirtos_ccs/Debug/syscfg" --cmd_file="configPkg/compiler.opt"  "../hello.c"
+Finished building: "../hello.c"
+ 
+making ../src/sysbios/sysbios.aem4f ...
+gmake[2]: Nothing to be done for 'all'.
+Building target: "hello_MSP_EXP432P401R_tirtos_ccs.out"
+Invoking: Arm Linker
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"hello_MSP_EXP432P401R_tirtos_ccs.map" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/tirtos/packages" -i"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/lib" --diag_wrap=off --display_error_number --warn_sections --xml_link_info="hello_MSP_EXP432P401R_tirtos_ccs_linkInfo.xml" --rom_model -o "hello_MSP_EXP432P401R_tirtos_ccs.out" "./hello.obj" "./syscfg/ti_drivers_config.obj" "../MSP_EXP432P401R_TIRTOS.cmd" -l"configPkg/linker.cmd"  -l"ti/display/lib/display.aem4f" -l"ti/grlib/lib/ccs/m4f/grlib.a" -l"third_party/spiffs/lib/ccs/m4f/spiffs.a" -l"ti/drivers/lib/drivers_msp432p401x.aem4f" -l"third_party/fatfs/lib/ccs/m4f/fatfs.a" -l"ti/dpl/lib/dpl_msp432p401x.aem4f" -l"ti/devices/msp432p4xx/driverlib/ccs/msp432p4xx_driverlib.lib" -llibc.a 
+<Linking>
+Finished building target: "hello_MSP_EXP432P401R_tirtos_ccs.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_MSP_EXP432P401R_release_ccs ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../release.cfg"
+Invoking: XDCtools
+"C:/ti/xdctools_3_60_02_34_core/xs" --xdcpath="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source;C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/tirtos/packages;" xdc.tools.configuro -o configPkg -t ti.targets.arm.elf.M4F -p ti.platforms.msp432:MSP432P401R -r release -c "C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS" "../release.cfg"
+making package.mak (because of package.bld) ...
+generating interfaces for package configPkg (because package/package.xdc.inc is older than package.xdc) ...
+configuring release.xem4f from package/cfg/release_pem4f.cfg ...
+generating custom ti.sysbios library makefile ... 
+Starting build of library sources ...
+making E:/TI/MSP432/MSP432_CSS_WorkSpace/tirtos_builds_MSP_EXP432P401R_release_ccs/src/sysbios/sysbios.aem4f ...
+clem4f C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/tirtos/packages/ti/sysbios/BIOS.c ...
+asmem4f C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/tirtos/packages/ti/sysbios/family/arm/m3/Hwi_asm.sv7M ...
+asmem4f C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/tirtos/packages/ti/sysbios/family/arm/m3/Hwi_asm_switch.sv7M ...
+asmem4f C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/tirtos/packages/ti/sysbios/family/arm/m3/IntrinsicsSupport_asm.sv7M ...
+asmem4f C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/tirtos/packages/ti/sysbios/family/arm/m3/TaskSupport_asm.sv7M ...
+arem4f BIOS.obj m3_Hwi_asm.obj m3_Hwi_asm_switch.obj m3_IntrinsicsSupport_asm.obj m3_TaskSupport_asm.obj ...
+Build of libraries done.
+clem4f package/cfg/release_pem4f.c ...
+Finished building: "../release.cfg"
+ 
+        1 file(s) copied.
+making ../src/sysbios/sysbios.aem4f ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/sysbios.aem4f ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project empty_MSP_EXP432P401R_tirtos_ccs ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../empty.syscfg"
+Invoking: SysConfig
+"C:/ti/ccs1031/ccs/utils/sysconfig_1.8.1/sysconfig_cli.bat" -s "C:/ti/simplelink_msp432p4_sdk_3_40_01_02/.metadata/product.json" --script "E:/TI/MSP432/MSP432_CSS_WorkSpace/empty_MSP_EXP432P401R_tirtos_ccs/empty.syscfg" -o "syscfg"
+Running script...
+Validating...
+Generating Code (empty.syscfg)...
+Writing E:\TI\MSP432\MSP432_CSS_WorkSpace\empty_MSP_EXP432P401R_tirtos_ccs\Debug\syscfg\ti_drivers_config.c...
+Writing E:\TI\MSP432\MSP432_CSS_WorkSpace\empty_MSP_EXP432P401R_tirtos_ccs\Debug\syscfg\ti_drivers_config.h...
+Writing E:\TI\MSP432\MSP432_CSS_WorkSpace\empty_MSP_EXP432P401R_tirtos_ccs\Debug\syscfg\syscfg_c.rov.xs...
+Finished building: "../empty.syscfg"
+ 
+Building file: "../empty.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/empty_MSP_EXP432P401R_tirtos_ccs" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/empty_MSP_EXP432P401R_tirtos_ccs/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/ti/posix/ccs" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="empty.d_raw" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/empty_MSP_EXP432P401R_tirtos_ccs/Debug/syscfg" --cmd_file="E:/TI/MSP432/MSP432_CSS_WorkSpace/tirtos_builds_MSP_EXP432P401R_release_ccs/Debug/configPkg/compiler.opt"  "../empty.c"
+Finished building: "../empty.c"
+ 
+Building file: "syscfg/ti_drivers_config.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/empty_MSP_EXP432P401R_tirtos_ccs" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/empty_MSP_EXP432P401R_tirtos_ccs/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/ti/posix/ccs" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="syscfg/ti_drivers_config.d_raw" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/empty_MSP_EXP432P401R_tirtos_ccs/Debug/syscfg" --obj_directory="syscfg" --cmd_file="E:/TI/MSP432/MSP432_CSS_WorkSpace/tirtos_builds_MSP_EXP432P401R_release_ccs/Debug/configPkg/compiler.opt"  "syscfg/ti_drivers_config.c"
+Finished building: "syscfg/ti_drivers_config.c"
+ 
+Building file: "../main_tirtos.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/empty_MSP_EXP432P401R_tirtos_ccs" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/empty_MSP_EXP432P401R_tirtos_ccs/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/ti/posix/ccs" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="main_tirtos.d_raw" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/empty_MSP_EXP432P401R_tirtos_ccs/Debug/syscfg" --cmd_file="E:/TI/MSP432/MSP432_CSS_WorkSpace/tirtos_builds_MSP_EXP432P401R_release_ccs/Debug/configPkg/compiler.opt"  "../main_tirtos.c"
+Finished building: "../main_tirtos.c"
+ 
+Building target: "empty_MSP_EXP432P401R_tirtos_ccs.out"
+Invoking: Arm Linker
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"empty_MSP_EXP432P401R_tirtos_ccs.map" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/tirtos/packages" -i"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/lib" --diag_wrap=off --display_error_number --warn_sections --xml_link_info="empty_MSP_EXP432P401R_tirtos_ccs_linkInfo.xml" --rom_model -o "empty_MSP_EXP432P401R_tirtos_ccs.out" "./empty.obj" "./syscfg/ti_drivers_config.obj" "./main_tirtos.obj" "../MSP_EXP432P401R_TIRTOS.cmd" -l"ti/display/lib/display.aem4f" -l"ti/grlib/lib/ccs/m4f/grlib.a" -l"third_party/spiffs/lib/ccs/m4f/spiffs.a" -l"ti/drivers/lib/drivers_msp432p401x.aem4f" -l"third_party/fatfs/lib/ccs/m4f/fatfs.a" -l"ti/dpl/lib/dpl_msp432p401x.aem4f" -l"E:/TI/MSP432/MSP432_CSS_WorkSpace/tirtos_builds_MSP_EXP432P401R_release_ccs/Debug/configPkg/linker.cmd"  -l"ti/devices/msp432p4xx/driverlib/ccs/msp432p4xx_driverlib.lib" -llibc.a 
+<Linking>
+Finished building target: "empty_MSP_EXP432P401R_tirtos_ccs.out"
+ 
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project tirtos_builds_MSP_EXP432P401R_release_ccs ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 clean -O 
+ 
+cleaning ../src/sysbios ...
+DEL /F  "tirtos_builds_MSP_EXP432P401R_release_ccs.lib"  "configPkg\linker.cmd" "configPkg\compiler.opt" 
+RMDIR /S/Q  "configPkg\" 
+Could Not Find E:\TI\MSP432\MSP432_CSS_WorkSpace\tirtos_builds_MSP_EXP432P401R_release_ccs\Debug\tirtos_builds_MSP_EXP432P401R_release_ccs.lib
+Finished clean
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_MSP_EXP432P401R_release_ccs ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../release.cfg"
+Invoking: XDCtools
+"C:/ti/xdctools_3_60_02_34_core/xs" --xdcpath="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source;C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/tirtos/packages;" xdc.tools.configuro -o configPkg -t ti.targets.arm.elf.M4F -p ti.platforms.msp432:MSP432P401R -r release -c "C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS" "../release.cfg"
+making package.mak (because of package.bld) ...
+generating interfaces for package configPkg (because package/package.xdc.inc is older than package.xdc) ...
+configuring release.xem4f from package/cfg/release_pem4f.cfg ...
+generating custom ti.sysbios library makefile ... 
+Starting build of library sources ...
+making E:/TI/MSP432/MSP432_CSS_WorkSpace/tirtos_builds_MSP_EXP432P401R_release_ccs/src/sysbios/sysbios.aem4f ...
+clem4f C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/tirtos/packages/ti/sysbios/BIOS.c ...
+asmem4f C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/tirtos/packages/ti/sysbios/family/arm/m3/Hwi_asm.sv7M ...
+asmem4f C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/tirtos/packages/ti/sysbios/family/arm/m3/Hwi_asm_switch.sv7M ...
+asmem4f C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/tirtos/packages/ti/sysbios/family/arm/m3/IntrinsicsSupport_asm.sv7M ...
+asmem4f C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/tirtos/packages/ti/sysbios/family/arm/m3/TaskSupport_asm.sv7M ...
+arem4f BIOS.obj m3_Hwi_asm.obj m3_Hwi_asm_switch.obj m3_IntrinsicsSupport_asm.obj m3_TaskSupport_asm.obj ...
+Build of libraries done.
+clem4f package/cfg/release_pem4f.c ...
+Finished building: "../release.cfg"
+ 
+        1 file(s) copied.
+making ../src/sysbios/sysbios.aem4f ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/sysbios.aem4f ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project tirtos_builds_MSP_EXP432P401R_release_ccs ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 clean -O 
+ 
+cleaning ../src/sysbios ...
+DEL /F  "tirtos_builds_MSP_EXP432P401R_release_ccs.lib"  "configPkg\linker.cmd" "configPkg\compiler.opt" 
+RMDIR /S/Q  "configPkg\" 
+Could Not Find E:\TI\MSP432\MSP432_CSS_WorkSpace\tirtos_builds_MSP_EXP432P401R_release_ccs\Debug\tirtos_builds_MSP_EXP432P401R_release_ccs.lib
+Finished clean
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_MSP_EXP432P401R_release_ccs ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../release.cfg"
+Invoking: XDCtools
+"C:/ti/xdctools_3_60_02_34_core/xs" --xdcpath="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source;C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/tirtos/packages;" xdc.tools.configuro -o configPkg -t ti.targets.arm.elf.M4F -p ti.platforms.msp432:MSP432P401R -r release -c "C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS" "../release.cfg"
+making package.mak (because of package.bld) ...
+generating interfaces for package configPkg (because package/package.xdc.inc is older than package.xdc) ...
+configuring release.xem4f from package/cfg/release_pem4f.cfg ...
+generating custom ti.sysbios library makefile ... 
+Starting build of library sources ...
+making E:/TI/MSP432/MSP432_CSS_WorkSpace/tirtos_builds_MSP_EXP432P401R_release_ccs/src/sysbios/sysbios.aem4f ...
+clem4f C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/tirtos/packages/ti/sysbios/BIOS.c ...
+asmem4f C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/tirtos/packages/ti/sysbios/family/arm/m3/Hwi_asm.sv7M ...
+asmem4f C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/tirtos/packages/ti/sysbios/family/arm/m3/Hwi_asm_switch.sv7M ...
+asmem4f C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/tirtos/packages/ti/sysbios/family/arm/m3/IntrinsicsSupport_asm.sv7M ...
+asmem4f C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/tirtos/packages/ti/sysbios/family/arm/m3/TaskSupport_asm.sv7M ...
+arem4f BIOS.obj m3_Hwi_asm.obj m3_Hwi_asm_switch.obj m3_IntrinsicsSupport_asm.obj m3_TaskSupport_asm.obj ...
+Build of libraries done.
+clem4f package/cfg/release_pem4f.c ...
+Finished building: "../release.cfg"
+ 
+        1 file(s) copied.
+making ../src/sysbios/sysbios.aem4f ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/sysbios.aem4f ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project empty_MSP_EXP432P401R_tirtos_ccs ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'empty_MSP_EXP432P401R_tirtos_ccs.out' is up to date.
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project tirtos_builds_MSP_EXP432P401R_release_ccs ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 clean -O 
+ 
+cleaning ../src/sysbios ...
+DEL /F  "tirtos_builds_MSP_EXP432P401R_release_ccs.lib"  "configPkg\linker.cmd" "configPkg\compiler.opt" 
+RMDIR /S/Q  "configPkg\" 
+Could Not Find E:\TI\MSP432\MSP432_CSS_WorkSpace\tirtos_builds_MSP_EXP432P401R_release_ccs\Debug\tirtos_builds_MSP_EXP432P401R_release_ccs.lib
+Finished clean
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_MSP_EXP432P401R_release_ccs ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../release.cfg"
+Invoking: XDCtools
+"C:/ti/xdctools_3_60_02_34_core/xs" --xdcpath="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source;C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/tirtos/packages;" xdc.tools.configuro -o configPkg -t ti.targets.arm.elf.M4F -p ti.platforms.msp432:MSP432P401R -r release -c "C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS" "../release.cfg"
+making package.mak (because of package.bld) ...
+generating interfaces for package configPkg (because package/package.xdc.inc is older than package.xdc) ...
+configuring release.xem4f from package/cfg/release_pem4f.cfg ...
+generating custom ti.sysbios library makefile ... 
+Starting build of library sources ...
+making E:/TI/MSP432/MSP432_CSS_WorkSpace/tirtos_builds_MSP_EXP432P401R_release_ccs/src/sysbios/sysbios.aem4f ...
+clem4f C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/tirtos/packages/ti/sysbios/BIOS.c ...
+asmem4f C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/tirtos/packages/ti/sysbios/family/arm/m3/Hwi_asm.sv7M ...
+asmem4f C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/tirtos/packages/ti/sysbios/family/arm/m3/Hwi_asm_switch.sv7M ...
+asmem4f C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/tirtos/packages/ti/sysbios/family/arm/m3/IntrinsicsSupport_asm.sv7M ...
+asmem4f C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/tirtos/packages/ti/sysbios/family/arm/m3/TaskSupport_asm.sv7M ...
+arem4f BIOS.obj m3_Hwi_asm.obj m3_Hwi_asm_switch.obj m3_IntrinsicsSupport_asm.obj m3_TaskSupport_asm.obj ...
+Build of libraries done.
+clem4f package/cfg/release_pem4f.c ...
+Finished building: "../release.cfg"
+ 
+        1 file(s) copied.
+making ../src/sysbios/sysbios.aem4f ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/sysbios.aem4f ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project hello_MSP_EXP432P401R_tirtos_ccs ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../hello.cfg"
+Invoking: XDCtools
+"C:/ti/xdctools_3_60_02_34_core/xs" --xdcpath="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source;C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/tirtos/packages;" xdc.tools.configuro -o configPkg -t ti.targets.arm.elf.M4F -p ti.platforms.msp432:MSP432P401R -r release -c "C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS" --compileOptions "-mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path=\"E:/TI/MSP432/MSP432_CSS_WorkSpace/hello_MSP_EXP432P401R_tirtos_ccs\" --include_path=\"E:/TI/MSP432/MSP432_CSS_WorkSpace/hello_MSP_EXP432P401R_tirtos_ccs/Debug\" --include_path=\"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source\" --include_path=\"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include\" --include_path=\"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/ti/posix/ccs\" --include_path=\"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include\" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on  " "../hello.cfg"
+making package.mak (because of package.bld) ...
+generating interfaces for package configPkg (because package/package.xdc.inc is older than package.xdc) ...
+configuring hello.xem4f from package/cfg/hello_pem4f.cfg ...
+generating custom ti.sysbios library makefile ... 
+Starting build of library sources ...
+making E:/TI/MSP432/MSP432_CSS_WorkSpace/hello_MSP_EXP432P401R_tirtos_ccs/src/sysbios/sysbios.aem4f ...
+clem4f C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/tirtos/packages/ti/sysbios/BIOS.c ...
+asmem4f C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/tirtos/packages/ti/sysbios/family/arm/m3/Hwi_asm.sv7M ...
+asmem4f C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/tirtos/packages/ti/sysbios/family/arm/m3/Hwi_asm_switch.sv7M ...
+asmem4f C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/tirtos/packages/ti/sysbios/family/arm/m3/IntrinsicsSupport_asm.sv7M ...
+asmem4f C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/tirtos/packages/ti/sysbios/family/arm/m3/TaskSupport_asm.sv7M ...
+arem4f BIOS.obj m3_Hwi_asm.obj m3_Hwi_asm_switch.obj m3_IntrinsicsSupport_asm.obj m3_TaskSupport_asm.obj ...
+Build of libraries done.
+clem4f package/cfg/hello_pem4f.c ...
+Finished building: "../hello.cfg"
+ 
+        1 file(s) copied.
+making ../src/sysbios/sysbios.aem4f ...
+gmake[1]: Nothing to be done for 'all'.
+Building file: "../hello.syscfg"
+Invoking: SysConfig
+"C:/ti/ccs1031/ccs/utils/sysconfig_1.8.1/sysconfig_cli.bat" -s "C:/ti/simplelink_msp432p4_sdk_3_40_01_02/.metadata/product.json" --script "E:/TI/MSP432/MSP432_CSS_WorkSpace/hello_MSP_EXP432P401R_tirtos_ccs/hello.syscfg" -o "syscfg"
+Running script...
+Validating...
+Generating Code (hello.syscfg)...
+Writing E:\TI\MSP432\MSP432_CSS_WorkSpace\hello_MSP_EXP432P401R_tirtos_ccs\Debug\syscfg\ti_drivers_config.c...
+Writing E:\TI\MSP432\MSP432_CSS_WorkSpace\hello_MSP_EXP432P401R_tirtos_ccs\Debug\syscfg\ti_drivers_config.h...
+Writing E:\TI\MSP432\MSP432_CSS_WorkSpace\hello_MSP_EXP432P401R_tirtos_ccs\Debug\syscfg\syscfg_c.rov.xs...
+Finished building: "../hello.syscfg"
+ 
+Building file: "syscfg/ti_drivers_config.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/hello_MSP_EXP432P401R_tirtos_ccs" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/hello_MSP_EXP432P401R_tirtos_ccs/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/ti/posix/ccs" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="syscfg/ti_drivers_config.d_raw" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/hello_MSP_EXP432P401R_tirtos_ccs/Debug/syscfg" --obj_directory="syscfg" --cmd_file="configPkg/compiler.opt"  "syscfg/ti_drivers_config.c"
+Finished building: "syscfg/ti_drivers_config.c"
+ 
+Building file: "../hello.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/hello_MSP_EXP432P401R_tirtos_ccs" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/hello_MSP_EXP432P401R_tirtos_ccs/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/ti/posix/ccs" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="hello.d_raw" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/hello_MSP_EXP432P401R_tirtos_ccs/Debug/syscfg" --cmd_file="configPkg/compiler.opt"  "../hello.c"
+Finished building: "../hello.c"
+ 
+making ../src/sysbios/sysbios.aem4f ...
+gmake[2]: Nothing to be done for 'all'.
+Building target: "hello_MSP_EXP432P401R_tirtos_ccs.out"
+Invoking: Arm Linker
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"hello_MSP_EXP432P401R_tirtos_ccs.map" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/tirtos/packages" -i"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/lib" --diag_wrap=off --display_error_number --warn_sections --xml_link_info="hello_MSP_EXP432P401R_tirtos_ccs_linkInfo.xml" --rom_model -o "hello_MSP_EXP432P401R_tirtos_ccs.out" "./hello.obj" "./syscfg/ti_drivers_config.obj" "../MSP_EXP432P401R_TIRTOS.cmd" -l"configPkg/linker.cmd"  -l"ti/display/lib/display.aem4f" -l"ti/grlib/lib/ccs/m4f/grlib.a" -l"third_party/spiffs/lib/ccs/m4f/spiffs.a" -l"ti/drivers/lib/drivers_msp432p401x.aem4f" -l"third_party/fatfs/lib/ccs/m4f/fatfs.a" -l"ti/dpl/lib/dpl_msp432p401x.aem4f" -l"ti/devices/msp432p4xx/driverlib/ccs/msp432p4xx_driverlib.lib" -llibc.a 
+<Linking>
+Finished building target: "hello_MSP_EXP432P401R_tirtos_ccs.out"
+ 
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project hello_MSP_EXP432P401R_tirtos_ccs ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 clean -O 
+ 
+cleaning ../src/sysbios ...
+DEL /F  "syscfg\ti_drivers_config.h" "syscfg\syscfg_c.rov.xs"  "../src/makefile.libs" "hello_MSP_EXP432P401R_tirtos_ccs.hex"  "configPkg\linker.cmd" "configPkg\compiler.opt" "syscfg\ti_drivers_config.c"  "hello_MSP_EXP432P401R_tirtos_ccs.out" 
+DEL /F "hello.obj" "syscfg\ti_drivers_config.obj" 
+DEL /F "hello.d" "syscfg\ti_drivers_config.d" 
+RMDIR /S/Q  "configPkg\" "syscfg\" 
+Could Not Find E:\TI\MSP432\MSP432_CSS_WorkSpace\hello_MSP_EXP432P401R_tirtos_ccs\src\../src/makefile.libs
+Could Not Find E:\TI\MSP432\MSP432_CSS_WorkSpace\hello_MSP_EXP432P401R_tirtos_ccs\Debug\hello_MSP_EXP432P401R_tirtos_ccs.hex
+Finished clean
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project hello_MSP_EXP432P401R_tirtos_ccs ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../hello.cfg"
+Invoking: XDCtools
+"C:/ti/xdctools_3_60_02_34_core/xs" --xdcpath="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source;C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/tirtos/packages;" xdc.tools.configuro -o configPkg -t ti.targets.arm.elf.M4F -p ti.platforms.msp432:MSP432P401R -r release -c "C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS" --compileOptions "-mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path=\"E:/TI/MSP432/MSP432_CSS_WorkSpace/hello_MSP_EXP432P401R_tirtos_ccs\" --include_path=\"E:/TI/MSP432/MSP432_CSS_WorkSpace/hello_MSP_EXP432P401R_tirtos_ccs/Debug\" --include_path=\"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source\" --include_path=\"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include\" --include_path=\"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/ti/posix/ccs\" --include_path=\"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include\" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on  " "../hello.cfg"
+making package.mak (because of package.bld) ...
+generating interfaces for package configPkg (because package/package.xdc.inc is older than package.xdc) ...
+configuring hello.xem4f from package/cfg/hello_pem4f.cfg ...
+generating custom ti.sysbios library makefile ... 
+Starting build of library sources ...
+making E:/TI/MSP432/MSP432_CSS_WorkSpace/hello_MSP_EXP432P401R_tirtos_ccs/src/sysbios/sysbios.aem4f ...
+clem4f C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/tirtos/packages/ti/sysbios/BIOS.c ...
+asmem4f C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/tirtos/packages/ti/sysbios/family/arm/m3/Hwi_asm.sv7M ...
+asmem4f C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/tirtos/packages/ti/sysbios/family/arm/m3/Hwi_asm_switch.sv7M ...
+asmem4f C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/tirtos/packages/ti/sysbios/family/arm/m3/IntrinsicsSupport_asm.sv7M ...
+asmem4f C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/tirtos/packages/ti/sysbios/family/arm/m3/TaskSupport_asm.sv7M ...
+arem4f BIOS.obj m3_Hwi_asm.obj m3_Hwi_asm_switch.obj m3_IntrinsicsSupport_asm.obj m3_TaskSupport_asm.obj ...
+Build of libraries done.
+clem4f package/cfg/hello_pem4f.c ...
+Finished building: "../hello.cfg"
+ 
+        1 file(s) copied.
+making ../src/sysbios/sysbios.aem4f ...
+gmake[1]: Nothing to be done for 'all'.
+Building file: "../hello.syscfg"
+Invoking: SysConfig
+"C:/ti/ccs1031/ccs/utils/sysconfig_1.8.1/sysconfig_cli.bat" -s "C:/ti/simplelink_msp432p4_sdk_3_40_01_02/.metadata/product.json" --script "E:/TI/MSP432/MSP432_CSS_WorkSpace/hello_MSP_EXP432P401R_tirtos_ccs/hello.syscfg" -o "syscfg"
+Running script...
+Validating...
+Generating Code (hello.syscfg)...
+Writing E:\TI\MSP432\MSP432_CSS_WorkSpace\hello_MSP_EXP432P401R_tirtos_ccs\Debug\syscfg\ti_drivers_config.c...
+Writing E:\TI\MSP432\MSP432_CSS_WorkSpace\hello_MSP_EXP432P401R_tirtos_ccs\Debug\syscfg\ti_drivers_config.h...
+Writing E:\TI\MSP432\MSP432_CSS_WorkSpace\hello_MSP_EXP432P401R_tirtos_ccs\Debug\syscfg\syscfg_c.rov.xs...
+Finished building: "../hello.syscfg"
+ 
+Building file: "syscfg/ti_drivers_config.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/hello_MSP_EXP432P401R_tirtos_ccs" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/hello_MSP_EXP432P401R_tirtos_ccs/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/ti/posix/ccs" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="syscfg/ti_drivers_config.d_raw" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/hello_MSP_EXP432P401R_tirtos_ccs/Debug/syscfg" --obj_directory="syscfg" --cmd_file="configPkg/compiler.opt"  "syscfg/ti_drivers_config.c"
+Finished building: "syscfg/ti_drivers_config.c"
+ 
+Building file: "../hello.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/hello_MSP_EXP432P401R_tirtos_ccs" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/hello_MSP_EXP432P401R_tirtos_ccs/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/ti/posix/ccs" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="hello.d_raw" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/hello_MSP_EXP432P401R_tirtos_ccs/Debug/syscfg" --cmd_file="configPkg/compiler.opt"  "../hello.c"
+Finished building: "../hello.c"
+ 
+making ../src/sysbios/sysbios.aem4f ...
+gmake[2]: Nothing to be done for 'all'.
+Building target: "hello_MSP_EXP432P401R_tirtos_ccs.out"
+Invoking: Arm Linker
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"hello_MSP_EXP432P401R_tirtos_ccs.map" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/tirtos/packages" -i"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/lib" --diag_wrap=off --display_error_number --warn_sections --xml_link_info="hello_MSP_EXP432P401R_tirtos_ccs_linkInfo.xml" --rom_model -o "hello_MSP_EXP432P401R_tirtos_ccs.out" "./hello.obj" "./syscfg/ti_drivers_config.obj" "../MSP_EXP432P401R_TIRTOS.cmd" -l"configPkg/linker.cmd"  -l"ti/display/lib/display.aem4f" -l"ti/grlib/lib/ccs/m4f/grlib.a" -l"third_party/spiffs/lib/ccs/m4f/spiffs.a" -l"ti/drivers/lib/drivers_msp432p401x.aem4f" -l"third_party/fatfs/lib/ccs/m4f/fatfs.a" -l"ti/dpl/lib/dpl_msp432p401x.aem4f" -l"ti/devices/msp432p4xx/driverlib/ccs/msp432p4xx_driverlib.lib" -llibc.a 
+<Linking>
+Finished building target: "hello_MSP_EXP432P401R_tirtos_ccs.out"
+ 
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project SevenSegmentDispaly ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 clean -O 
+ 
+DEL /F  "syscfg\ti_drivers_config.h" "syscfg\syscfg_c.rov.xs"  "SevenSegmentDispaly.hex"  "syscfg\ti_drivers_config.c"  "SevenSegmentDispaly.out" 
+DEL /F "syscfg\ti_drivers_config.obj" "blink.obj" "main_nortos.obj" 
+DEL /F "syscfg\ti_drivers_config.d" "blink.d" "main_nortos.d" 
+RMDIR /S/Q  "syscfg\" 
+Could Not Find E:\TI\MSP432\MSP432_CSS_WorkSpace\SevenSegmentDispaly\Debug\SevenSegmentDispaly.hex
+Could Not Find E:\TI\MSP432\MSP432_CSS_WorkSpace\SevenSegmentDispaly\Debug\SevenSegmentDispaly.out
+Finished clean
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SevenSegmentDispaly ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../SevenSegmentDisplay.syscfg"
+Invoking: SysConfig
+"C:/ti/ccs1031/ccs/utils/sysconfig_1.8.1/sysconfig_cli.bat" -s "C:/ti/simplelink_msp432p4_sdk_3_40_01_02/.metadata/product.json" --script "E:/TI/MSP432/MSP432_CSS_WorkSpace/SevenSegmentDispaly/SevenSegmentDisplay.syscfg" -o "syscfg"
+Running script...
+Validating...
+Generating Code (SevenSegmentDisplay.syscfg)...
+Writing E:\TI\MSP432\MSP432_CSS_WorkSpace\SevenSegmentDispaly\Debug\syscfg\ti_drivers_config.c...
+Writing E:\TI\MSP432\MSP432_CSS_WorkSpace\SevenSegmentDispaly\Debug\syscfg\ti_drivers_config.h...
+Writing E:\TI\MSP432\MSP432_CSS_WorkSpace\SevenSegmentDispaly\Debug\syscfg\syscfg_c.rov.xs...
+Finished building: "../SevenSegmentDisplay.syscfg"
+ 
+Building file: "../SevenSegmentDispaly.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/SevenSegmentDispaly" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/SevenSegmentDispaly/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="SevenSegmentDispaly.d_raw" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/SevenSegmentDispaly/Debug/syscfg"  "../SevenSegmentDispaly.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'SevenSegmentDispaly.obj' failed
+"../SevenSegmentDispaly.c", line 57: error #20: identifier "CONFIG_GPIO_BLUE_LED" is undefined
+1 error detected in the compilation of "../SevenSegmentDispaly.c".
+gmake: *** [SevenSegmentDispaly.obj] Error 1
+Building file: "syscfg/ti_drivers_config.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/SevenSegmentDispaly" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/SevenSegmentDispaly/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="syscfg/ti_drivers_config.d_raw" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/SevenSegmentDispaly/Debug/syscfg" --obj_directory="syscfg"  "syscfg/ti_drivers_config.c"
+Finished building: "syscfg/ti_drivers_config.c"
+ 
+Building file: "../main_nortos.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/SevenSegmentDispaly" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/SevenSegmentDispaly/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="main_nortos.d_raw" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/SevenSegmentDispaly/Debug/syscfg"  "../main_nortos.c"
+Finished building: "../main_nortos.c"
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SevenSegmentDispaly ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../SevenSegmentDispaly.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/SevenSegmentDispaly" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/SevenSegmentDispaly/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="SevenSegmentDispaly.d_raw" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/SevenSegmentDispaly/Debug/syscfg"  "../SevenSegmentDispaly.c"
+Finished building: "../SevenSegmentDispaly.c"
+ 
+Building target: "SevenSegmentDispaly.out"
+Invoking: Arm Linker
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"SevenSegmentDispaly.map" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" -i"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/lib" --diag_suppress=10063 --diag_wrap=off --display_error_number --warn_sections --xml_link_info="SevenSegmentDispaly_linkInfo.xml" --entry_point=resetISR --rom_model -o "SevenSegmentDispaly.out" "./SevenSegmentDispaly.obj" "./syscfg/ti_drivers_config.obj" "./main_nortos.obj" "../MSP_EXP432P401R_NoRTOS.cmd"  -l"ti/display/lib/display.aem4f" -l"ti/grlib/lib/ccs/m4f/grlib.a" -l"third_party/spiffs/lib/ccs/m4f/spiffs.a" -l"ti/drivers/lib/drivers_msp432p401x.aem4f" -l"third_party/fatfs/lib/ccs/m4f/fatfs.a" -l"lib/nortos_msp432p401x.aem4f" -l"ti/devices/msp432p4xx/driverlib/ccs/msp432p4xx_driverlib.lib" -llibc.a 
+<Linking>
+warning #10229-D: output section ".data" refers to load symbol "GPIO_Callback_Button_S1" and hence cannot be compressed; compression "lzss" is ignored
+ 
+ undefined               first referenced              
+  symbol                     in file                   
+ ---------               ----------------              
+ GPIO_Callback_Button_S1 ./syscfg/ti_drivers_config.obj
+ 
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "SevenSegmentDispaly.out" not built
+ 
+>> Compilation failure
+makefile:150: recipe for target 'SevenSegmentDispaly.out' failed
+gmake[1]: *** [SevenSegmentDispaly.out] Error 1
+gmake: *** [all] Error 2
+makefile:146: recipe for target 'all' failed
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SevenSegmentDispaly ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../SevenSegmentDispaly.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/SevenSegmentDispaly" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/SevenSegmentDispaly/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="SevenSegmentDispaly.d_raw" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/SevenSegmentDispaly/Debug/syscfg"  "../SevenSegmentDispaly.c"
+Finished building: "../SevenSegmentDispaly.c"
+ 
+Building target: "SevenSegmentDispaly.out"
+Invoking: Arm Linker
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"SevenSegmentDispaly.map" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" -i"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/lib" --diag_suppress=10063 --diag_wrap=off --display_error_number --warn_sections --xml_link_info="SevenSegmentDispaly_linkInfo.xml" --entry_point=resetISR --rom_model -o "SevenSegmentDispaly.out" "./SevenSegmentDispaly.obj" "./syscfg/ti_drivers_config.obj" "./main_nortos.obj" "../MSP_EXP432P401R_NoRTOS.cmd"  -l"ti/display/lib/display.aem4f" -l"ti/grlib/lib/ccs/m4f/grlib.a" -l"third_party/spiffs/lib/ccs/m4f/spiffs.a" -l"ti/drivers/lib/drivers_msp432p401x.aem4f" -l"third_party/fatfs/lib/ccs/m4f/fatfs.a" -l"lib/nortos_msp432p401x.aem4f" -l"ti/devices/msp432p4xx/driverlib/ccs/msp432p4xx_driverlib.lib" -llibc.a 
+<Linking>
+Finished building target: "SevenSegmentDispaly.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SevenSegmentDispaly ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../SevenSegmentDispaly.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/SevenSegmentDispaly" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/SevenSegmentDispaly/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="SevenSegmentDispaly.d_raw" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/SevenSegmentDispaly/Debug/syscfg"  "../SevenSegmentDispaly.c"
+Finished building: "../SevenSegmentDispaly.c"
+ 
+Building target: "SevenSegmentDispaly.out"
+Invoking: Arm Linker
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"SevenSegmentDispaly.map" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" -i"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/lib" --diag_suppress=10063 --diag_wrap=off --display_error_number --warn_sections --xml_link_info="SevenSegmentDispaly_linkInfo.xml" --entry_point=resetISR --rom_model -o "SevenSegmentDispaly.out" "./SevenSegmentDispaly.obj" "./syscfg/ti_drivers_config.obj" "./main_nortos.obj" "../MSP_EXP432P401R_NoRTOS.cmd"  -l"ti/display/lib/display.aem4f" -l"ti/grlib/lib/ccs/m4f/grlib.a" -l"third_party/spiffs/lib/ccs/m4f/spiffs.a" -l"ti/drivers/lib/drivers_msp432p401x.aem4f" -l"third_party/fatfs/lib/ccs/m4f/fatfs.a" -l"lib/nortos_msp432p401x.aem4f" -l"ti/devices/msp432p4xx/driverlib/ccs/msp432p4xx_driverlib.lib" -llibc.a 
+<Linking>
+Finished building target: "SevenSegmentDispaly.out"
+ 
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project ADC ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 clean -O 
+ 
+DEL /F  "syscfg\ti_drivers_config.h" "syscfg\syscfg_c.rov.xs"  "ADC.hex"  "syscfg\ti_drivers_config.c"  "ADC.out" 
+DEL /F "syscfg\ti_drivers_config.obj" "blink.obj" "main_nortos.obj" 
+DEL /F "syscfg\ti_drivers_config.d" "blink.d" "main_nortos.d" 
+RMDIR /S/Q  "syscfg\" 
+Could Not Find E:\TI\MSP432\MSP432_CSS_WorkSpace\ADC\Debug\ADC.hex
+Could Not Find E:\TI\MSP432\MSP432_CSS_WorkSpace\ADC\Debug\ADC.out
+Finished clean
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ADC ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../Blink.syscfg"
+Invoking: SysConfig
+"C:/ti/ccs1031/ccs/utils/sysconfig_1.8.1/sysconfig_cli.bat" -s "C:/ti/simplelink_msp432p4_sdk_3_40_01_02/.metadata/product.json" --script "E:/TI/MSP432/MSP432_CSS_WorkSpace/ADC/Blink.syscfg" -o "syscfg"
+Running script...
+Validating...
+Generating Code (Blink.syscfg)...
+Writing E:\TI\MSP432\MSP432_CSS_WorkSpace\ADC\Debug\syscfg\ti_drivers_config.c...
+Writing E:\TI\MSP432\MSP432_CSS_WorkSpace\ADC\Debug\syscfg\ti_drivers_config.h...
+Writing E:\TI\MSP432\MSP432_CSS_WorkSpace\ADC\Debug\syscfg\syscfg_c.rov.xs...
+Finished building: "../Blink.syscfg"
+ 
+Building file: "../blink.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/ADC" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/ADC/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="blink.d_raw" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/ADC/Debug/syscfg"  "../blink.c"
+Finished building: "../blink.c"
+ 
+Building file: "../main_nortos.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/ADC" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/ADC/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="main_nortos.d_raw" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/ADC/Debug/syscfg"  "../main_nortos.c"
+Finished building: "../main_nortos.c"
+ 
+Building file: "syscfg/ti_drivers_config.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/ADC" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/ADC/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="syscfg/ti_drivers_config.d_raw" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/ADC/Debug/syscfg" --obj_directory="syscfg"  "syscfg/ti_drivers_config.c"
+Finished building: "syscfg/ti_drivers_config.c"
+ 
+Building target: "ADC.out"
+Invoking: Arm Linker
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"ADC.map" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" -i"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/lib" --diag_suppress=10063 --diag_wrap=off --display_error_number --warn_sections --xml_link_info="ADC_linkInfo.xml" --entry_point=resetISR --rom_model -o "ADC.out" "./syscfg/ti_drivers_config.obj" "./blink.obj" "./main_nortos.obj" "../MSP_EXP432P401R_NoRTOS.cmd"  -l"ti/display/lib/display.aem4f" -l"ti/grlib/lib/ccs/m4f/grlib.a" -l"third_party/spiffs/lib/ccs/m4f/spiffs.a" -l"ti/drivers/lib/drivers_msp432p401x.aem4f" -l"third_party/fatfs/lib/ccs/m4f/fatfs.a" -l"lib/nortos_msp432p401x.aem4f" -l"ti/devices/msp432p4xx/driverlib/ccs/msp432p4xx_driverlib.lib" -llibc.a 
+<Linking>
+Finished building target: "ADC.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ADC ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../blink.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/ADC" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/ADC/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="blink.d_raw" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/ADC/Debug/syscfg"  "../blink.c"
+"../blink.c", line 67: warning #552-D: variable "res" was set but never used
+Finished building: "../blink.c"
+ 
+Building target: "ADC.out"
+Invoking: Arm Linker
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"ADC.map" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" -i"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/lib" --diag_suppress=10063 --diag_wrap=off --display_error_number --warn_sections --xml_link_info="ADC_linkInfo.xml" --entry_point=resetISR --rom_model -o "ADC.out" "./syscfg/ti_drivers_config.obj" "./blink.obj" "./main_nortos.obj" "../MSP_EXP432P401R_NoRTOS.cmd"  -l"ti/display/lib/display.aem4f" -l"ti/grlib/lib/ccs/m4f/grlib.a" -l"third_party/spiffs/lib/ccs/m4f/spiffs.a" -l"ti/drivers/lib/drivers_msp432p401x.aem4f" -l"third_party/fatfs/lib/ccs/m4f/fatfs.a" -l"lib/nortos_msp432p401x.aem4f" -l"ti/devices/msp432p4xx/driverlib/ccs/msp432p4xx_driverlib.lib" -llibc.a 
+<Linking>
+Finished building target: "ADC.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ADC ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'ADC.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ADC ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../blink.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/ADC" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/ADC/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="blink.d_raw" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/ADC/Debug/syscfg"  "../blink.c"
+Finished building: "../blink.c"
+ 
+Building target: "ADC.out"
+Invoking: Arm Linker
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"ADC.map" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" -i"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/lib" --diag_suppress=10063 --diag_wrap=off --display_error_number --warn_sections --xml_link_info="ADC_linkInfo.xml" --entry_point=resetISR --rom_model -o "ADC.out" "./syscfg/ti_drivers_config.obj" "./blink.obj" "./main_nortos.obj" "../MSP_EXP432P401R_NoRTOS.cmd"  -l"ti/display/lib/display.aem4f" -l"ti/grlib/lib/ccs/m4f/grlib.a" -l"third_party/spiffs/lib/ccs/m4f/spiffs.a" -l"ti/drivers/lib/drivers_msp432p401x.aem4f" -l"third_party/fatfs/lib/ccs/m4f/fatfs.a" -l"lib/nortos_msp432p401x.aem4f" -l"ti/devices/msp432p4xx/driverlib/ccs/msp432p4xx_driverlib.lib" -llibc.a 
+<Linking>
+Finished building target: "ADC.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ADC ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'ADC.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ADC ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'ADC.out' is up to date.
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project SevenSegment ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 clean -O 
+ 
+DEL /F  "syscfg\ti_drivers_config.h" "syscfg\syscfg_c.rov.xs"  "SevenSegment.hex"  "syscfg\ti_drivers_config.c"  "SevenSegment.out" 
+DEL /F "syscfg\ti_drivers_config.obj" "blink.obj" "main_nortos.obj" 
+DEL /F "syscfg\ti_drivers_config.d" "blink.d" "main_nortos.d" 
+RMDIR /S/Q  "syscfg\" 
+Could Not Find E:\TI\MSP432\MSP432_CSS_WorkSpace\SevenSegment\Debug\SevenSegment.hex
+Could Not Find E:\TI\MSP432\MSP432_CSS_WorkSpace\SevenSegment\Debug\SevenSegment.out
+Finished clean
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SevenSegment ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../SevenSegment.syscfg"
+Invoking: SysConfig
+"C:/ti/ccs1031/ccs/utils/sysconfig_1.8.1/sysconfig_cli.bat" -s "C:/ti/simplelink_msp432p4_sdk_3_40_01_02/.metadata/product.json" --script "E:/TI/MSP432/MSP432_CSS_WorkSpace/SevenSegment/SevenSegment.syscfg" -o "syscfg"
+Running script...
+Validating...
+Generating Code (SevenSegment.syscfg)...
+Writing E:\TI\MSP432\MSP432_CSS_WorkSpace\SevenSegment\Debug\syscfg\ti_drivers_config.c...
+Writing E:\TI\MSP432\MSP432_CSS_WorkSpace\SevenSegment\Debug\syscfg\ti_drivers_config.h...
+Writing E:\TI\MSP432\MSP432_CSS_WorkSpace\SevenSegment\Debug\syscfg\syscfg_c.rov.xs...
+Finished building: "../SevenSegment.syscfg"
+ 
+Building file: "../SevenSegment.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/SevenSegment" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/SevenSegment/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="SevenSegment.d_raw" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/SevenSegment/Debug/syscfg"  "../SevenSegment.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'SevenSegment.obj' failed
+"../SevenSegment.c", line 57: error #20: identifier "CONFIG_GPIO_BLUE_LED" is undefined
+1 error detected in the compilation of "../SevenSegment.c".
+gmake: *** [SevenSegment.obj] Error 1
+Building file: "../main_nortos.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/SevenSegment" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/SevenSegment/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="main_nortos.d_raw" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/SevenSegment/Debug/syscfg"  "../main_nortos.c"
+Finished building: "../main_nortos.c"
+ 
+Building file: "syscfg/ti_drivers_config.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/SevenSegment" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/SevenSegment/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="syscfg/ti_drivers_config.d_raw" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/SevenSegment/Debug/syscfg" --obj_directory="syscfg"  "syscfg/ti_drivers_config.c"
+Finished building: "syscfg/ti_drivers_config.c"
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SevenSegment ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../SevenSegment.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/SevenSegment" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/SevenSegment/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="SevenSegment.d_raw" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/SevenSegment/Debug/syscfg"  "../SevenSegment.c"
+Finished building: "../SevenSegment.c"
+ 
+Building target: "SevenSegment.out"
+Invoking: Arm Linker
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"SevenSegment.map" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" -i"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/lib" --diag_suppress=10063 --diag_wrap=off --display_error_number --warn_sections --xml_link_info="SevenSegment_linkInfo.xml" --entry_point=resetISR --rom_model -o "SevenSegment.out" "./SevenSegment.obj" "./syscfg/ti_drivers_config.obj" "./main_nortos.obj" "../MSP_EXP432P401R_NoRTOS.cmd"  -l"ti/display/lib/display.aem4f" -l"ti/grlib/lib/ccs/m4f/grlib.a" -l"third_party/spiffs/lib/ccs/m4f/spiffs.a" -l"ti/drivers/lib/drivers_msp432p401x.aem4f" -l"third_party/fatfs/lib/ccs/m4f/fatfs.a" -l"lib/nortos_msp432p401x.aem4f" -l"ti/devices/msp432p4xx/driverlib/ccs/msp432p4xx_driverlib.lib" -llibc.a 
+<Linking>
+Finished building target: "SevenSegment.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SevenSegment ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'SevenSegment.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SevenSegment ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../SevenSegment.syscfg"
+Invoking: SysConfig
+"C:/ti/ccs1031/ccs/utils/sysconfig_1.8.1/sysconfig_cli.bat" -s "C:/ti/simplelink_msp432p4_sdk_3_40_01_02/.metadata/product.json" --script "E:/TI/MSP432/MSP432_CSS_WorkSpace/SevenSegment/SevenSegment.syscfg" -o "syscfg"
+Running script...
+Validating...
+Generating Code (SevenSegment.syscfg)...
+Writing E:\TI\MSP432\MSP432_CSS_WorkSpace\SevenSegment\Debug\syscfg\ti_drivers_config.c...
+Writing E:\TI\MSP432\MSP432_CSS_WorkSpace\SevenSegment\Debug\syscfg\ti_drivers_config.h...
+Writing E:\TI\MSP432\MSP432_CSS_WorkSpace\SevenSegment\Debug\syscfg\syscfg_c.rov.xs...
+Finished building: "../SevenSegment.syscfg"
+ 
+Building file: "../SevenSegment.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/SevenSegment" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/SevenSegment/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="SevenSegment.d_raw" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/SevenSegment/Debug/syscfg"  "../SevenSegment.c"
+Finished building: "../SevenSegment.c"
+ 
+Building file: "syscfg/ti_drivers_config.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/SevenSegment" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/SevenSegment/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="syscfg/ti_drivers_config.d_raw" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/SevenSegment/Debug/syscfg" --obj_directory="syscfg"  "syscfg/ti_drivers_config.c"
+Finished building: "syscfg/ti_drivers_config.c"
+ 
+Building target: "SevenSegment.out"
+Invoking: Arm Linker
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"SevenSegment.map" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" -i"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/lib" --diag_suppress=10063 --diag_wrap=off --display_error_number --warn_sections --xml_link_info="SevenSegment_linkInfo.xml" --entry_point=resetISR --rom_model -o "SevenSegment.out" "./SevenSegment.obj" "./syscfg/ti_drivers_config.obj" "./main_nortos.obj" "../MSP_EXP432P401R_NoRTOS.cmd"  -l"ti/display/lib/display.aem4f" -l"ti/grlib/lib/ccs/m4f/grlib.a" -l"third_party/spiffs/lib/ccs/m4f/spiffs.a" -l"ti/drivers/lib/drivers_msp432p401x.aem4f" -l"third_party/fatfs/lib/ccs/m4f/fatfs.a" -l"lib/nortos_msp432p401x.aem4f" -l"ti/devices/msp432p4xx/driverlib/ccs/msp432p4xx_driverlib.lib" -llibc.a 
+<Linking>
+warning #10229-D: output section ".data" refers to load symbol "GPIO_Callback_Button_S1" and hence cannot be compressed; compression "lzss" is ignored
+ 
+ undefined               first referenced              
+  symbol                     in file                   
+ ---------               ----------------              
+ GPIO_Callback_Button_S1 ./syscfg/ti_drivers_config.obj
+ 
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "SevenSegment.out" not built
+ 
+>> Compilation failure
+makefile:150: recipe for target 'SevenSegment.out' failed
+gmake[1]: *** [SevenSegment.out] Error 1
+makefile:146: recipe for target 'all' failed
+gmake: *** [all] Error 2
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SevenSegment ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../SevenSegment.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/SevenSegment" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/SevenSegment/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="SevenSegment.d_raw" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/SevenSegment/Debug/syscfg"  "../SevenSegment.c"
+Finished building: "../SevenSegment.c"
+ 
+Building target: "SevenSegment.out"
+Invoking: Arm Linker
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"SevenSegment.map" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" -i"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/lib" --diag_suppress=10063 --diag_wrap=off --display_error_number --warn_sections --xml_link_info="SevenSegment_linkInfo.xml" --entry_point=resetISR --rom_model -o "SevenSegment.out" "./SevenSegment.obj" "./syscfg/ti_drivers_config.obj" "./main_nortos.obj" "../MSP_EXP432P401R_NoRTOS.cmd"  -l"ti/display/lib/display.aem4f" -l"ti/grlib/lib/ccs/m4f/grlib.a" -l"third_party/spiffs/lib/ccs/m4f/spiffs.a" -l"ti/drivers/lib/drivers_msp432p401x.aem4f" -l"third_party/fatfs/lib/ccs/m4f/fatfs.a" -l"lib/nortos_msp432p401x.aem4f" -l"ti/devices/msp432p4xx/driverlib/ccs/msp432p4xx_driverlib.lib" -llibc.a 
+<Linking>
+Finished building target: "SevenSegment.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SevenSegment ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../SevenSegment.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/SevenSegment" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/SevenSegment/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="SevenSegment.d_raw" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/SevenSegment/Debug/syscfg"  "../SevenSegment.c"
+Finished building: "../SevenSegment.c"
+ 
+Building target: "SevenSegment.out"
+Invoking: Arm Linker
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"SevenSegment.map" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" -i"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/lib" --diag_suppress=10063 --diag_wrap=off --display_error_number --warn_sections --xml_link_info="SevenSegment_linkInfo.xml" --entry_point=resetISR --rom_model -o "SevenSegment.out" "./SevenSegment.obj" "./syscfg/ti_drivers_config.obj" "./main_nortos.obj" "../MSP_EXP432P401R_NoRTOS.cmd"  -l"ti/display/lib/display.aem4f" -l"ti/grlib/lib/ccs/m4f/grlib.a" -l"third_party/spiffs/lib/ccs/m4f/spiffs.a" -l"ti/drivers/lib/drivers_msp432p401x.aem4f" -l"third_party/fatfs/lib/ccs/m4f/fatfs.a" -l"lib/nortos_msp432p401x.aem4f" -l"ti/devices/msp432p4xx/driverlib/ccs/msp432p4xx_driverlib.lib" -llibc.a 
+<Linking>
+Finished building target: "SevenSegment.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SevenSegment ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'SevenSegment.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SevenSegment ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'SevenSegment.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SevenSegment ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'SevenSegment.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SevenSegment ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../SevenSegment.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/SevenSegment" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/SevenSegment/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="SevenSegment.d_raw" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/SevenSegment/Debug/syscfg"  "../SevenSegment.c"
+Finished building: "../SevenSegment.c"
+ 
+Building target: "SevenSegment.out"
+Invoking: Arm Linker
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"SevenSegment.map" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" -i"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/lib" --diag_suppress=10063 --diag_wrap=off --display_error_number --warn_sections --xml_link_info="SevenSegment_linkInfo.xml" --entry_point=resetISR --rom_model -o "SevenSegment.out" "./SevenSegment.obj" "./syscfg/ti_drivers_config.obj" "./main_nortos.obj" "../MSP_EXP432P401R_NoRTOS.cmd"  -l"ti/display/lib/display.aem4f" -l"ti/grlib/lib/ccs/m4f/grlib.a" -l"third_party/spiffs/lib/ccs/m4f/spiffs.a" -l"ti/drivers/lib/drivers_msp432p401x.aem4f" -l"third_party/fatfs/lib/ccs/m4f/fatfs.a" -l"lib/nortos_msp432p401x.aem4f" -l"ti/devices/msp432p4xx/driverlib/ccs/msp432p4xx_driverlib.lib" -llibc.a 
+<Linking>
+Finished building target: "SevenSegment.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SevenSegment ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'SevenSegment.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project display_MSP_EXP432P401R_nortos_ccs ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../display.syscfg"
+Invoking: SysConfig
+"C:/ti/ccs1031/ccs/utils/sysconfig_1.8.1/sysconfig_cli.bat" -s "C:/ti/simplelink_msp432p4_sdk_3_40_01_02/.metadata/product.json" --script "E:/TI/MSP432/MSP432_CSS_WorkSpace/display_MSP_EXP432P401R_nortos_ccs/display.syscfg" -o "syscfg"
+Running script...
+Validating...
+Generating Code (display.syscfg)...
+Writing E:\TI\MSP432\MSP432_CSS_WorkSpace\display_MSP_EXP432P401R_nortos_ccs\Debug\syscfg\ti_drivers_config.c...
+Writing E:\TI\MSP432\MSP432_CSS_WorkSpace\display_MSP_EXP432P401R_nortos_ccs\Debug\syscfg\ti_drivers_config.h...
+Writing E:\TI\MSP432\MSP432_CSS_WorkSpace\display_MSP_EXP432P401R_nortos_ccs\Debug\syscfg\syscfg_c.rov.xs...
+Finished building: "../display.syscfg"
+ 
+Building file: "../display.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/display_MSP_EXP432P401R_nortos_ccs" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/display_MSP_EXP432P401R_nortos_ccs/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none --define=BOARD_DISPLAY_USE_UART_ANSI=1 --define=BOARD_DISPLAY_USE_LCD=1 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="display.d_raw" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/display_MSP_EXP432P401R_nortos_ccs/Debug/syscfg"  "../display.c"
+Finished building: "../display.c"
+ 
+Building file: "../main_nortos.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/display_MSP_EXP432P401R_nortos_ccs" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/display_MSP_EXP432P401R_nortos_ccs/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none --define=BOARD_DISPLAY_USE_UART_ANSI=1 --define=BOARD_DISPLAY_USE_LCD=1 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="main_nortos.d_raw" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/display_MSP_EXP432P401R_nortos_ccs/Debug/syscfg"  "../main_nortos.c"
+Finished building: "../main_nortos.c"
+ 
+Building file: "../splash_image.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/display_MSP_EXP432P401R_nortos_ccs" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/display_MSP_EXP432P401R_nortos_ccs/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none --define=BOARD_DISPLAY_USE_UART_ANSI=1 --define=BOARD_DISPLAY_USE_LCD=1 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="splash_image.d_raw" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/display_MSP_EXP432P401R_nortos_ccs/Debug/syscfg"  "../splash_image.c"
+Finished building: "../splash_image.c"
+ 
+Building file: "syscfg/ti_drivers_config.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/display_MSP_EXP432P401R_nortos_ccs" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/display_MSP_EXP432P401R_nortos_ccs/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none --define=BOARD_DISPLAY_USE_UART_ANSI=1 --define=BOARD_DISPLAY_USE_LCD=1 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="syscfg/ti_drivers_config.d_raw" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/display_MSP_EXP432P401R_nortos_ccs/Debug/syscfg" --obj_directory="syscfg"  "syscfg/ti_drivers_config.c"
+Finished building: "syscfg/ti_drivers_config.c"
+ 
+Building target: "display_MSP_EXP432P401R_nortos_ccs.out"
+Invoking: Arm Linker
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --advice:power=none --define=BOARD_DISPLAY_USE_UART_ANSI=1 --define=BOARD_DISPLAY_USE_LCD=1 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"display_MSP_EXP432P401R_nortos_ccs.map" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" -i"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/lib" --diag_suppress=10063 --diag_wrap=off --display_error_number --warn_sections --xml_link_info="display_MSP_EXP432P401R_nortos_ccs_linkInfo.xml" --entry_point=resetISR --rom_model -o "display_MSP_EXP432P401R_nortos_ccs.out" "./display.obj" "./syscfg/ti_drivers_config.obj" "./main_nortos.obj" "./splash_image.obj" "../MSP_EXP432P401R_NoRTOS.cmd"  -l"ti/display/lib/display.aem4f" -l"ti/grlib/lib/ccs/m4f/grlib.a" -l"third_party/spiffs/lib/ccs/m4f/spiffs.a" -l"ti/drivers/lib/drivers_msp432p401x.aem4f" -l"third_party/fatfs/lib/ccs/m4f/fatfs.a" -l"lib/nortos_msp432p401x.aem4f" -l"ti/devices/msp432p4xx/driverlib/ccs/msp432p4xx_driverlib.lib" -llibc.a 
+<Linking>
+Finished building target: "display_MSP_EXP432P401R_nortos_ccs.out"
+ 
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project Display ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 clean -O 
+ 
+DEL /F  "syscfg\ti_drivers_config.h" "syscfg\syscfg_c.rov.xs"  "Display.hex"  "syscfg\ti_drivers_config.c"  "Display.out" 
+DEL /F "syscfg\ti_drivers_config.obj" "blink.obj" "main_nortos.obj" 
+DEL /F "syscfg\ti_drivers_config.d" "blink.d" "main_nortos.d" 
+RMDIR /S/Q  "syscfg\" 
+Could Not Find E:\TI\MSP432\MSP432_CSS_WorkSpace\Display\Debug\Display.hex
+Could Not Find E:\TI\MSP432\MSP432_CSS_WorkSpace\Display\Debug\Display.out
+Finished clean
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Display ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../Blink.syscfg"
+Invoking: SysConfig
+"C:/ti/ccs1031/ccs/utils/sysconfig_1.8.1/sysconfig_cli.bat" -s "C:/ti/simplelink_msp432p4_sdk_3_40_01_02/.metadata/product.json" --script "E:/TI/MSP432/MSP432_CSS_WorkSpace/Display/Blink.syscfg" -o "syscfg"
+Running script...
+Validating...
+Generating Code (Blink.syscfg)...
+Writing E:\TI\MSP432\MSP432_CSS_WorkSpace\Display\Debug\syscfg\ti_drivers_config.c...
+Writing E:\TI\MSP432\MSP432_CSS_WorkSpace\Display\Debug\syscfg\ti_drivers_config.h...
+Writing E:\TI\MSP432\MSP432_CSS_WorkSpace\Display\Debug\syscfg\syscfg_c.rov.xs...
+Finished building: "../Blink.syscfg"
+ 
+Building file: "../blink.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/Display" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/Display/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="blink.d_raw" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/Display/Debug/syscfg"  "../blink.c"
+Finished building: "../blink.c"
+ 
+Building file: "../main_nortos.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/Display" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/Display/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="main_nortos.d_raw" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/Display/Debug/syscfg"  "../main_nortos.c"
+Finished building: "../main_nortos.c"
+ 
+Building file: "syscfg/ti_drivers_config.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/Display" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/Display/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="syscfg/ti_drivers_config.d_raw" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/Display/Debug/syscfg" --obj_directory="syscfg"  "syscfg/ti_drivers_config.c"
+Finished building: "syscfg/ti_drivers_config.c"
+ 
+Building target: "Display.out"
+Invoking: Arm Linker
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"Display.map" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" -i"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/lib" --diag_suppress=10063 --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Display_linkInfo.xml" --entry_point=resetISR --rom_model -o "Display.out" "./syscfg/ti_drivers_config.obj" "./blink.obj" "./main_nortos.obj" "../MSP_EXP432P401R_NoRTOS.cmd"  -l"ti/display/lib/display.aem4f" -l"ti/grlib/lib/ccs/m4f/grlib.a" -l"third_party/spiffs/lib/ccs/m4f/spiffs.a" -l"ti/drivers/lib/drivers_msp432p401x.aem4f" -l"third_party/fatfs/lib/ccs/m4f/fatfs.a" -l"lib/nortos_msp432p401x.aem4f" -l"ti/devices/msp432p4xx/driverlib/ccs/msp432p4xx_driverlib.lib" -llibc.a 
+<Linking>
+Finished building target: "Display.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Display ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../blink.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/Display" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/Display/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="blink.d_raw" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/Display/Debug/syscfg"  "../blink.c"
+ 
+>> Compilation failure
+subdir_rules.mk:28: recipe for target 'blink.obj' failed
+"../blink.c", line 63: error #169: argument of type "Display_Params" is incompatible with parameter of type "Display_Params *"
+1 error detected in the compilation of "../blink.c".
+gmake: *** [blink.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Display ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../blink.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/Display" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/Display/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="blink.d_raw" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/Display/Debug/syscfg"  "../blink.c"
+Finished building: "../blink.c"
+ 
+Building target: "Display.out"
+Invoking: Arm Linker
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"Display.map" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" -i"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/lib" --diag_suppress=10063 --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Display_linkInfo.xml" --entry_point=resetISR --rom_model -o "Display.out" "./syscfg/ti_drivers_config.obj" "./blink.obj" "./main_nortos.obj" "../MSP_EXP432P401R_NoRTOS.cmd"  -l"ti/display/lib/display.aem4f" -l"ti/grlib/lib/ccs/m4f/grlib.a" -l"third_party/spiffs/lib/ccs/m4f/spiffs.a" -l"ti/drivers/lib/drivers_msp432p401x.aem4f" -l"third_party/fatfs/lib/ccs/m4f/fatfs.a" -l"lib/nortos_msp432p401x.aem4f" -l"ti/devices/msp432p4xx/driverlib/ccs/msp432p4xx_driverlib.lib" -llibc.a 
+<Linking>
+Finished building target: "Display.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Display ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'Display.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Display ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../Blink.syscfg"
+Invoking: SysConfig
+"C:/ti/ccs1031/ccs/utils/sysconfig_1.8.1/sysconfig_cli.bat" -s "C:/ti/simplelink_msp432p4_sdk_3_40_01_02/.metadata/product.json" --script "E:/TI/MSP432/MSP432_CSS_WorkSpace/Display/Blink.syscfg" -o "syscfg"
+Running script...
+Validating...
+Generating Code (Blink.syscfg)...
+Writing E:\TI\MSP432\MSP432_CSS_WorkSpace\Display\Debug\syscfg\ti_drivers_config.c...
+Writing E:\TI\MSP432\MSP432_CSS_WorkSpace\Display\Debug\syscfg\ti_drivers_config.h...
+Writing E:\TI\MSP432\MSP432_CSS_WorkSpace\Display\Debug\syscfg\syscfg_c.rov.xs...
+Finished building: "../Blink.syscfg"
+ 
+Building file: "../blink.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/Display" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/Display/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="blink.d_raw" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/Display/Debug/syscfg"  "../blink.c"
+Finished building: "../blink.c"
+ 
+Building file: "syscfg/ti_drivers_config.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/Display" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/Display/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="syscfg/ti_drivers_config.d_raw" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/Display/Debug/syscfg" --obj_directory="syscfg"  "syscfg/ti_drivers_config.c"
+Finished building: "syscfg/ti_drivers_config.c"
+ 
+Building target: "Display.out"
+Invoking: Arm Linker
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"Display.map" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" -i"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/lib" --diag_suppress=10063 --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Display_linkInfo.xml" --entry_point=resetISR --rom_model -o "Display.out" "./syscfg/ti_drivers_config.obj" "./blink.obj" "./main_nortos.obj" "../MSP_EXP432P401R_NoRTOS.cmd"  -l"ti/display/lib/display.aem4f" -l"ti/grlib/lib/ccs/m4f/grlib.a" -l"third_party/spiffs/lib/ccs/m4f/spiffs.a" -l"ti/drivers/lib/drivers_msp432p401x.aem4f" -l"third_party/fatfs/lib/ccs/m4f/fatfs.a" -l"lib/nortos_msp432p401x.aem4f" -l"ti/devices/msp432p4xx/driverlib/ccs/msp432p4xx_driverlib.lib" -llibc.a 
+<Linking>
+Finished building target: "Display.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Display ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'Display.out' is up to date.
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project ADC_Sample_Delete ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 clean -O 
+ 
+DEL /F  "syscfg\ti_drivers_config.h" "syscfg\syscfg_c.rov.xs"  "ADC_Sample_Delete.hex"  "syscfg\ti_drivers_config.c"  "ADC_Sample_Delete.out" 
+DEL /F "syscfg\ti_drivers_config.obj" "blink.obj" "main_nortos.obj" 
+DEL /F "syscfg\ti_drivers_config.d" "blink.d" "main_nortos.d" 
+RMDIR /S/Q  "syscfg\" 
+Could Not Find E:\TI\MSP432\MSP432_CSS_WorkSpace\ADC_Sample_Delete\Debug\ADC_Sample_Delete.hex
+Could Not Find E:\TI\MSP432\MSP432_CSS_WorkSpace\ADC_Sample_Delete\Debug\ADC_Sample_Delete.out
+Finished clean
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ADC_Sample_Delete ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../Blink.syscfg"
+Invoking: SysConfig
+"C:/ti/ccs1031/ccs/utils/sysconfig_1.8.1/sysconfig_cli.bat" -s "C:/ti/simplelink_msp432p4_sdk_3_40_01_02/.metadata/product.json" --script "E:/TI/MSP432/MSP432_CSS_WorkSpace/ADC_Sample_Delete/Blink.syscfg" -o "syscfg"
+Running script...
+Validating...
+Generating Code (Blink.syscfg)...
+Writing E:\TI\MSP432\MSP432_CSS_WorkSpace\ADC_Sample_Delete\Debug\syscfg\ti_drivers_config.c...
+Writing E:\TI\MSP432\MSP432_CSS_WorkSpace\ADC_Sample_Delete\Debug\syscfg\ti_drivers_config.h...
+Writing E:\TI\MSP432\MSP432_CSS_WorkSpace\ADC_Sample_Delete\Debug\syscfg\syscfg_c.rov.xs...
+Finished building: "../Blink.syscfg"
+ 
+Building file: "../blink.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/ADC_Sample_Delete" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/ADC_Sample_Delete/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="blink.d_raw" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/ADC_Sample_Delete/Debug/syscfg"  "../blink.c"
+ 
+>> Compilation failure
+subdir_rules.mk:28: recipe for target 'blink.obj' failed
+"../blink.c", line 79: error #29: expected an expression
+1 error detected in the compilation of "../blink.c".
+gmake: *** [blink.obj] Error 1
+Building file: "syscfg/ti_drivers_config.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/ADC_Sample_Delete" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/ADC_Sample_Delete/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="syscfg/ti_drivers_config.d_raw" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/ADC_Sample_Delete/Debug/syscfg" --obj_directory="syscfg"  "syscfg/ti_drivers_config.c"
+Finished building: "syscfg/ti_drivers_config.c"
+ 
+Building file: "../main_nortos.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/ADC_Sample_Delete" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/ADC_Sample_Delete/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="main_nortos.d_raw" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/ADC_Sample_Delete/Debug/syscfg"  "../main_nortos.c"
+Finished building: "../main_nortos.c"
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ADC_Sample_Delete ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../blink.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/ADC_Sample_Delete" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/ADC_Sample_Delete/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="blink.d_raw" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/ADC_Sample_Delete/Debug/syscfg"  "../blink.c"
+Finished building: "../blink.c"
+ 
+Building target: "ADC_Sample_Delete.out"
+Invoking: Arm Linker
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"ADC_Sample_Delete.map" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" -i"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/lib" --diag_suppress=10063 --diag_wrap=off --display_error_number --warn_sections --xml_link_info="ADC_Sample_Delete_linkInfo.xml" --entry_point=resetISR --rom_model -o "ADC_Sample_Delete.out" "./syscfg/ti_drivers_config.obj" "./blink.obj" "./main_nortos.obj" "../MSP_EXP432P401R_NoRTOS.cmd"  -l"ti/display/lib/display.aem4f" -l"ti/grlib/lib/ccs/m4f/grlib.a" -l"third_party/spiffs/lib/ccs/m4f/spiffs.a" -l"ti/drivers/lib/drivers_msp432p401x.aem4f" -l"third_party/fatfs/lib/ccs/m4f/fatfs.a" -l"lib/nortos_msp432p401x.aem4f" -l"ti/devices/msp432p4xx/driverlib/ccs/msp432p4xx_driverlib.lib" -llibc.a 
+<Linking>
+Finished building target: "ADC_Sample_Delete.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ADC_Sample_Delete ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../blink.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/ADC_Sample_Delete" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/ADC_Sample_Delete/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="blink.d_raw" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/ADC_Sample_Delete/Debug/syscfg"  "../blink.c"
+Finished building: "../blink.c"
+ 
+Building target: "ADC_Sample_Delete.out"
+Invoking: Arm Linker
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"ADC_Sample_Delete.map" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" -i"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/lib" --diag_suppress=10063 --diag_wrap=off --display_error_number --warn_sections --xml_link_info="ADC_Sample_Delete_linkInfo.xml" --entry_point=resetISR --rom_model -o "ADC_Sample_Delete.out" "./syscfg/ti_drivers_config.obj" "./blink.obj" "./main_nortos.obj" "../MSP_EXP432P401R_NoRTOS.cmd"  -l"ti/display/lib/display.aem4f" -l"ti/grlib/lib/ccs/m4f/grlib.a" -l"third_party/spiffs/lib/ccs/m4f/spiffs.a" -l"ti/drivers/lib/drivers_msp432p401x.aem4f" -l"third_party/fatfs/lib/ccs/m4f/fatfs.a" -l"lib/nortos_msp432p401x.aem4f" -l"ti/devices/msp432p4xx/driverlib/ccs/msp432p4xx_driverlib.lib" -llibc.a 
+<Linking>
+Finished building target: "ADC_Sample_Delete.out"
+ 
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project VCOM ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 clean -O 
+ 
+DEL /F  "syscfg\ti_drivers_config.h" "syscfg\syscfg_c.rov.xs"  "VCOM.hex"  "syscfg\ti_drivers_config.c"  "VCOM.out" 
+DEL /F "syscfg\ti_drivers_config.obj" "blink.obj" "main_nortos.obj" 
+DEL /F "syscfg\ti_drivers_config.d" "blink.d" "main_nortos.d" 
+RMDIR /S/Q  "syscfg\" 
+Could Not Find E:\TI\MSP432\MSP432_CSS_WorkSpace\VCOM\Debug\VCOM.hex
+Could Not Find E:\TI\MSP432\MSP432_CSS_WorkSpace\VCOM\Debug\VCOM.out
+Finished clean
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project VCOM ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../VCOM.syscfg"
+Invoking: SysConfig
+"C:/ti/ccs1031/ccs/utils/sysconfig_1.8.1/sysconfig_cli.bat" -s "C:/ti/simplelink_msp432p4_sdk_3_40_01_02/.metadata/product.json" --script "E:/TI/MSP432/MSP432_CSS_WorkSpace/VCOM/VCOM.syscfg" -o "syscfg"
+Running script...
+Validating...
+Generating Code (VCOM.syscfg)...
+Writing E:\TI\MSP432\MSP432_CSS_WorkSpace\VCOM\Debug\syscfg\ti_drivers_config.c...
+Writing E:\TI\MSP432\MSP432_CSS_WorkSpace\VCOM\Debug\syscfg\ti_drivers_config.h...
+Writing E:\TI\MSP432\MSP432_CSS_WorkSpace\VCOM\Debug\syscfg\syscfg_c.rov.xs...
+Finished building: "../VCOM.syscfg"
+ 
+Building file: "../main_nortos.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/VCOM" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/VCOM/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="main_nortos.d_raw" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/VCOM/Debug/syscfg"  "../main_nortos.c"
+Finished building: "../main_nortos.c"
+ 
+Building file: "../VCOM.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/VCOM" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/VCOM/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="VCOM.d_raw" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/VCOM/Debug/syscfg"  "../VCOM.c"
+Finished building: "../VCOM.c"
+ 
+Building file: "syscfg/ti_drivers_config.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/VCOM" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/VCOM/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="syscfg/ti_drivers_config.d_raw" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/VCOM/Debug/syscfg" --obj_directory="syscfg"  "syscfg/ti_drivers_config.c"
+Finished building: "syscfg/ti_drivers_config.c"
+ 
+Building target: "VCOM.out"
+Invoking: Arm Linker
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"VCOM.map" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" -i"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/lib" --diag_suppress=10063 --diag_wrap=off --display_error_number --warn_sections --xml_link_info="VCOM_linkInfo.xml" --entry_point=resetISR --rom_model -o "VCOM.out" "./VCOM.obj" "./syscfg/ti_drivers_config.obj" "./main_nortos.obj" "../MSP_EXP432P401R_NoRTOS.cmd"  -l"ti/display/lib/display.aem4f" -l"ti/grlib/lib/ccs/m4f/grlib.a" -l"third_party/spiffs/lib/ccs/m4f/spiffs.a" -l"ti/drivers/lib/drivers_msp432p401x.aem4f" -l"third_party/fatfs/lib/ccs/m4f/fatfs.a" -l"lib/nortos_msp432p401x.aem4f" -l"ti/devices/msp432p4xx/driverlib/ccs/msp432p4xx_driverlib.lib" -llibc.a 
+<Linking>
+Finished building target: "VCOM.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project VCOM ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../VCOM.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/VCOM" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/VCOM/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="VCOM.d_raw" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/VCOM/Debug/syscfg"  "../VCOM.c"
+"../VCOM.c", line 69: warning #551-D: variable "number" is used before its value is set
+Finished building: "../VCOM.c"
+ 
+Building target: "VCOM.out"
+Invoking: Arm Linker
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"VCOM.map" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" -i"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/lib" --diag_suppress=10063 --diag_wrap=off --display_error_number --warn_sections --xml_link_info="VCOM_linkInfo.xml" --entry_point=resetISR --rom_model -o "VCOM.out" "./VCOM.obj" "./syscfg/ti_drivers_config.obj" "./main_nortos.obj" "../MSP_EXP432P401R_NoRTOS.cmd"  -l"ti/display/lib/display.aem4f" -l"ti/grlib/lib/ccs/m4f/grlib.a" -l"third_party/spiffs/lib/ccs/m4f/spiffs.a" -l"ti/drivers/lib/drivers_msp432p401x.aem4f" -l"third_party/fatfs/lib/ccs/m4f/fatfs.a" -l"lib/nortos_msp432p401x.aem4f" -l"ti/devices/msp432p4xx/driverlib/ccs/msp432p4xx_driverlib.lib" -llibc.a 
+<Linking>
+Finished building target: "VCOM.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project VCOM ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../VCOM.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/VCOM" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/VCOM/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="VCOM.d_raw" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/VCOM/Debug/syscfg"  "../VCOM.c"
+Finished building: "../VCOM.c"
+ 
+Building target: "VCOM.out"
+Invoking: Arm Linker
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"VCOM.map" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" -i"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/lib" --diag_suppress=10063 --diag_wrap=off --display_error_number --warn_sections --xml_link_info="VCOM_linkInfo.xml" --entry_point=resetISR --rom_model -o "VCOM.out" "./VCOM.obj" "./syscfg/ti_drivers_config.obj" "./main_nortos.obj" "../MSP_EXP432P401R_NoRTOS.cmd"  -l"ti/display/lib/display.aem4f" -l"ti/grlib/lib/ccs/m4f/grlib.a" -l"third_party/spiffs/lib/ccs/m4f/spiffs.a" -l"ti/drivers/lib/drivers_msp432p401x.aem4f" -l"third_party/fatfs/lib/ccs/m4f/fatfs.a" -l"lib/nortos_msp432p401x.aem4f" -l"ti/devices/msp432p4xx/driverlib/ccs/msp432p4xx_driverlib.lib" -llibc.a 
+<Linking>
+Finished building target: "VCOM.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project VCOM ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'VCOM.out' is up to date.
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project ADC_Sample_Delete ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 clean -O 
+ 
+DEL /F  "syscfg\ti_drivers_config.h" "syscfg\syscfg_c.rov.xs"  "ADC_Sample_Delete.hex"  "syscfg\ti_drivers_config.c"  "ADC_Sample_Delete.out" 
+DEL /F "syscfg\ti_drivers_config.obj" "blink.obj" "main_nortos.obj" 
+DEL /F "syscfg\ti_drivers_config.d" "blink.d" "main_nortos.d" 
+RMDIR /S/Q  "syscfg\" 
+Could Not Find E:\TI\MSP432\MSP432_CSS_WorkSpace\ADC_Sample_Delete\Debug\ADC_Sample_Delete.hex
+Finished clean
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ADC_Sample_Delete ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../Blink.syscfg"
+Invoking: SysConfig
+"C:/ti/ccs1031/ccs/utils/sysconfig_1.8.1/sysconfig_cli.bat" -s "C:/ti/simplelink_msp432p4_sdk_3_40_01_02/.metadata/product.json" --script "E:/TI/MSP432/MSP432_CSS_WorkSpace/ADC_Sample_Delete/Blink.syscfg" -o "syscfg"
+Running script...
+Validating...
+Generating Code (Blink.syscfg)...
+Writing E:\TI\MSP432\MSP432_CSS_WorkSpace\ADC_Sample_Delete\Debug\syscfg\ti_drivers_config.c...
+Writing E:\TI\MSP432\MSP432_CSS_WorkSpace\ADC_Sample_Delete\Debug\syscfg\ti_drivers_config.h...
+Writing E:\TI\MSP432\MSP432_CSS_WorkSpace\ADC_Sample_Delete\Debug\syscfg\syscfg_c.rov.xs...
+Finished building: "../Blink.syscfg"
+ 
+Building file: "../blink.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/ADC_Sample_Delete" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/ADC_Sample_Delete/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="blink.d_raw" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/ADC_Sample_Delete/Debug/syscfg"  "../blink.c"
+ 
+>> Compilation failure
+subdir_rules.mk:28: recipe for target 'blink.obj' failed
+"../blink.c", line 69: error #20: identifier "uartHandle" is undefined
+1 error detected in the compilation of "../blink.c".
+gmake: *** [blink.obj] Error 1
+Building file: "../main_nortos.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/ADC_Sample_Delete" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/ADC_Sample_Delete/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="main_nortos.d_raw" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/ADC_Sample_Delete/Debug/syscfg"  "../main_nortos.c"
+Finished building: "../main_nortos.c"
+ 
+Building file: "syscfg/ti_drivers_config.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/ADC_Sample_Delete" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/ADC_Sample_Delete/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="syscfg/ti_drivers_config.d_raw" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/ADC_Sample_Delete/Debug/syscfg" --obj_directory="syscfg"  "syscfg/ti_drivers_config.c"
+Finished building: "syscfg/ti_drivers_config.c"
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ADC_Sample_Delete ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../blink.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/ADC_Sample_Delete" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/ADC_Sample_Delete/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="blink.d_raw" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/ADC_Sample_Delete/Debug/syscfg"  "../blink.c"
+Finished building: "../blink.c"
+ 
+Building target: "ADC_Sample_Delete.out"
+Invoking: Arm Linker
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"ADC_Sample_Delete.map" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" -i"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/lib" --diag_suppress=10063 --diag_wrap=off --display_error_number --warn_sections --xml_link_info="ADC_Sample_Delete_linkInfo.xml" --entry_point=resetISR --rom_model -o "ADC_Sample_Delete.out" "./syscfg/ti_drivers_config.obj" "./blink.obj" "./main_nortos.obj" "../MSP_EXP432P401R_NoRTOS.cmd"  -l"ti/display/lib/display.aem4f" -l"ti/grlib/lib/ccs/m4f/grlib.a" -l"third_party/spiffs/lib/ccs/m4f/spiffs.a" -l"ti/drivers/lib/drivers_msp432p401x.aem4f" -l"third_party/fatfs/lib/ccs/m4f/fatfs.a" -l"lib/nortos_msp432p401x.aem4f" -l"ti/devices/msp432p4xx/driverlib/ccs/msp432p4xx_driverlib.lib" -llibc.a 
+<Linking>
+Finished building target: "ADC_Sample_Delete.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ADC_Sample_Delete ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'ADC_Sample_Delete.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ADC_Sample_Delete ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'ADC_Sample_Delete.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ADC_Sample_Delete ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'ADC_Sample_Delete.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ADC_Sample_Delete ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'ADC_Sample_Delete.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SevenSegment ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'SevenSegment.out' is up to date.
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project SingleChannelADC_POT ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 clean -O 
+ 
+DEL /F  "syscfg\ti_drivers_config.h" "syscfg\syscfg_c.rov.xs"  "SingleChannelADC_POT.hex"  "syscfg\ti_drivers_config.c"  "SingleChannelADC_POT.out" 
+DEL /F "VCOM.obj" "syscfg\ti_drivers_config.obj" "main_nortos.obj" 
+DEL /F "VCOM.d" "syscfg\ti_drivers_config.d" "main_nortos.d" 
+RMDIR /S/Q  "syscfg\" 
+Could Not Find E:\TI\MSP432\MSP432_CSS_WorkSpace\SingleChannelADC_POT\Debug\SingleChannelADC_POT.hex
+Could Not Find E:\TI\MSP432\MSP432_CSS_WorkSpace\SingleChannelADC_POT\Debug\SingleChannelADC_POT.out
+Finished clean
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SingleChannelADC_POT ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../SingleChannelADC.syscfg"
+Invoking: SysConfig
+"C:/ti/ccs1031/ccs/utils/sysconfig_1.8.1/sysconfig_cli.bat" -s "C:/ti/simplelink_msp432p4_sdk_3_40_01_02/.metadata/product.json" --script "E:/TI/MSP432/MSP432_CSS_WorkSpace/SingleChannelADC_POT/SingleChannelADC.syscfg" -o "syscfg"
+Running script...
+Validating...
+Generating Code (SingleChannelADC.syscfg)...
+Writing E:\TI\MSP432\MSP432_CSS_WorkSpace\SingleChannelADC_POT\Debug\syscfg\ti_drivers_config.c...
+Writing E:\TI\MSP432\MSP432_CSS_WorkSpace\SingleChannelADC_POT\Debug\syscfg\ti_drivers_config.h...
+Writing E:\TI\MSP432\MSP432_CSS_WorkSpace\SingleChannelADC_POT\Debug\syscfg\syscfg_c.rov.xs...
+Finished building: "../SingleChannelADC.syscfg"
+ 
+Building file: "../main_nortos.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/SingleChannelADC_POT" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/SingleChannelADC_POT/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="main_nortos.d_raw" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/SingleChannelADC_POT/Debug/syscfg"  "../main_nortos.c"
+Finished building: "../main_nortos.c"
+ 
+Building file: "../SingleChannelADC.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/SingleChannelADC_POT" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/SingleChannelADC_POT/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="SingleChannelADC.d_raw" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/SingleChannelADC_POT/Debug/syscfg"  "../SingleChannelADC.c"
+Finished building: "../SingleChannelADC.c"
+ 
+Building file: "syscfg/ti_drivers_config.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/SingleChannelADC_POT" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/SingleChannelADC_POT/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="syscfg/ti_drivers_config.d_raw" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/SingleChannelADC_POT/Debug/syscfg" --obj_directory="syscfg"  "syscfg/ti_drivers_config.c"
+Finished building: "syscfg/ti_drivers_config.c"
+ 
+Building target: "SingleChannelADC_POT.out"
+Invoking: Arm Linker
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"SingleChannelADC_POT.map" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" -i"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/lib" --diag_suppress=10063 --diag_wrap=off --display_error_number --warn_sections --xml_link_info="SingleChannelADC_POT_linkInfo.xml" --entry_point=resetISR --rom_model -o "SingleChannelADC_POT.out" "./SingleChannelADC.obj" "./syscfg/ti_drivers_config.obj" "./main_nortos.obj" "../MSP_EXP432P401R_NoRTOS.cmd"  -l"ti/display/lib/display.aem4f" -l"ti/grlib/lib/ccs/m4f/grlib.a" -l"third_party/spiffs/lib/ccs/m4f/spiffs.a" -l"ti/drivers/lib/drivers_msp432p401x.aem4f" -l"third_party/fatfs/lib/ccs/m4f/fatfs.a" -l"lib/nortos_msp432p401x.aem4f" -l"ti/devices/msp432p4xx/driverlib/ccs/msp432p4xx_driverlib.lib" -llibc.a 
+<Linking>
+Finished building target: "SingleChannelADC_POT.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SingleChannelADC_POT ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../SingleChannelADC.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/SingleChannelADC_POT" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/SingleChannelADC_POT/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="SingleChannelADC.d_raw" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/SingleChannelADC_POT/Debug/syscfg"  "../SingleChannelADC.c"
+"../SingleChannelADC.c", line 61: warning #179-D: variable "number" was declared but never referenced
+Finished building: "../SingleChannelADC.c"
+ 
+Building target: "SingleChannelADC_POT.out"
+Invoking: Arm Linker
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"SingleChannelADC_POT.map" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" -i"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/lib" --diag_suppress=10063 --diag_wrap=off --display_error_number --warn_sections --xml_link_info="SingleChannelADC_POT_linkInfo.xml" --entry_point=resetISR --rom_model -o "SingleChannelADC_POT.out" "./SingleChannelADC.obj" "./syscfg/ti_drivers_config.obj" "./main_nortos.obj" "../MSP_EXP432P401R_NoRTOS.cmd"  -l"ti/display/lib/display.aem4f" -l"ti/grlib/lib/ccs/m4f/grlib.a" -l"third_party/spiffs/lib/ccs/m4f/spiffs.a" -l"ti/drivers/lib/drivers_msp432p401x.aem4f" -l"third_party/fatfs/lib/ccs/m4f/fatfs.a" -l"lib/nortos_msp432p401x.aem4f" -l"ti/devices/msp432p4xx/driverlib/ccs/msp432p4xx_driverlib.lib" -llibc.a 
+<Linking>
+Finished building target: "SingleChannelADC_POT.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SingleChannelADC_POT ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../SingleChannelADC.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/SingleChannelADC_POT" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/SingleChannelADC_POT/Debug" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source/third_party/CMSIS/Include" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" --include_path="C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos/posix" --include_path="C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="SingleChannelADC.d_raw" --include_path="E:/TI/MSP432/MSP432_CSS_WorkSpace/SingleChannelADC_POT/Debug/syscfg"  "../SingleChannelADC.c"
+Finished building: "../SingleChannelADC.c"
+ 
+Building target: "SingleChannelADC_POT.out"
+Invoking: Arm Linker
+"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --advice:power=none -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"SingleChannelADC_POT.map" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/source" -i"C:/ti/simplelink_msp432p4_sdk_3_40_01_02/kernel/nortos" -i"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/lib" --diag_suppress=10063 --diag_wrap=off --display_error_number --warn_sections --xml_link_info="SingleChannelADC_POT_linkInfo.xml" --entry_point=resetISR --rom_model -o "SingleChannelADC_POT.out" "./SingleChannelADC.obj" "./syscfg/ti_drivers_config.obj" "./main_nortos.obj" "../MSP_EXP432P401R_NoRTOS.cmd"  -l"ti/display/lib/display.aem4f" -l"ti/grlib/lib/ccs/m4f/grlib.a" -l"third_party/spiffs/lib/ccs/m4f/spiffs.a" -l"ti/drivers/lib/drivers_msp432p401x.aem4f" -l"third_party/fatfs/lib/ccs/m4f/fatfs.a" -l"lib/nortos_msp432p401x.aem4f" -l"ti/devices/msp432p4xx/driverlib/ccs/msp432p4xx_driverlib.lib" -llibc.a 
+<Linking>
+Finished building target: "SingleChannelADC_POT.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SingleChannelADC_POT ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'SingleChannelADC_POT.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SingleChannelADC_POT ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'SingleChannelADC_POT.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SingleChannelADC_POT ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'SingleChannelADC_POT.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SingleChannelADC_POT ****
+
+"C:\\ti\\ccs1031\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'SingleChannelADC_POT.out' is up to date.
+
+**** Build Finished ****

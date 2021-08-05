@@ -1,0 +1,289 @@
+<!DOCTYPE html><html><head>
+<meta charset="UTF-8">
+<title>GUI Composer ADC Application | JTAG/XDS </title>
+<link rel="stylesheet" href="../../../web_support/strapdown/v/0.2/fonts/ubuntu-regular-woff.css"><link rel="stylesheet" href="../../../web_support/strapdown/v/0.2/fonts/glyphicons-halflings-regular.css"><link rel="stylesheet" href="../../../web_support/strapdown/v/0.2/themes/united2.min.css"><link rel="stylesheet" href="../../../web_support/strapdown/v/0.2/themes/bootstrap-responsive.min.css"><link rel="stylesheet" href="../../../web_support/strapdown/v/0.2/strapdown.css"><link rel="shortcut icon" type="image/x-icon" href="../../../.metadata/favicon.ico"></head>
+
+<!-- START PRE -->
+
+
+
+
+
+
+<!-- END PRE -->
+
+<body style=""><div class="container"><nav class="navbar navbar-default navbar-static-top"><div class="container-fluid"> <div class="navbar-header">  <div id="headline" class="navbar-brand">GUI Composer ADC Application | JTAG/XDS </div> </div> </div></nav><div class="container"><div class="row row-offcanvas row-offcanvas-left"><div class="col-xs-12 col-sm-9" id="content"><h1 class="body-heading" id="-introduction">  Introduction<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#-introduction"></a></h1><p>  In this workshop we will construct a simple application that continually reads an ADC channel and toggles an LED on or off depending on whether or not our ADC reading exceeds a custom threshold. We will create a simple PC-side graphical user interface (GUI) that complements our application code.</p>
+<p>  To do this, we will use a nifty tool called GUI Composer. GUI Composer is a browser-based utility for creating PC-side graphical interfaces for interacting with your hardware. GUI Composer supports several interfaces today, including Serial/UART, JTAG/XDS, or MQTT (for IoT applications).</p>
+<p>  For this demo, we will use the JTAG/XDS interface. We will visualize our latest ADC readings in an analog gauge &amp; will add a horizontal slider for dynamically setting the threshold that triggers the LED to turn on/off.</p>
+<p>  <strong>Here's what we'll learn:</strong></p>
+<ul>
+<li>Get introduced to TI's GUI Composer</li>
+<li>Create a simple analog gauge for visualizing ADC values</li>
+<li>Create a horizontal slider to dynamically set a threshold</li>
+<li>Add an "LED" indicator to the GUI that mirrors the physical LED on our LaunchPad kit</li>
+</ul>
+<p>  <strong>Preview of the GUI we're making:</strong>
+  </p><div class="modal-pop" style="cursor:zoom-in;"><img src="./resources/gui_composer.gif" alt="" class="img-responsive"></div><p></p>
+<h2 class="body-heading" id="-what-is-gui-composer">  What is GUI Composer<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#-what-is-gui-composer"></a></h2><p>  GUI Composer is a browser-based "What you see is what you get" (WYSIWYG) tool for developing PC-side HTML-based graphical user interfaces (GUIs) that can complement your embedded project/application. With this tool users will be able to drag &amp; drop various GUI elements into a sandbox to build their interface. These tools include gauges, dials, sliders, line charts &amp; more.</p>
+<p>  Features:</p>
+<ul>
+<li>Allows you to build HTML-based GUIs graphically (simple drag &amp; drop interface)</li>
+<li>Supports communication with the target device via USB (serial I/O), XDS Debug Port or the Internet (MQTT / IoT)</li>
+<li>Wide variety of components to choose from, including graphs, gauges, dials, buttons, menus, meters, and many more</li>
+<li>Components configured via easy-to-use properties</li>
+<li>Full JavaScript editor provided for advanced users</li>
+</ul>
+<h2 class="body-heading" id="-what-interfaces-does-gui-composer-support-">  What interfaces does GUI Composer support?<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#-what-interfaces-does-gui-composer-support-"></a></h2><p>  GUI Composer supports various data transport interfaces. The following are supported:</p>
+<ul>
+<li>Serial/UART</li>
+<li><strong>JTAG/XDS Debug interface (This is the interface we will use for this training)</strong></li>
+<li>MQTT (Internet of Things)</li>
+</ul>
+<h1 class="body-heading" id="-prerequisites">  Prerequisites<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#-prerequisites"></a></h1><h3 class="body-heading" id="recommended-material">Recommended material<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#recommended-material"></a></h3><ul>
+<li><a href="../tidrivers_project_zero/tidrivers_project_zero.html">TI Drivers Project Zero</a></li>
+</ul>
+<h3 class="body-heading" id="software-for-desktop-development">Software for desktop development<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#software-for-desktop-development"></a></h3><ul>
+<li>This tutorial can be done 100% with a web browser in CCS Cloud</li>
+<li>The exercises can also be completed using desktop/offline tools as well. If you want to run the exercises offline, you will need to download &amp; install the following:<ul>
+<li>CCS 7.0+</li>
+<li>SimpleLink SDK for your given LaunchPad</li>
+</ul>
+</li>
+<li>We will make small modifications to an existing example &amp; will use GUI Composer to build a simple graphical interface for use with our application</li>
+</ul>
+<h3 class="body-heading" id="hardware-requirements">Hardware requirements<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#hardware-requirements"></a></h3><ul>
+<li>A SimpleLink MCU LaunchPad Development Kit</li>
+</ul>
+<h3 class="body-heading" id="recommended-reading">Recommended Reading<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#recommended-reading"></a></h3><ul>
+<li>GUI Composer User's Guide: <a href="https://dev.ti.com/gc/designer/help/UsersGuide/index.html">https://dev.ti.com/gc/designer/help/UsersGuide/index.html</a></li>
+</ul>
+<h1 class="body-heading" id="-task-1-setting-up-code-example-for-gui-composer">  Task 1 - Setting up code example for GUI Composer<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#-task-1-setting-up-code-example-for-gui-composer"></a></h1><h2 class="body-heading" id="-1-using-a-jtag-xds-debug-interface-to-exchange-data-with-your-gui">  1. Using a JTAG/XDS Debug interface to exchange data with your GUI<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#-1-using-a-jtag-xds-debug-interface-to-exchange-data-with-your-gui"></a></h2><p>  When using the JTAG/XDS Debug interface, GUI Composer can use your firmware's symbolic information to bind widgets. This essentially allows you to bind your application's global variables to GUI Composer widgets. In this training, we'll learn how to upload your project's .out file into GUI Composer, where it will parse the symbols within your application. We will then be able to bind our application's variables to various GUI elements. This mode requires the device to support non-intrusive memory access. There is no overhead on application processing and there is no code that needs to be added to your application. This option is available on all SimpleLink MCUs.</p>
+<p>  GUI Composer uses bindings to the ti-program-model component to allow widgets to be automatically updated to reflect the value of target-side global variables when those variables change, and to update the target-side global variable when the widget is configured by the user. For example, you can bind ADC readings to an analog gauge widget, or bind a variable within your application that is altered by a GUI Composer slider.</p>
+<h2 class="body-heading" id="-2-add-adc-conversion-to-the-empty-project">  2. Add ADC conversion to the "empty" project<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#-2-add-adc-conversion-to-the-empty-project"></a></h2><ol>
+<li><p>Import the <code>empty</code> example for your launchpad into CCS or into CCS Cloud. The <a href="../tidrivers_project_zero/tidrivers_project_zero.html">TI Drivers Project Zero Lab</a> provides instructions on how to do this.</p>
+</li>
+<li><p>We need to include the ADC driver's header at the top of our example's empty.c file:</p>
+<div style="display:inline-block"><div style="display:block"><button type="button" class="btn btn-xs btn-warning float-right select-text" style="margin: 0; position: relative;" onclick="SelectText('codeBlock_1')">Select text</button></div><div class="pre-container"><pre><code id="codeBlock_1" class="lang-c hljs cpp"><span class="hljs-preprocessor">#<span class="hljs-keyword">include</span> &lt;ti/drivers/ADC.h&gt;</span>
+</code></pre><span class="code-title"><p>empty.c</p>
+</span></div></div>
+</li>
+<li><p>Add an ADC driver to our configuration. This is done through SysConfig:</p>
+<ol>
+<li>Double-click the <code>empty.syscfg</code> file within your CCS project in order to open the SysConfig editor.</li>
+<li>Add an ADC module to the configuration by clicking the plus button next to "ADC" in the left panel under "TI DRIVERS"<blockquote>
+<p></p><div class="modal-pop" style="cursor:zoom-in;"><img src="./resources/syscfg_add_adc.png" alt="" class="img-responsive"></div><p></p>
+</blockquote>
+</li>
+<li>This causes changes to the generated SysConfig files "ti_drivers_config.c" and "ti_drivers_config.h". These files can be viewed immediately in the SysConfig editor, or within your project directory under <strong>Generated Source → SysConfig</strong> after the project has been built. It is in these files that we will find the macros naming our added peripherals i.e. <code>CONFIG_ADC_0</code>. See the <a href="../../tools/sysconfig_basics/sysconfig_basics.html">SysConfig Basics lab</a> for more details.</li>
+<li>Be sure to save the empty.syscfg file</li>
+</ol>
+</li>
+<li><p>Next we need a call to ADC_init() which will initialize the ADC driver. In empty.c there are comments that recommend where to place such driver initializations.</p>
+</li>
+<li><p>Now let's create an ADC Handle. We must also initialize driver parameters and open the driver for usage. We can add this code inside mainThread, right before the <code>while(1)</code> loop (around line 75 in the code).</p>
+<div style="display:inline-block"><div style="display:block"><button type="button" class="btn btn-xs btn-warning float-right select-text" style="margin: 0; position: relative;" onclick="SelectText('codeBlock_2')">Select text</button></div><div class="pre-container"><pre><code id="codeBlock_2" class="lang-c hljs cpp"><span class="hljs-comment">/* Open ADC Driver */</span>
+ADC_Handle adc;
+ADC_Params params;
+ADC_Params_init(&amp;params);
+adc = ADC_Open(CONFIG_ADC_0, &amp;params);
+<span class="hljs-keyword">if</span> (adc == NULL) {
+   <span class="hljs-comment">/* Error initializing ADC channel 0 */</span>
+   <span class="hljs-keyword">while</span> (<span class="hljs-number">1</span>);
+}
+</code></pre><span class="code-title"><p>ADC handle.</p>
+</span></div></div>
+</li>
+<li><p>Finally, let's add the ADC conversion code inside the already present <code>while(1)</code> loop to periodically sample the ADC every second. Let's also use a simple <code>if</code> statement to set the LED high when the ADC result is <code>&gt;=</code> an arbitrary threshold of 100, and to set the LED low when <code>&lt;</code> then the threshold. We'll use the GPIO_write() API to accomplish this. We should also remove the GPIO_toggle() from the original empty example.</p>
+<div style="display:inline-block"><div style="display:block"><button type="button" class="btn btn-xs btn-warning float-right select-text" style="margin: 0; position: relative;" onclick="SelectText('codeBlock_3')">Select text</button></div><div class="pre-container"><pre><code id="codeBlock_3" class="lang-c hljs cpp"><span class="hljs-keyword">while</span> (<span class="hljs-number">1</span>) {
+  <span class="hljs-keyword">uint16_t</span>     adcValue;
+  <span class="hljs-keyword">int_fast16_t</span> res;
+
+  res = ADC_convert(adc, &amp;adcValue);
+  <span class="hljs-keyword">if</span> (res == ADC_STATUS_SUCCESS) {
+    <span class="hljs-keyword">if</span> (adcValue &gt;= <span class="hljs-number">100</span>) {
+      GPIO_write(CONFIG_GPIO_LED_0, CONFIG_GPIO_LED_ON);
+    } <span class="hljs-keyword">else</span> {
+      GPIO_write(CONFIG_GPIO_LED_0, CONFIG_GPIO_LED_OFF);
+    }
+  }
+
+  sleep(time);
+}
+</code></pre><span class="code-title"><p>ADC_convert() with LED toggling statement.</p>
+</span></div></div>
+</li>
+</ol>
+<h2 class="body-heading" id="-3-let-s-turn-the-variables-we-want-to-visualize-modify-into-global-variables">  3. Let's turn the variables we want to visualize &amp; modify into global variables<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#-3-let-s-turn-the-variables-we-want-to-visualize-modify-into-global-variables"></a></h2><p>  In this exercise, we want to build a simple GUI that does the following things:</p>
+<ul>
+<li>Visualize our latest ADC readings using an analog gauge</li>
+<li>Get an "LED" notification when we are above/below a threshold</li>
+<li>Feature a slider that allows us to modify the threshold for the LED alert</li>
+</ul>
+<p>  This means we need a global variable for our ADC reading &amp; a global variable for our threshold. We will also need a global variable that tells us if we're above or below the threshold. Again, these variables need to be globals in order to bind them to GUI Composer.</p>
+<h3 class="body-heading" id="make-adcvalue-a-global-variable">Make <code>adcValue</code> a global variable<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#make-adcvalue-a-global-variable"></a></h3><p>  First, let's make adcValue a global variable. We need to get rid of the local declaration we have in our while(1) loop, then add a global declaration to the top of our code. We will eventually bind this global variable to an analog gauge in the GUI to visualize our latest readings.</p>
+<h3 class="body-heading" id="create-a-global-variable-for-threshold-">Create a global variable for <code>threshold</code><a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#create-a-global-variable-for-threshold-"></a></h3><p>  Second, we need to make our threshold value variable-dependent. Currently, our threshold is hard-coded at 100. Let's define a new global variable called "threshold" and replace our hardcoded limit of 100. We will eventually bind this global variable with a slider to enable the threshold to be altered via the GUI.</p>
+<h3 class="body-heading" id="create-a-global-variable-for-alert-">Create a global variable for <code>alert</code><a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#create-a-global-variable-for-alert-"></a></h3><p>  Lastly, we need to create a new global variable for our alert. This will be '1' if our ADC reading is above the threshold, or '0' if it is below the threshold. We can use this global variable to feed the LED indicator in the GUI we are about to build.</p>
+<h3 class="body-heading" id="let-s-also-make-our-variables-update-more-frequently">Let's also make our variables update more frequently<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#let-s-also-make-our-variables-update-more-frequently"></a></h3><p>  To do this, we will use the <code>usleep()</code> API instead of the sleep() API. This allows us to pass in the number of microseconds we want to sleep for. Set the value of the <code>time</code> variable to <code>100000</code>.</p>
+<h3 class="body-heading" id="we-should-end-up-with-the-following">We should end up with the following<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#we-should-end-up-with-the-following"></a></h3><div style="display:inline-block"><div style="display:block"><button type="button" class="btn btn-xs btn-warning float-right select-text" style="margin: 0; position: relative;" onclick="SelectText('codeBlock_4')">Select text</button></div><div class="pre-container"><pre><code id="codeBlock_4" class="hljs cpp">  <span class="hljs-comment">/*
+   *  ======== empty.c ========
+   */</span>
+
+  <span class="hljs-comment">/* For usleep() */</span>
+  <span class="hljs-preprocessor">#<span class="hljs-keyword">include</span> &lt;unistd.h&gt;</span>
+  <span class="hljs-preprocessor">#<span class="hljs-keyword">include</span> &lt;stdint.h&gt;</span>
+  <span class="hljs-preprocessor">#<span class="hljs-keyword">include</span> &lt;stddef.h&gt;</span>
+
+  <span class="hljs-comment">/* Driver Header files */</span>
+  <span class="hljs-preprocessor">#<span class="hljs-keyword">include</span> &lt;ti/drivers/GPIO.h&gt;</span>
+  <span class="hljs-preprocessor">#<span class="hljs-keyword">include</span> &lt;ti/drivers/ADC.h&gt;</span>
+  <span class="hljs-comment">// #include &lt;ti/drivers/I2C.h&gt;</span>
+  <span class="hljs-comment">// #include &lt;ti/drivers/SPI.h&gt;</span>
+  <span class="hljs-comment">// #include &lt;ti/drivers/UART.h&gt;</span>
+  <span class="hljs-comment">// #include &lt;ti/drivers/Watchdog.h&gt;</span>
+
+  <span class="hljs-comment">/* Driver configuration */</span>
+  <span class="hljs-preprocessor">#<span class="hljs-keyword">include</span> "ti_drivers_config.h"</span>
+
+  <span class="hljs-comment">/* global variableS FOR GUI COMPOSER */</span>
+  <span class="hljs-keyword">uint16_t</span> adcValue = <span class="hljs-number">0</span>;
+  <span class="hljs-keyword">uint16_t</span> threshold = <span class="hljs-number">100</span>;
+  <span class="hljs-keyword">uint16_t</span> alert = <span class="hljs-number">0</span>;
+
+  <span class="hljs-comment">/*
+   *  ======== mainThread ========
+   */</span>
+
+  <span class="hljs-keyword">void</span> *mainThread(<span class="hljs-keyword">void</span> *arg0)
+  {
+      <span class="hljs-comment">/* ~10 loops/second */</span>
+      <span class="hljs-keyword">uint32_t</span> time = <span class="hljs-number">100000</span>;  <span class="hljs-comment">// update ~10/second</span>
+
+      <span class="hljs-comment">/* Call driver init functions */</span>
+      GPIO_init();
+      ADC_init();
+      <span class="hljs-comment">// I2C_init();</span>
+      <span class="hljs-comment">// SPI_init();</span>
+      <span class="hljs-comment">// UART_init();</span>
+      <span class="hljs-comment">// Watchdog_init();</span>
+
+      <span class="hljs-comment">/* Open ADC Driver */</span>
+      ADC_Handle adc;
+      ADC_Params params;
+      ADC_Params_init(&amp;params);
+      adc = ADC_open(CONFIG_ADC_0, &amp;params);
+      <span class="hljs-keyword">if</span> (adc == NULL) {
+          <span class="hljs-comment">// Error initializing ADC channel 0</span>
+          <span class="hljs-keyword">while</span> (<span class="hljs-number">1</span>);
+      }
+
+      <span class="hljs-keyword">while</span> (<span class="hljs-number">1</span>) {
+          <span class="hljs-keyword">int_fast16_t</span> res;
+
+          res = ADC_convert(adc, &amp;adcValue);
+          <span class="hljs-keyword">if</span> (res == ADC_STATUS_SUCCESS) {
+              <span class="hljs-keyword">if</span>(adcValue &gt;= threshold) {
+                  GPIO_write(CONFIG_GPIO_LED_0, CONFIG_GPIO_LED_ON);
+                  alert = <span class="hljs-number">1</span>;
+              } <span class="hljs-keyword">else</span>{
+                  GPIO_write(CONFIG_GPIO_LED_0, CONFIG_GPIO_LED_OFF);
+                  alert = <span class="hljs-number">0</span>;
+              }
+          }
+
+          usleep(time);
+      }
+  }
+</code></pre></div></div>
+<h2 class="body-heading" id="-4-let-s-compile-our-code-to-generate-a-out-file">  4. Let's compile our code to generate a .out file<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#-4-let-s-compile-our-code-to-generate-a-out-file"></a></h2><p>  Once we've made the small changes to our project, we can go ahead and compile our project. This will generate a .out file, which we can ultimately pass on to GUI Composer. With the .out file, GUI Composer will be able to use the symbolic information to extract the global variables within your application. Clicking the "Debug" button in CCS (or the "Run" button in CCS Cloud) will compile our code to generate a .out file &amp; will also flash our LaunchPad.</p>
+<blockquote>
+<p></p><div class="modal-pop" style="cursor:zoom-in;"><img src="./resources/debug.png" alt="&quot;Debug&quot; will compile your code, generating a *.out file &amp; flash your LaunchPad." class="img-responsive"></div><p></p>
+</blockquote>
+<p>  Once the project is built, we can find the .out file by going to the Debug folder within the Project Explorer/Workspace Files window within your IDE. In CCS Cloud you will find it in the Debug folder within your project. If using CCS Cloud, right-click the file to download it locally.</p>
+<blockquote>
+<p></p><div class="modal-pop" style="cursor:zoom-in;"><img src="./resources/save_dot_out.png" alt="Save the *.out file so we can later upload it to GUI Composer" class="img-responsive"></div><p></p>
+</blockquote>
+<h1 class="body-heading" id="-task-2-creating-our-first-gui-">  Task 2 - Creating our first GUI!<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#-task-2-creating-our-first-gui-"></a></h1><h2 class="body-heading" id="-1-launch-gui-composer-create-new-gui-project-">  1. Launch GUI Composer &amp; Create new GUI project!<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#-1-launch-gui-composer-create-new-gui-project-"></a></h2><p>  Now that we have our .out file, we can launch GUI Composer by navigating to <a href="http://dev.ti.com/gc">http://dev.ti.com/gc</a></p>
+<p>  Select "CREATE A NEW PROJECT" to launch the "New Project Wizard."</p>
+<p>  Let's use the following parameters:</p>
+<ul>
+<li>Project Template: Application</li>
+<li>Project Name: GUI_Composer_Demo</li>
+<li>Application Name: GUI_Composer_Demo</li>
+<li>Enable TI-Branding: [Check]</li>
+<li>Then, press NEXT &gt;&gt;</li>
+</ul>
+<h2 class="body-heading" id="-2-the-target-programming-window">  2. The Target programming window<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#-2-the-target-programming-window"></a></h2><p>  We need to tell GUI Composer which device we are using as well as upload the .out file of our firmware. This will allow GUI Composer to unintrusively read/modify global variables without any additional code required in our firmware.</p>
+<p>  Start by clicking "ADD".</p>
+<h3 class="body-heading" id="select-the-device-you-are-using">Select the device you are using<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#select-the-device-you-are-using"></a></h3><p>  In the development of this tutorial, we used the MSP-EXP432P401R LaunchPad, so we will select MSP432P401R. Be sure to select the device you are developing with. After selecting your device the Connection field should automatically be populated. You can also find the connection mechanism your launchpad uses on its product page or within its provided documentation.</p>
+<h3 class="body-heading" id="upload-your-out-file">Upload your .out file<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#upload-your-out-file"></a></h3><p>  Click the upload button &amp; navigate to the .out file inside your local CCS project or to the .out file that you downloaded from CCS Cloud.</p>
+<blockquote>
+<p></p><div class="modal-pop" style="cursor:zoom-in;"><img src="./resources/gui_composer_target_config.png" alt="Configure GUI Composer." class="img-responsive"></div><p></p>
+</blockquote>
+<p>  Leave Auto Program checked and press NEXT.</p>
+<h2 class="body-heading" id="-3-the-target-communication-window">  3. The Target communication window<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#-3-the-target-communication-window"></a></h2><p>  In this window we specify how we will extract data from our target.</p>
+<h3 class="body-heading" id="select-a-transport-mechanism">Select a transport mechanism<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#select-a-transport-mechanism"></a></h3><p>  Create a new transport mechanism by pressing the "Add" button. The XDS transport option is available on Cortex-based MCU's and C2000 devices. As we have been using the MSP-EXP432P401R in this workshop, we will select XDS.</p>
+<p>  </p><div class="modal-pop" style="cursor:zoom-in;"><img src="./resources/add_xds_transport.png" alt="" class="img-responsive"></div><p></p>
+<h3 class="body-heading" id="select-a-data-representation-scheme">Select a data representation scheme<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#select-a-data-representation-scheme"></a></h3><p>  The target data representation scheme (a.k.a. Available Model) we will use is "Program". Ensure this is selected, then click the "Add" button next to the selection. On the resulting screen under Program Model there should only be one option for Program Loader ID - "ti_core_programloader". Finally, click "OK" to exit the wizard and create the project.
+  </p><div class="modal-pop" style="cursor:zoom-in;"><img src="./resources/add_communication_model.png" alt="" class="img-responsive"></div><p></p>
+<p>  Please see the "Interacting with a Target Device" section of the <a href="https://dev.ti.com/gc/designer/help/UsersGuide/index.html#Interacting_with_a_Target_Device">GUI Composer User's Guide</a> for an explanation of the different target communication options.</p>
+<h2 class="body-heading" id="-4-adding-elements-to-your-gui">  4. Adding elements to your GUI<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#-4-adding-elements-to-your-gui"></a></h2><p>  At this point, we should have a blank window to start developing our GUI. We can search the palette of available GUI elements by opening the component palette on the left-hand side of the editor.</p>
+<p>  </p><div class="modal-pop" style="cursor:zoom-in;"><img src="./resources/component_palette.png" alt="" class="img-responsive"></div><p></p>
+<p>  For this demo, we need 3 different elements:</p>
+<ul>
+<li>Dials &amp; Gauges &gt; Analog Meter (for our ADC readings)</li>
+<li>Common Widgets &gt; Horizontal Slider (for modifying our threshold)</li>
+<li>Status Indicators &gt; LED (to indicate if ADC reading is above/below threshold)</li>
+</ul>
+<p>  Search for these items in the GUI palette &amp; drag them into the GUI editor window. The editor may look a bit different from what is presented below. You should end up with the following:</p>
+<blockquote>
+<p></p><div class="modal-pop" style="cursor:zoom-in;"><img src="./resources/build_gui.gif" alt="" class="img-responsive"></div><p></p>
+</blockquote>
+<h2 class="body-heading" id="-5-editing-gui-elements-with-properties-styles-panel">  5. Editing GUI elements with Properties &amp; Styles panel<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#-5-editing-gui-elements-with-properties-styles-panel"></a></h2><p>  Each GUI element can be modified &amp; edited using the Properties &amp; Styles panel. Click on the GUI element you want to modify, then simply edit the parameters in the side configuration pane.</p>
+<p>  For this tutorial, we need to make a few small adjustments</p>
+<h3 class="body-heading" id="analog-meter">Analog meter<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#analog-meter"></a></h3><ul>
+<li>Change the max-value to the maximum digital number your device's ADC resolution can support. The MSP432P401R device we are using has a 14-bit Analog to Digital Converter, which can give us 2^14 unique readings. So we'll put 16,383 as our max-value.</li>
+</ul>
+<h3 class="body-heading" id="horizontal-slider">Horizontal slider<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#horizontal-slider"></a></h3><ul>
+<li>We want to change the labels here to reflect percentage, so let's change the "labels" parameter to: 0%, 25%, 50%, 75%, 100%</li>
+<li>We also need to change the max-value of the slider to match that of the analog meter. In the case of a 14-bit ADC, we will change it to 16,383.</li>
+</ul>
+<h3 class="body-heading" id="led">LED<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#led"></a></h3><ul>
+<li>If we wanted to, we can change the LED color, but we'll go ahead and leave ours red.</li>
+</ul>
+<h2 class="body-heading" id="-6-binding-global-variables-with-gui-widgets">  6. Binding global variables with GUI widgets<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#-6-binding-global-variables-with-gui-widgets"></a></h2><p>  Now that our GUI elements are configured, we can go ahead &amp; bind the global variables to them. To do this, we will again modify the Properties pane for each widget.</p>
+<h3 class="body-heading" id="binding-analog-meter">Binding Analog meter<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#binding-analog-meter"></a></h3><p>  Click the analog meter widget to make it "active." Click the "bind" icon next to the "value" field. This will introduce a drop down menu that is pre-set for "ti_model_program." Leave that as-is. In the empty text field to the right, we will type the name of the global variable that we want to bind. In this case, we want to bind the global variable <code>adcValue</code></p>
+<blockquote>
+<p></p><div class="modal-pop" style="cursor:zoom-in;"><img src="./resources/adc_value_bind.png" alt="Bind the adcValue variable to the analog meter widget." class="img-responsive"></div><p></p>
+</blockquote>
+<h3 class="body-heading" id="binding-horizontal-slider">Binding Horizontal slider<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#binding-horizontal-slider"></a></h3><p>  Click the horizontal slider widget to make it "active." Click the "bind" icon next to the "value" field. Again, leave the "ti_model_program" drop down as-is &amp; type in the global variable we want to bind to the horizontal slider. In this case, we want to bind the global variable <code>threshold</code></p>
+<blockquote>
+<p></p><div class="modal-pop" style="cursor:zoom-in;"><img src="./resources/threshold_value_bind.png" alt="Bind the threshold variable to the horizontal slider widget." class="img-responsive"></div><p></p>
+</blockquote>
+<h3 class="body-heading" id="binding-led-indicator">Binding LED indicator<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#binding-led-indicator"></a></h3><p>  Click the LED indicator widget to make it "active." Click the "bind" icon next to the "on" field. Again, leave the "ti_model_program" drop down as-is &amp; type in the global variable we want to bind to the LED indicator. In this case, we want to bind the global variable <code>alert</code></p>
+<blockquote>
+<p></p><div class="modal-pop" style="cursor:zoom-in;"><img src="./resources/alert_value_bind.png" alt="Bind the alert variable to the LED indicator widget." class="img-responsive"></div><p></p>
+</blockquote>
+<h2 class="body-heading" id="-7-let-s-run-our-gui-">  7. Let's run our GUI!<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#-7-let-s-run-our-gui-"></a></h2><p>  And that's it! Now that we've successfully built our GUI, we can go ahead and run our GUI by clicking the "play" button.</p>
+<blockquote>
+<p></p><div class="modal-pop" style="cursor:zoom-in;"><img src="./resources/run_gui.png" alt="Run the GUI!" class="img-responsive"></div><p></p>
+</blockquote>
+<p>  This will open up your GUI in a new tab. At this point, your GUI will start to connect to your LaunchPad, which is running the same firmware that we uploaded into GUI Composer.</p>
+<p>  At this time, you should see the analog meter updating appropriately. You can also slide the horizontal slider to change the target threshold. Lastly, the LED indicator in the GUI should match the status of the LED found on your LaunchPad.</p>
+<h2 class="body-heading" id="-8-exporting-your-gui-app">  8. Exporting your GUI/app<a class="anchor-link glyphicon glyphicon-link" aria-hidden="true" href="#-8-exporting-your-gui-app"></a></h2><p>  Once you're happy with your GUI, you GUI Composer can export your GUI as a standalone application. You can export your GUI by clicking on <strong>File &gt; Export &gt; as Stand-Alone App</strong></p>
+<p>  This will generate a zip file of your GUI, which can now run standalone.</p>
+<div align="center" style="margin-top: 4em; font-size: smaller;">
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="../../../web_support/cc_license_icon.png"></a><br>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.</div>
+
+</div><div class="col-xs-4 col-sm-2 sidebar-offcanvas bs-docs-sidebar hidden-print" id="sidebar-overview"><ul class="nav nav-stacked fixed" id="sidebar"><li><a href="#-introduction">  Introduction</a><ul class="nav nav-stacked"><li><a href="#-what-is-gui-composer">  What is GUI Composer</a></li><li><a href="#-what-interfaces-does-gui-composer-support-">  What interfaces does GUI Composer support?</a></li></ul></li><li><a href="#-prerequisites">  Prerequisites</a><ul class="nav nav-stacked"><ul class="nav nav-stacked"><li><a href="#recommended-material">Recommended material</a></li><li><a href="#software-for-desktop-development">Software for desktop development</a></li><li><a href="#hardware-requirements">Hardware requirements</a></li><li><a href="#recommended-reading">Recommended Reading</a></li></ul></ul></li><li><a href="#-task-1-setting-up-code-example-for-gui-composer">  Task 1 - Setting up code example for GUI Composer</a><ul class="nav nav-stacked"><li><a href="#-1-using-a-jtag-xds-debug-interface-to-exchange-data-with-your-gui">  1. Using a JTAG/XDS Debug interface to exchange data with your GUI</a></li><li><a href="#-2-add-adc-conversion-to-the-empty-project">  2. Add ADC conversion to the "empty" project</a></li><li><a href="#-3-let-s-turn-the-variables-we-want-to-visualize-modify-into-global-variables">  3. Let's turn the variables we want to visualize &amp; modify into global variables</a><ul class="nav nav-stacked"><li><a href="#make-adcvalue-a-global-variable">Make adcValue a global variable</a></li><li><a href="#create-a-global-variable-for-threshold-">Create a global variable for threshold</a></li><li><a href="#create-a-global-variable-for-alert-">Create a global variable for alert</a></li><li><a href="#let-s-also-make-our-variables-update-more-frequently">Let's also make our variables update more frequently</a></li><li><a href="#we-should-end-up-with-the-following">We should end up with the following</a></li></ul></li><li><a href="#-4-let-s-compile-our-code-to-generate-a-out-file">  4. Let's compile our code to generate a .out file</a></li></ul></li><li><a href="#-task-2-creating-our-first-gui-">  Task 2 - Creating our first GUI!</a><ul class="nav nav-stacked"><li><a href="#-1-launch-gui-composer-create-new-gui-project-">  1. Launch GUI Composer &amp; Create new GUI project!</a></li><li><a href="#-2-the-target-programming-window">  2. The Target programming window</a><ul class="nav nav-stacked"><li><a href="#select-the-device-you-are-using">Select the device you are using</a></li><li><a href="#upload-your-out-file">Upload your .out file</a></li></ul></li><li><a href="#-3-the-target-communication-window">  3. The Target communication window</a><ul class="nav nav-stacked"><li><a href="#select-a-transport-mechanism">Select a transport mechanism</a></li><li><a href="#select-a-data-representation-scheme">Select a data representation scheme</a></li></ul></li><li><a href="#-4-adding-elements-to-your-gui">  4. Adding elements to your GUI</a></li><li><a href="#-5-editing-gui-elements-with-properties-styles-panel">  5. Editing GUI elements with Properties &amp; Styles panel</a><ul class="nav nav-stacked"><li><a href="#analog-meter">Analog meter</a></li><li><a href="#horizontal-slider">Horizontal slider</a></li><li><a href="#led">LED</a></li></ul></li><li><a href="#-6-binding-global-variables-with-gui-widgets">  6. Binding global variables with GUI widgets</a><ul class="nav nav-stacked"><li><a href="#binding-analog-meter">Binding Analog meter</a></li><li><a href="#binding-horizontal-slider">Binding Horizontal slider</a></li><li><a href="#binding-led-indicator">Binding LED indicator</a></li></ul></li><li><a href="#-7-let-s-run-our-gui-">  7. Let's run our GUI!</a></li><li><a href="#-8-exporting-your-gui-app">  8. Exporting your GUI/app</a></li></ul></li></ul></div></div></div></div>
+
+
+
+
+<link rel="stylesheet" href="../../../web_support/highlight/styles/zenburn.css">
+<script src="../../../web_support/strapdown/vendor/jquery-1.11.2.min.js"></script>
+<script src="../../../web_support/strapdown/vendor/bootstrap.min.js"></script>
+<script src="../../../web_support/highlight/highlight.pack.js"></script>
+<script type="text/javascript">document.isPreRendered = true;</script><script src="../../../web_support/strapdown/v/0.2/strapdown.js"></script>      <div class="modal" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">        <div class="vertical-alignment-helper">          <div class="modal-dialog vertical-align-center">             <div class="modal-dialog">               <div class="modal-content" style="margin-left: auto;margin-right: auto;">                 <div class="modal-body">                   <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>                   <img src="" class="imagepreview img-responsive">                 </div>              </div>            </div>          </div>        </div>      </div>
+
+
+</body></html>
