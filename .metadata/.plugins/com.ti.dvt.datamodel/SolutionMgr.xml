@@ -5,7 +5,7 @@
    <string>defaultSolution</string>
    <void method="set">
     <object idref="SolutionManager$PersistState0"/>
-    <string>C:\ti\ccs1031\ccs\ccs_base\dvt_4.1.0.202009111017\CodeGen\solutions\CodeGenCoverage</string>
+    <string>C:\ti\ccs1031\ccs\ccs_base\dvt_4.1.0.202105121547\CodeGen\solutions\CodeGenCoverage</string>
    </void>
   </void>
  </object>
@@ -14,10 +14,10 @@
  <void id="ArrayList0" method="get">
   <object idref="SolutionManager$PersistState0"/>
   <void method="add">
-   <string>E:\TI\MSP432\MSP432_CSS_WorkSpace\dvt\AnalysisSolutionsTemp\AnalysisSolution1627815782735\null</string>
+   <string>E:\TI\MSP432\MSP432_CSS_WorkSpace\dvt\AnalysisSolutionsTemp\AnalysisSolution1630513187531\null</string>
   </void>
   <void method="add">
-   <string>C:\ti\ccs1031\ccs\ccs_base\dvt_4.1.0.202009111017\CodeGen\solutions\CodeGenCoverage</string>
+   <string>C:\ti\ccs1031\ccs\ccs_base\dvt_4.1.0.202105121547\CodeGen\solutions\CodeGenCoverage</string>
   </void>
  </void>
 </void>

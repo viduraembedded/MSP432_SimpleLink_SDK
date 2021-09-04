@@ -1,0 +1,52 @@
+/**
+ * These arguments were used when this file was generated. They will be automatically applied on subsequent loads
+ * via the GUI or CLI. Run CLI with '--help' for additional information on how to override these arguments.
+ * @cliArgs --board "/ti/boards/MSP_EXP432P401R" --product "simplelink_msp432p4_sdk@3.40.01.02"
+ * @versions {"tool":"1.9.0+2015","templates":null}
+ */
+
+/**
+ * Import the modules used in this configuration.
+ */
+const Display  = scripting.addModule("/ti/display/Display", {}, false);
+const Display1 = Display.addInstance();
+const GPIO     = scripting.addModule("/ti/drivers/GPIO", {}, false);
+const GPIO1    = GPIO.addInstance();
+const I2C      = scripting.addModule("/ti/drivers/I2C", {}, false);
+const I2C1     = I2C.addInstance();
+const RTOS     = scripting.addModule("/ti/drivers/RTOS");
+
+/**
+ * Write custom configuration values to the imported modules.
+ */
+Display1.$name      = "CONFIG_Display_0";
+Display1.$hardware  = system.deviceData.board.components.XDS110UART;
+Display1.enableANSI = true;
+Display1.uart.$name = "CONFIG_UART_0";
+
+GPIO1.$name     = "CONFIG_GPIO_BLUE_LED";
+GPIO1.$hardware = system.deviceData.board.components.LED2_BLUE;
+
+I2C1.$name = "CONFIG_I2C_0";
+
+const Power                   = scripting.addModule("/ti/drivers/Power", {}, false);
+Power.performanceLevel3.$name = "ti_drivers_power_PowerMSP432PerfLevels0";
+Power.performanceLevel2.$name = "ti_drivers_power_PowerMSP432PerfLevels1";
+Power.performanceLevel1.$name = "ti_drivers_power_PowerMSP432PerfLevels2";
+Power.performanceLevel0.$name = "ti_drivers_power_PowerMSP432PerfLevels3";
+
+RTOS.name = "NoRTOS";
+
+/**
+ * Pinmux solution for unlocked pins/peripherals. This ensures that minor changes to the automatic solver in a future
+ * version of the tool will not impact the pinmux you originally saw.  These lines can be completely deleted in order to
+ * re-solve from scratch.
+ */
+Display1.uart.uart.$suggestSolution       = "EUSCI_A0";
+Display1.uart.uart.txPin.$suggestSolution = "ball.7";
+Display1.uart.uart.rxPin.$suggestSolution = "ball.6";
+GPIO1.gpioPin.$suggestSolution            = "ball.18";
+I2C1.i2c.$suggestSolution                 = "EUSCI_B1";
+I2C1.i2c.sdaPin.$suggestSolution          = "boosterpack.10";
+I2C1.i2c.sclPin.$suggestSolution          = "boosterpack.9";
+RTOS.timer0.resource.$suggestSolution     = "Timer_A0";
