@@ -1181,3 +1181,1692 @@ org.json.JSONException: Module Closed
 
 !ENTRY org.eclipse.cdt.core 1 0 2021-09-01 22:00:52.649
 !MESSAGE Indexed 'Nokia5110_LCD' (3 sources, 46 headers) in 1.68 sec: 2,425 declarations; 3,456 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+!SESSION 2021-09-05 10:48:10.352 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product com.ti.ccstudio.branding.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ti.ccstudio.branding.product
+
+!ENTRY com.ti.common.core 1 0 2021-09-05 10:48:38.557
+!MESSAGE path=ccs_base/DebugServer
+
+!ENTRY com.ti.common.core 1 0 2021-09-05 10:48:38.625
+!MESSAGE debugServerDir=C:/ti/ccs1031/ccs/ccs_base/DebugServer
+
+!ENTRY com.ti.ccstudio.app.center 4 0 2021-09-05 10:49:38.198
+!MESSAGE An internal error was logged by 'com.ti.ccstudio.app.center'.
+!STACK 0
+org.json.JSONException: A JSONObject text must begin with '{' at 1 [character 2 line 1]
+	at org.json.JSONTokener.syntaxError(JSONTokener.java:433)
+	at org.json.JSONObject.<init>(JSONObject.java:189)
+	at org.json.JSONObject.<init>(JSONObject.java:316)
+	at com.ti.ccstudio.app.center.internal.CCSAppCenter.processImports(CCSAppCenter.java:251)
+	at com.ti.ccstudio.app.center.internal.CCSAppCenter.getAppJson_0(CCSAppCenter.java:214)
+	at com.ti.ccstudio.app.center.internal.CCSAppCenter.access$1(CCSAppCenter.java:205)
+	at com.ti.ccstudio.app.center.internal.CCSAppCenter$1.run(CCSAppCenter.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.ti.ccstudio.app.center 4 0 2021-09-05 10:49:38.228
+!MESSAGE An internal error was logged by 'com.ti.ccstudio.app.center'.
+!STACK 0
+org.json.JSONException: A JSONObject text must begin with '{' at 1 [character 2 line 1]
+	at org.json.JSONTokener.syntaxError(JSONTokener.java:433)
+	at org.json.JSONObject.<init>(JSONObject.java:189)
+	at org.json.JSONObject.<init>(JSONObject.java:316)
+	at com.ti.ccstudio.app.center.internal.CCSAppCenter.convertToFullpaths(CCSAppCenter.java:325)
+	at com.ti.ccstudio.app.center.internal.CCSAppCenter.getAppJson_0(CCSAppCenter.java:223)
+	at com.ti.ccstudio.app.center.internal.CCSAppCenter.access$1(CCSAppCenter.java:205)
+	at com.ti.ccstudio.app.center.internal.CCSAppCenter$1.run(CCSAppCenter.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.ti.ccstudio.app.center 4 0 2021-09-05 10:49:38.353
+!MESSAGE An internal error was logged by 'com.ti.ccstudio.app.center'.
+!STACK 0
+org.json.JSONException: A JSONObject text must begin with '{' at 1 [character 2 line 1]
+	at org.json.JSONTokener.syntaxError(JSONTokener.java:433)
+	at org.json.JSONObject.<init>(JSONObject.java:189)
+	at org.json.JSONObject.<init>(JSONObject.java:316)
+	at com.ti.ccstudio.app.center.internal.CCSAppCenter._replaceIusWithLatest(CCSAppCenter.java:361)
+	at com.ti.ccstudio.app.center.internal.CCSAppCenter.access$3(CCSAppCenter.java:358)
+	at com.ti.ccstudio.app.center.internal.CCSAppCenter$2.run(CCSAppCenter.java:234)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.ti.ccstudio.ui 1 0 2021-09-05 10:49:43.871
+!MESSAGE CCS IDE session started!
+	CCS build: 10.4.0.00006
+	CCS location: C:/ti/ccs1031/ccs
+	Workspace location: E:/TI/MSP432/MSP432_CSS_WorkSpace
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-05 10:49:46.546
+!MESSAGE constructor
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-05 10:49:46.546
+!MESSAGE done with directories
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-05 10:49:46.546
+!MESSAGE loading ti_logger
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-05 10:49:46.551
+!MESSAGE Platform os: win32
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-05 10:49:46.551
+!MESSAGE loading cToolsIF
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-05 10:49:46.887
+!MESSAGE loading cTools
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-05 10:49:47.324
+!MESSAGE loading TraceFactory
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-05 10:49:47.514
+!MESSAGE loading sqlite3
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-05 10:49:47.820
+!MESSAGE loading CloudTrace
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-05 10:49:49.681
+!MESSAGE CloudTrace interface loaded
+
+!ENTRY com.ti.ccstudio.project.ui.webcontent 1 0 2021-09-05 10:49:50.186
+!MESSAGE CCS HTTP adapter started! [ccs.port:51610] - Open 'http://localhost:51610/ide' in web browser to see listing of available APIs...
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-09-05 10:52:15.373
+!MESSAGE Indexed '1.8inch_TFT_LCD' (4 sources, 56 headers) in 6.5 sec: 3,826 declarations; 7,668 references; 0 unresolved inclusions; 0 syntax errors; 10 unresolved names (0.087%)
+
+!ENTRY com.ti.ccstudio.webcontent 4 0 2021-09-05 10:54:26.786
+!MESSAGE Module Closed
+!STACK 0
+org.json.JSONException: Module Closed
+	at com.ti.cloudagent.communication.Socket$WebSocket.<init>(Socket.java:58)
+	at com.ti.cloudagent.communication.Socket.<init>(Socket.java:146)
+	at com.ti.cloudagent.communication.JSONInterface.<init>(JSONInterface.java:24)
+	at com.ti.cloudagent.Agent.<init>(Agent.java:149)
+	at com.ti.cloudagent.Agent.instance(Agent.java:50)
+	at com.ti.ccstudio.webcontent.cloudagent.CloudAgent.getAgent(CloudAgent.java:33)
+	at com.ti.ccstudio.webcontent.cloudagent.CloudAgent.<init>(CloudAgent.java:22)
+	at com.ti.ccstudio.webcontent.cloudagent.CloudAgent.<clinit>(CloudAgent.java:18)
+	at com.ti.ccstudio.webcontent.internal.ABrowserExtension.init(ABrowserExtension.java:29)
+	at com.ti.ccstudio.webcontent.cloudagent.CloudAgentBrowserExtension.init(CloudAgentBrowserExtension.java:25)
+	at com.ti.ccstudio.webcontent.internal.CommonBrowserExtensionContributor.init(CommonBrowserExtensionContributor.java:29)
+	at com.ti.browser.internal.TIBrowser$1.run(TIBrowser.java:104)
+	at com.ti.chromium.browser.JxBrowser.lambda$8(JxBrowser.java:298)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at com.ti.chromium.browser.JxBrowser$1$1.run(JxBrowser.java:128)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-09-05 12:13:24.327
+!MESSAGE Indexed 'SSD1306_LCD' (3 sources, 46 headers) in 0.596 sec: 2,425 declarations; 3,456 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.ti.ccstudio.debug 1 0 2021-09-05 13:06:05.938
+!MESSAGE DS_ERROR: CS_DAP_0: Error initializing emulator: (Error -260 @ 0x0) An attempt to connect to the XDS110 failed. The cause may be one or more of: no XDS110 is connected, invalid firmware update, invalid XDS110 serial number, or faulty USB cable. The firmware and serial number may be updated using the xdsdfu utility found in the .../ccs_base/common/uscif/xds110 directory of your installation. View the XDS110SupportReadMe.pdf file there for instructions. (Emulation package 9.4.0.00129) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2021-09-05 13:06:07.273
+!MESSAGE DS_ERROR: Error initializing emulator:
+(Error -260 @ 0x0)
+An attempt to connect to the XDS110 failed.
+The cause may be one or more of: no XDS110 is connected, invalid
+firmware update, invalid XDS110 serial number, or faulty USB
+cable. The firmware and serial number may be updated using the
+xdsdfu utility found in the .../ccs_base/common/uscif/xds110
+directory of your installation. View the XDS110SupportReadMe.pdf
+file there for instructions.
+(Emulation package 9.4.0.00129)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2021-09-05 13:06:09.104
+!MESSAGE DS_ERROR: CS_DAP_0: Error initializing emulator: (Error -260 @ 0x0) An attempt to connect to the XDS110 failed. The cause may be one or more of: no XDS110 is connected, invalid firmware update, invalid XDS110 serial number, or faulty USB cable. The firmware and serial number may be updated using the xdsdfu utility found in the .../ccs_base/common/uscif/xds110 directory of your installation. View the XDS110SupportReadMe.pdf file there for instructions. (Emulation package 9.4.0.00129) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2021-09-05 13:06:09.167
+!MESSAGE DS_ERROR: Error initializing emulator:
+(Error -260 @ 0x0)
+An attempt to connect to the XDS110 failed.
+The cause may be one or more of: no XDS110 is connected, invalid
+firmware update, invalid XDS110 serial number, or faulty USB
+cable. The firmware and serial number may be updated using the
+xdsdfu utility found in the .../ccs_base/common/uscif/xds110
+directory of your installation. View the XDS110SupportReadMe.pdf
+file there for instructions.
+(Emulation package 9.4.0.00129)
+
+
+!ENTRY org.eclipse.core.jobs 4 2 2021-09-05 13:18:51.334
+!MESSAGE An internal error occurred during: "Searching for local changes".
+!STACK 0
+java.lang.NullPointerException
+	at com.ti.common.project.core.internal.settings.AConfigurationSettings.<init>(AConfigurationSettings.java:178)
+	at com.ti.ccstudio.project.core.internal.settings.CCSConfigurationSettings.<init>(CCSConfigurationSettings.java:53)
+	at com.ti.ccstudio.project.core.util.ProjectCoreUtils.getCodegenVersion(ProjectCoreUtils.java:711)
+	at com.ti.ccstudio.project.core.util.ProjectCoreUtils.getCodegenVersion(ProjectCoreUtils.java:704)
+	at com.ti.ccstudio.project.core.util.ProjectCoreUtils.getCodegenVersion(ProjectCoreUtils.java:697)
+	at com.ti.ccstudio.project.core.util.ProjectCoreUtils.isUsingTIToolChain(ProjectCoreUtils.java:768)
+	at com.ti.ccstudio.project.core.util.ProjectCoreUtils.getTICompilerTool(ProjectCoreUtils.java:1436)
+	at com.ti.ccstudio.project.core.internal.build.CCSMakefileGenerator.doInitialize(CCSMakefileGenerator.java:277)
+	at com.ti.ccstudio.project.core.internal.build.CCSMakefileGenerator.initialize(CCSMakefileGenerator.java:252)
+	at org.eclipse.cdt.managedbuilder.internal.core.Builder.getDefaultBuildPath(Builder.java:1825)
+	at org.eclipse.cdt.managedbuilder.internal.core.Builder.getBuildPath(Builder.java:1795)
+	at org.eclipse.cdt.managedbuilder.internal.dataprovider.BuildBuildData.getBuilderCWD(BuildBuildData.java:42)
+	at org.eclipse.cdt.core.settings.model.extension.impl.CDefaultBuildData.copySettingsFrom(CDefaultBuildData.java:56)
+	at org.eclipse.cdt.internal.core.settings.model.CBuildSettingCache.<init>(CBuildSettingCache.java:45)
+	at org.eclipse.cdt.internal.core.settings.model.CConfigurationDescriptionCache.copyBuildData(CConfigurationDescriptionCache.java:247)
+	at org.eclipse.cdt.core.settings.model.extension.impl.CDefaultConfigurationData.copySettingsFrom(CDefaultConfigurationData.java:110)
+	at org.eclipse.cdt.internal.core.settings.model.CConfigurationDescriptionCache.loadData(CConfigurationDescriptionCache.java:154)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescription.loadDatas(CProjectDescription.java:199)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.loadProjectDescription(XmlProjectDescriptionStorage.java:512)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.getProjectDescription(XmlProjectDescriptionStorage.java:240)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescriptionInternal(CProjectDescriptionManager.java:426)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:408)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:402)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:395)
+	at org.eclipse.cdt.core.model.CoreModel.getProjectDescription(CoreModel.java:1436)
+	at org.eclipse.cdt.managedbuilder.internal.core.ManagedBuildInfo.findExistingDefaultConfiguration(ManagedBuildInfo.java:272)
+	at org.eclipse.cdt.managedbuilder.internal.core.ManagedBuildInfo.getDefaultConfiguration(ManagedBuildInfo.java:258)
+	at com.ti.common.project.core.util.CTIProjectCoreUtils.getActiveBuildConfiguration(CTIProjectCoreUtils.java:479)
+	at com.ti.common.project.core.variables.ProductPathVariableResolver.doGetValue(ProductPathVariableResolver.java:82)
+	at com.ti.common.project.core.variables.APathVariableResolver.getValue(APathVariableResolver.java:76)
+	at org.eclipse.core.internal.resources.ProjectVariableProviderManager$Descriptor.getValue(ProjectVariableProviderManager.java:65)
+	at org.eclipse.core.internal.resources.ProjectPathVariableManager.internalGetValue(ProjectPathVariableManager.java:160)
+	at org.eclipse.core.internal.resources.ProjectPathVariableManager.resolveVariable(ProjectPathVariableManager.java:233)
+	at org.eclipse.core.internal.resources.ProjectPathVariableManager.resolveVariable(ProjectPathVariableManager.java:218)
+	at org.eclipse.core.internal.resources.ProjectPathVariableManager.resolveURI(ProjectPathVariableManager.java:291)
+	at org.eclipse.core.internal.localstore.FileStoreRoot.createStore(FileStoreRoot.java:128)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.getStore(FileSystemResourceManager.java:534)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.fastIsSynchronized(FileSystemResourceManager.java:455)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.isSynchronized(FileSystemResourceManager.java:729)
+	at org.eclipse.core.internal.resources.Resource.isSynchronized(Resource.java:1416)
+	at org.eclipse.core.internal.refresh.PollingMonitor.poll(PollingMonitor.java:180)
+	at org.eclipse.core.internal.refresh.PollingMonitor.run(PollingMonitor.java:139)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2021-09-06 21:04:02.770 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product com.ti.ccstudio.branding.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ti.ccstudio.branding.product
+
+!ENTRY com.ti.common.core 1 0 2021-09-06 21:07:38.991
+!MESSAGE path=ccs_base/DebugServer
+
+!ENTRY com.ti.common.core 1 0 2021-09-06 21:07:39.023
+!MESSAGE debugServerDir=C:/ti/ccs1031/ccs/ccs_base/DebugServer
+
+!ENTRY com.ti.ccstudio.ui 1 0 2021-09-06 21:08:23.042
+!MESSAGE CCS IDE session started!
+	CCS build: 10.4.0.00006
+	CCS location: C:/ti/ccs1031/ccs
+	Workspace location: E:/TI/MSP432/MSP432_CSS_WorkSpace
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-06 21:08:27.386
+!MESSAGE constructor
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-06 21:08:27.386
+!MESSAGE done with directories
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-06 21:08:27.386
+!MESSAGE loading ti_logger
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-06 21:08:27.386
+!MESSAGE Platform os: win32
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-06 21:08:27.386
+!MESSAGE loading cToolsIF
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-06 21:08:27.792
+!MESSAGE loading cTools
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-06 21:08:28.011
+!MESSAGE loading TraceFactory
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-06 21:08:29.105
+!MESSAGE loading sqlite3
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-06 21:08:29.261
+!MESSAGE loading CloudTrace
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-06 21:08:30.136
+!MESSAGE CloudTrace interface loaded
+
+!ENTRY com.ti.ccstudio.project.ui.webcontent 1 0 2021-09-06 21:08:31.683
+!MESSAGE CCS HTTP adapter started! [ccs.port:51537] - Open 'http://localhost:51537/ide' in web browser to see listing of available APIs...
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-09-06 21:09:19.191
+!MESSAGE REX Launching REX 3.1 (offline)
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-09-06 21:09:19.566
+!MESSAGE REX Launching server with: [C:\ti\ccs1031\ccs\tirex3/node.exe, app.js, C:\ti\ccs1031\ccs\tirex3\ti-rex-core/dinfra-desktop/dinfra.js, C:\ti\ccs1031\ccs\tirex3\ti-rex-core/config/dconfig_localserver.json, C:\ti\ccs1031\ccs\tirex3\ti-rex-core/config/app_localserver_win.json, --ccs_port=51537, --myHttpPort=55432, --logsDirUncaughtException=C:\Users\Venki\AppData\Local\TEXASI~1\CCS\ccs1031\0\dmp\, --ccsVersion=10.4.0.00006, --tirexPluginVersion=1.0.0.202105121547, --startInOfflineMode=true]
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-09-06 21:09:19.598
+!MESSAGE REX Launching Browser
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-09-06 21:09:20.426
+!MESSAGE REX Server launched
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-09-06 21:09:20.457
+!MESSAGE REX Wait server to alive
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-09-06 21:09:20.473
+!MESSAGE REX Server alive
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-09-06 21:10:13.638
+!MESSAGE REX Setting browser URL to: http://127.0.0.1:55432
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-09-06 21:10:14.037
+!MESSAGE REX Setting browser URL to: file:/C:/ti/ccs1031/ccs/eclipse/..\tirex3\ti-rex-core\public\plugin\serverstarting.html
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-09-06 21:10:14.038
+!MESSAGE REX Setting browser URL to: http://127.0.0.1:55432
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-09-06 21:11:41.230
+!MESSAGE Indexed 'pwmled2_MSP_EXP432P401R_nortos_ccs' (2 sources, 10 headers) in 1.1 sec: 158 declarations; 373 references; 1 unresolved inclusions; 0 syntax errors; 2 unresolved names (0.38%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-09-06 21:18:38.943
+!MESSAGE Indexed 'SG90_ServoMotor' (2 sources, 10 headers) in 0.171 sec: 158 declarations; 373 references; 1 unresolved inclusions; 0 syntax errors; 2 unresolved names (0.38%)
+
+!ENTRY com.ti.ccstudio.debug 1 0 2021-09-06 21:53:37.888
+!MESSAGE DS_ERROR: CS_DAP_0: Error initializing emulator: (Error -260 @ 0x0) An attempt to connect to the XDS110 failed. The cause may be one or more of: no XDS110 is connected, invalid firmware update, invalid XDS110 serial number, or faulty USB cable. The firmware and serial number may be updated using the xdsdfu utility found in the .../ccs_base/common/uscif/xds110 directory of your installation. View the XDS110SupportReadMe.pdf file there for instructions. (Emulation package 9.4.0.00129) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2021-09-06 21:53:38.153
+!MESSAGE DS_ERROR: Error initializing emulator:
+(Error -260 @ 0x0)
+An attempt to connect to the XDS110 failed.
+The cause may be one or more of: no XDS110 is connected, invalid
+firmware update, invalid XDS110 serial number, or faulty USB
+cable. The firmware and serial number may be updated using the
+xdsdfu utility found in the .../ccs_base/common/uscif/xds110
+directory of your installation. View the XDS110SupportReadMe.pdf
+file there for instructions.
+(Emulation package 9.4.0.00129)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2021-09-06 22:06:44.398
+!MESSAGE DS_ERROR: CS_DAP_0: Error initializing emulator: (Error -260 @ 0x0) An attempt to connect to the XDS110 failed. The cause may be one or more of: no XDS110 is connected, invalid firmware update, invalid XDS110 serial number, or faulty USB cable. The firmware and serial number may be updated using the xdsdfu utility found in the .../ccs_base/common/uscif/xds110 directory of your installation. View the XDS110SupportReadMe.pdf file there for instructions. (Emulation package 9.4.0.00129) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2021-09-06 22:06:44.822
+!MESSAGE DS_ERROR: Error initializing emulator:
+(Error -260 @ 0x0)
+An attempt to connect to the XDS110 failed.
+The cause may be one or more of: no XDS110 is connected, invalid
+firmware update, invalid XDS110 serial number, or faulty USB
+cable. The firmware and serial number may be updated using the
+xdsdfu utility found in the .../ccs_base/common/uscif/xds110
+directory of your installation. View the XDS110SupportReadMe.pdf
+file there for instructions.
+(Emulation package 9.4.0.00129)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2021-09-06 22:15:17.530
+!MESSAGE DS_ERROR: CORTEX_M4_0: JTAG Communication Error: (Error -261 @ 0x0) Invalid response was received from the XDS110. (Emulation package 9.4.0.00129) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2021-09-06 22:15:17.559
+!MESSAGE DS_ERROR: CORTEX_M4_0: Breakpoint Manager: Remove job failed: Register/memory write failure[22005]
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2021-09-06 22:24:31.381
+!MESSAGE DS_ERROR: CORTEX_M4_0: JTAG Communication Error: (Error -613 @ 0x0) The target indicates that it is busy.  Either try the SWD request  again, or abort the transaction. (Emulation package 9.4.0.00129) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2021-09-06 22:24:31.432
+!MESSAGE DS_ERROR: CORTEX_M4_0: Breakpoint Manager: Remove job failed: Register/memory write failure[22005]
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2021-09-06 22:28:12.062
+!MESSAGE DS_ERROR: CS_DAP_0: Error initializing emulator: (Error -260 @ 0x0) An attempt to connect to the XDS110 failed. The cause may be one or more of: no XDS110 is connected, invalid firmware update, invalid XDS110 serial number, or faulty USB cable. The firmware and serial number may be updated using the xdsdfu utility found in the .../ccs_base/common/uscif/xds110 directory of your installation. View the XDS110SupportReadMe.pdf file there for instructions. (Emulation package 9.4.0.00129) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2021-09-06 22:28:12.281
+!MESSAGE DS_ERROR: Error initializing emulator:
+(Error -260 @ 0x0)
+An attempt to connect to the XDS110 failed.
+The cause may be one or more of: no XDS110 is connected, invalid
+firmware update, invalid XDS110 serial number, or faulty USB
+cable. The firmware and serial number may be updated using the
+xdsdfu utility found in the .../ccs_base/common/uscif/xds110
+directory of your installation. View the XDS110SupportReadMe.pdf
+file there for instructions.
+(Emulation package 9.4.0.00129)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2021-09-06 22:42:52.578
+!MESSAGE DS_ERROR: CS_DAP_0: Error initializing emulator: (Error -260 @ 0x0) An attempt to connect to the XDS110 failed. The cause may be one or more of: no XDS110 is connected, invalid firmware update, invalid XDS110 serial number, or faulty USB cable. The firmware and serial number may be updated using the xdsdfu utility found in the .../ccs_base/common/uscif/xds110 directory of your installation. View the XDS110SupportReadMe.pdf file there for instructions. (Emulation package 9.4.0.00129) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2021-09-06 22:42:52.890
+!MESSAGE DS_ERROR: Error initializing emulator:
+(Error -260 @ 0x0)
+An attempt to connect to the XDS110 failed.
+The cause may be one or more of: no XDS110 is connected, invalid
+firmware update, invalid XDS110 serial number, or faulty USB
+cable. The firmware and serial number may be updated using the
+xdsdfu utility found in the .../ccs_base/common/uscif/xds110
+directory of your installation. View the XDS110SupportReadMe.pdf
+file there for instructions.
+(Emulation package 9.4.0.00129)
+
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-09-06 22:53:14.839
+!MESSAGE REX Error: Server process is not running
+!SESSION 2021-09-06 23:12:32.694 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product com.ti.ccstudio.branding.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ti.ccstudio.branding.product
+
+!ENTRY com.ti.common.core 1 0 2021-09-06 23:12:41.474
+!MESSAGE path=ccs_base/DebugServer
+
+!ENTRY com.ti.common.core 1 0 2021-09-06 23:12:41.474
+!MESSAGE debugServerDir=C:/ti/ccs1031/ccs/ccs_base/DebugServer
+
+!ENTRY com.ti.ccstudio.ui 1 0 2021-09-06 23:13:49.214
+!MESSAGE CCS IDE session started!
+	CCS build: 10.4.0.00006
+	CCS location: C:/ti/ccs1031/ccs
+	Workspace location: E:/TI/MSP432/MSP432_CSS_WorkSpace
+
+!ENTRY com.ti.ccstudio.app.center 4 0 2021-09-06 23:13:52.636
+!MESSAGE An internal error was logged by 'com.ti.ccstudio.app.center'.
+!STACK 0
+org.json.JSONException: A JSONObject text must begin with '{' at 1 [character 2 line 1]
+	at org.json.JSONTokener.syntaxError(JSONTokener.java:433)
+	at org.json.JSONObject.<init>(JSONObject.java:189)
+	at org.json.JSONObject.<init>(JSONObject.java:316)
+	at com.ti.ccstudio.app.center.internal.CCSAppCenter.processImports(CCSAppCenter.java:251)
+	at com.ti.ccstudio.app.center.internal.CCSAppCenter.getAppJson_0(CCSAppCenter.java:214)
+	at com.ti.ccstudio.app.center.internal.CCSAppCenter.access$1(CCSAppCenter.java:205)
+	at com.ti.ccstudio.app.center.internal.CCSAppCenter$1.run(CCSAppCenter.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.ti.ccstudio.app.center 4 0 2021-09-06 23:13:52.776
+!MESSAGE An internal error was logged by 'com.ti.ccstudio.app.center'.
+!STACK 0
+org.json.JSONException: A JSONObject text must begin with '{' at 1 [character 2 line 1]
+	at org.json.JSONTokener.syntaxError(JSONTokener.java:433)
+	at org.json.JSONObject.<init>(JSONObject.java:189)
+	at org.json.JSONObject.<init>(JSONObject.java:316)
+	at com.ti.ccstudio.app.center.internal.CCSAppCenter.convertToFullpaths(CCSAppCenter.java:325)
+	at com.ti.ccstudio.app.center.internal.CCSAppCenter.getAppJson_0(CCSAppCenter.java:223)
+	at com.ti.ccstudio.app.center.internal.CCSAppCenter.access$1(CCSAppCenter.java:205)
+	at com.ti.ccstudio.app.center.internal.CCSAppCenter$1.run(CCSAppCenter.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.ti.ccstudio.app.center 4 0 2021-09-06 23:13:52.854
+!MESSAGE An internal error was logged by 'com.ti.ccstudio.app.center'.
+!STACK 0
+org.json.JSONException: A JSONObject text must begin with '{' at 1 [character 2 line 1]
+	at org.json.JSONTokener.syntaxError(JSONTokener.java:433)
+	at org.json.JSONObject.<init>(JSONObject.java:189)
+	at org.json.JSONObject.<init>(JSONObject.java:316)
+	at com.ti.ccstudio.app.center.internal.CCSAppCenter._replaceIusWithLatest(CCSAppCenter.java:361)
+	at com.ti.ccstudio.app.center.internal.CCSAppCenter.access$3(CCSAppCenter.java:358)
+	at com.ti.ccstudio.app.center.internal.CCSAppCenter$2.run(CCSAppCenter.java:234)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-06 23:13:53.417
+!MESSAGE constructor
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-06 23:13:53.417
+!MESSAGE done with directories
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-06 23:13:53.417
+!MESSAGE loading ti_logger
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-06 23:13:53.417
+!MESSAGE Platform os: win32
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-06 23:13:53.417
+!MESSAGE loading cToolsIF
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-06 23:13:54.339
+!MESSAGE loading cTools
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-06 23:13:54.526
+!MESSAGE loading TraceFactory
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-06 23:13:54.667
+!MESSAGE loading sqlite3
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-06 23:13:54.823
+!MESSAGE loading CloudTrace
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-06 23:13:56.229
+!MESSAGE CloudTrace interface loaded
+
+!ENTRY com.ti.ccstudio.project.ui.webcontent 1 0 2021-09-06 23:13:58.464
+!MESSAGE CCS HTTP adapter started! [ccs.port:59775] - Open 'http://localhost:59775/ide' in web browser to see listing of available APIs...
+!SESSION 2021-09-07 21:48:06.668 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product com.ti.ccstudio.branding.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ti.ccstudio.branding.product
+
+!ENTRY com.ti.common.core 1 0 2021-09-07 21:48:24.232
+!MESSAGE path=ccs_base/DebugServer
+
+!ENTRY com.ti.common.core 1 0 2021-09-07 21:48:24.263
+!MESSAGE debugServerDir=C:/ti/ccs1031/ccs/ccs_base/DebugServer
+
+!ENTRY com.ti.ccstudio.ui 1 0 2021-09-07 21:50:24.677
+!MESSAGE CCS IDE session started!
+	CCS build: 10.4.0.00006
+	CCS location: C:/ti/ccs1031/ccs
+	Workspace location: E:/TI/MSP432/MSP432_CSS_WorkSpace
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-07 21:50:25.575
+!MESSAGE constructor
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-07 21:50:25.577
+!MESSAGE done with directories
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-07 21:50:25.577
+!MESSAGE loading ti_logger
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-07 21:50:25.579
+!MESSAGE Platform os: win32
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-07 21:50:25.580
+!MESSAGE loading cToolsIF
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-07 21:50:25.995
+!MESSAGE loading cTools
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-07 21:50:26.617
+!MESSAGE loading TraceFactory
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-07 21:50:27.030
+!MESSAGE loading sqlite3
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-07 21:50:27.399
+!MESSAGE loading CloudTrace
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-07 21:50:29.966
+!MESSAGE CloudTrace interface loaded
+
+!ENTRY com.ti.ccstudio.project.ui.webcontent 1 0 2021-09-07 21:50:31.382
+!MESSAGE CCS HTTP adapter started! [ccs.port:52761] - Open 'http://localhost:52761/ide' in web browser to see listing of available APIs...
+
+!ENTRY com.ti.ccstudio.webcontent 4 0 2021-09-07 21:51:01.810
+!MESSAGE Module Closed
+!STACK 0
+org.json.JSONException: Module Closed
+	at com.ti.cloudagent.communication.Socket$WebSocket.<init>(Socket.java:58)
+	at com.ti.cloudagent.communication.Socket.<init>(Socket.java:146)
+	at com.ti.cloudagent.communication.JSONInterface.<init>(JSONInterface.java:24)
+	at com.ti.cloudagent.Agent.<init>(Agent.java:149)
+	at com.ti.cloudagent.Agent.instance(Agent.java:50)
+	at com.ti.ccstudio.webcontent.cloudagent.CloudAgent.getAgent(CloudAgent.java:33)
+	at com.ti.ccstudio.webcontent.cloudagent.CloudAgent.<init>(CloudAgent.java:22)
+	at com.ti.ccstudio.webcontent.cloudagent.CloudAgent.<clinit>(CloudAgent.java:18)
+	at com.ti.ccstudio.webcontent.internal.ABrowserExtension.init(ABrowserExtension.java:29)
+	at com.ti.ccstudio.webcontent.cloudagent.CloudAgentBrowserExtension.init(CloudAgentBrowserExtension.java:25)
+	at com.ti.ccstudio.webcontent.internal.CommonBrowserExtensionContributor.init(CommonBrowserExtensionContributor.java:29)
+	at com.ti.browser.internal.TIBrowser$1.run(TIBrowser.java:104)
+	at com.ti.chromium.browser.JxBrowser.lambda$8(JxBrowser.java:298)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at com.ti.chromium.browser.JxBrowser$1$1.run(JxBrowser.java:128)
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-09-07 21:51:27.162
+!MESSAGE REX Launching REX 4.1 (online)
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-09-07 21:51:27.716
+!MESSAGE REX Setting browser URL to: http://dev.ti.com/tirex4-desktop
+
+!ENTRY com.ti.common.project.core 4 0 2021-09-07 21:51:35.375
+!MESSAGE Failed to parse product-descriptor file 'C:\ti\tivaware_c_series_2_1_4_178\package.tirex.json'
+!STACK 0
+org.json.JSONException: Duplicate key "devices"
+	at org.json.JSONObject.putOnce(JSONObject.java:1129)
+	at org.json.JSONObject.<init>(JSONObject.java:213)
+	at org.json.JSONTokener.nextValue(JSONTokener.java:363)
+	at org.json.JSONArray.<init>(JSONArray.java:117)
+	at org.json.JSONTokener.nextValue(JSONTokener.java:366)
+	at com.ti.common.project.core.products.reader.ProductDescriptor_JSON.createFrom(ProductDescriptor_JSON.java:52)
+	at com.ti.common.project.core.products.reader.ProductManifestReader.internalReadProductDescriptor(ProductManifestReader.java:247)
+	at com.ti.common.project.core.products.reader.ProductManifestReader.internalReadManifest(ProductManifestReader.java:141)
+	at com.ti.common.project.core.products.reader.ProductManifestReader.readManifest(ProductManifestReader.java:120)
+	at com.ti.common.project.core.internal.tools.ADiscoveryManager.collectSearchPathSubdirectories(ADiscoveryManager.java:409)
+	at com.ti.common.project.core.internal.tools.ADiscoveryManager.collectSearchPathSubdirectories(ADiscoveryManager.java:467)
+	at com.ti.common.project.core.internal.tools.ADiscoveryManager.toSearchPath(ADiscoveryManager.java:379)
+	at com.ti.common.project.core.products.ProductDiscoveryManager.getProductDiscoverySearchPath(ProductDiscoveryManager.java:687)
+	at org.eclipse.rtsc.project.core.extdiscovery.ExtensionSiteDiscoveryManager.discoverExtensionSites_all(ExtensionSiteDiscoveryManager.java:155)
+	at org.eclipse.rtsc.project.core.extdiscovery.ExtensionSiteDiscoveryManager.getAllDiscoveredExtensionSites(ExtensionSiteDiscoveryManager.java:510)
+	at org.eclipse.rtsc.xdctools.managedbuild.core.products.RTSCProductDiscoveryManager.getAllDiscoveredProductDescriptors(RTSCProductDiscoveryManager.java:533)
+	at com.ti.common.project.core.products.ProductDiscoveryManager.getAllDiscoveredProductDescriptors(ProductDiscoveryManager.java:1030)
+	at com.ti.ccstudio.project.ui.webcontent.internal.servlets.IDEServlet$4.handle(IDEServlet.java:233)
+	at com.ti.ccstudio.project.ui.webcontent.internal.common.BaseApiServlet.doGet(BaseApiServlet.java:176)
+	at com.ti.ccstudio.project.ui.webcontent.internal.common.BaseApiServlet.handle(BaseApiServlet.java:162)
+	at com.ti.ccstudio.project.ui.webcontent.internal.ProjectWebcontentRouteProvider.handle(ProjectWebcontentRouteProvider.java:107)
+	at com.ti.ccstudio.webcontent.internal.RouteHandler.handle(RouteHandler.java:61)
+	at com.ti.ccstudio.webcontent.internal.HttpServerHandlerManager.handle(HttpServerHandlerManager.java:40)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:500)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:270)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-09-07 21:52:13.033
+!MESSAGE REX Launching REX 4.1 (online)
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-09-07 21:52:13.247
+!MESSAGE REX Setting browser URL to: http://dev.ti.com/tirex4-desktop
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-09-07 21:57:58.462
+!MESSAGE REX Launching REX 3.1 (offline)
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-09-07 21:57:58.509
+!MESSAGE REX Launching Browser
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-09-07 21:57:58.835
+!MESSAGE REX Launching server with: [C:\ti\ccs1031\ccs\tirex3/node.exe, app.js, C:\ti\ccs1031\ccs\tirex3\ti-rex-core/dinfra-desktop/dinfra.js, C:\ti\ccs1031\ccs\tirex3\ti-rex-core/config/dconfig_localserver.json, C:\ti\ccs1031\ccs\tirex3\ti-rex-core/config/app_localserver_win.json, --ccs_port=52761, --myHttpPort=55432, --logsDirUncaughtException=C:\Users\Venki\AppData\Local\TEXASI~1\CCS\ccs1031\0\dmp\, --ccsVersion=10.4.0.00006, --tirexPluginVersion=1.0.0.202105121547, --startInOfflineMode=true]
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-09-07 21:57:59.558
+!MESSAGE REX Server launched
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-09-07 21:57:59.832
+!MESSAGE REX Wait server to alive
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-09-07 21:57:59.886
+!MESSAGE REX Server alive
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-09-07 21:57:59.922
+!MESSAGE REX Setting browser URL to: file:/C:/ti/ccs1031/ccs/eclipse/..\tirex3\ti-rex-core\public\plugin\serverstarting.html
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-09-07 21:58:36.326
+!MESSAGE REX Setting browser URL to: http://127.0.0.1:55432
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-09-07 21:59:21.369
+!MESSAGE REX Error: Server process is not running
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-09-07 21:59:21.369
+!MESSAGE REX Setting browser URL to: file:/C:/ti/ccs1031/ccs/eclipse/..\tirex4\ti-rex-core\public\serverdidnotstart.html
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-09-07 21:59:40.526
+!MESSAGE REX Launching REX 4.1 (online)
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-09-07 21:59:41.112
+!MESSAGE REX Setting browser URL to: http://dev.ti.com/tirex4-desktop
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-09-07 22:02:05.107
+!MESSAGE REX Setting browser URL to: http://dev.ti.com/tirex4-desktop
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-09-07 22:05:56.376
+!MESSAGE REX Launching REX 4.1 (online)
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-09-07 22:05:56.608
+!MESSAGE REX Setting browser URL to: http://dev.ti.com/tirex4-desktop
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2021-09-07 22:06:52.400
+!MESSAGE No remedy found
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2021-09-07 22:06:52.540
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2021-09-07 22:06:52.540
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2021-09-07 22:06:52.540
+!MESSAGE Software being installed: ARM Compiler Tools 20.2.4 (com.ti.cgt.tms470.19.win32.feature.group 20.2.4)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2021-09-07 22:06:52.540
+!MESSAGE Software currently installed: ARM Compiler Tools 20.2.5 (com.ti.cgt.tms470.19.win32.feature.group 20.2.5)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-09-07 22:06:52.540
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-09-07 22:06:52.540
+!MESSAGE ARM Compiler Tools 20.2.4 (com.ti.cgt.tms470.19.win32.feature.jar 20.2.4)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-09-07 22:06:52.540
+!MESSAGE ARM Compiler Tools 20.2.5 (com.ti.cgt.tms470.19.win32.feature.jar 20.2.5)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-09-07 22:06:52.540
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-09-07 22:06:52.540
+!MESSAGE From: ARM Compiler Tools 20.2.4 (com.ti.cgt.tms470.19.win32.feature.group 20.2.4)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-09-07 22:06:52.540
+!MESSAGE To: org.eclipse.equinox.p2.iu; com.ti.cgt.tms470.19.win32.feature.jar [20.2.4,20.2.4]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-09-07 22:06:52.540
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-09-07 22:06:52.540
+!MESSAGE From: ARM Compiler Tools 20.2.5 (com.ti.cgt.tms470.19.win32.feature.group 20.2.5)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-09-07 22:06:52.540
+!MESSAGE To: org.eclipse.equinox.p2.iu; com.ti.cgt.tms470.19.win32.feature.jar [20.2.5,20.2.5]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2021-09-07 22:06:52.899
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2021-09-07 22:06:52.899
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2021-09-07 22:06:52.899
+!MESSAGE Software being installed: ARM Compiler Tools 20.2.4 (com.ti.cgt.tms470.19.win32.feature.group 20.2.4)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2021-09-07 22:06:52.899
+!MESSAGE Software currently installed: ARM Compiler Tools 20.2.5 (com.ti.cgt.tms470.19.win32.feature.group 20.2.5)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-09-07 22:06:52.899
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-09-07 22:06:52.899
+!MESSAGE ARM Compiler Tools 20.2.4 (com.ti.cgt.tms470.19.win32.feature.jar 20.2.4)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-09-07 22:06:52.899
+!MESSAGE ARM Compiler Tools 20.2.5 (com.ti.cgt.tms470.19.win32.feature.jar 20.2.5)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-09-07 22:06:52.899
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-09-07 22:06:52.899
+!MESSAGE From: ARM Compiler Tools 20.2.4 (com.ti.cgt.tms470.19.win32.feature.group 20.2.4)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-09-07 22:06:52.899
+!MESSAGE To: org.eclipse.equinox.p2.iu; com.ti.cgt.tms470.19.win32.feature.jar [20.2.4,20.2.4]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-09-07 22:06:52.899
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-09-07 22:06:52.899
+!MESSAGE From: ARM Compiler Tools 20.2.5 (com.ti.cgt.tms470.19.win32.feature.group 20.2.5)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-09-07 22:06:52.899
+!MESSAGE To: org.eclipse.equinox.p2.iu; com.ti.cgt.tms470.19.win32.feature.jar [20.2.5,20.2.5]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2021-09-07 22:06:53.890
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2021-09-07 22:06:53.890
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2021-09-07 22:06:53.890
+!MESSAGE Software being installed: ARM Compiler Tools 20.2.4 (com.ti.cgt.tms470.19.win32.feature.group 20.2.4)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2021-09-07 22:06:53.890
+!MESSAGE Software currently installed: ARM Compiler Tools 20.2.5 (com.ti.cgt.tms470.19.win32.feature.group 20.2.5)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-09-07 22:06:53.890
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-09-07 22:06:53.890
+!MESSAGE ARM Compiler Tools 20.2.4 (com.ti.cgt.tms470.19.win32.feature.jar 20.2.4)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-09-07 22:06:53.890
+!MESSAGE ARM Compiler Tools 20.2.5 (com.ti.cgt.tms470.19.win32.feature.jar 20.2.5)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-09-07 22:06:53.890
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-09-07 22:06:53.890
+!MESSAGE From: ARM Compiler Tools 20.2.4 (com.ti.cgt.tms470.19.win32.feature.group 20.2.4)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-09-07 22:06:53.890
+!MESSAGE To: org.eclipse.equinox.p2.iu; com.ti.cgt.tms470.19.win32.feature.jar [20.2.4,20.2.4]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-09-07 22:06:53.890
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-09-07 22:06:53.890
+!MESSAGE From: ARM Compiler Tools 20.2.5 (com.ti.cgt.tms470.19.win32.feature.group 20.2.5)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-09-07 22:06:53.890
+!MESSAGE To: org.eclipse.equinox.p2.iu; com.ti.cgt.tms470.19.win32.feature.jar [20.2.5,20.2.5]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2021-09-07 22:06:53.890
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2021-09-07 22:06:53.890
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2021-09-07 22:06:53.890
+!MESSAGE Software being installed: ARM Compiler Tools 20.2.4 (com.ti.cgt.tms470.19.win32.feature.group 20.2.4)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2021-09-07 22:06:53.890
+!MESSAGE Software currently installed: ARM Compiler Tools 20.2.5 (com.ti.cgt.tms470.19.win32.feature.group 20.2.5)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-09-07 22:06:53.890
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-09-07 22:06:53.890
+!MESSAGE ARM Compiler Tools 20.2.4 (com.ti.cgt.tms470.19.win32.feature.jar 20.2.4)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-09-07 22:06:53.890
+!MESSAGE ARM Compiler Tools 20.2.5 (com.ti.cgt.tms470.19.win32.feature.jar 20.2.5)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-09-07 22:06:53.890
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-09-07 22:06:53.890
+!MESSAGE From: ARM Compiler Tools 20.2.4 (com.ti.cgt.tms470.19.win32.feature.group 20.2.4)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-09-07 22:06:53.890
+!MESSAGE To: org.eclipse.equinox.p2.iu; com.ti.cgt.tms470.19.win32.feature.jar [20.2.4,20.2.4]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-09-07 22:06:53.890
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-09-07 22:06:53.890
+!MESSAGE From: ARM Compiler Tools 20.2.5 (com.ti.cgt.tms470.19.win32.feature.group 20.2.5)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-09-07 22:06:53.890
+!MESSAGE To: org.eclipse.equinox.p2.iu; com.ti.cgt.tms470.19.win32.feature.jar [20.2.5,20.2.5]
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-09-07 22:12:15.001
+!MESSAGE REX Launching REX 4.1 (online)
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-09-07 22:12:16.891
+!MESSAGE REX Setting browser URL to: http://dev.ti.com/tirex4-desktop/wizard
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-09-07 22:13:34.384
+!MESSAGE REX Launching REX 3.1 (offline)
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-09-07 22:13:34.429
+!MESSAGE REX Launching Browser
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-09-07 22:13:34.898
+!MESSAGE REX Launching server with: [C:\ti\ccs1031\ccs\tirex3/node.exe, app.js, C:\ti\ccs1031\ccs\tirex3\ti-rex-core/dinfra-desktop/dinfra.js, C:\ti\ccs1031\ccs\tirex3\ti-rex-core/config/dconfig_localserver.json, C:\ti\ccs1031\ccs\tirex3\ti-rex-core/config/app_localserver_win.json, --ccs_port=52761, --myHttpPort=55432, --logsDirUncaughtException=C:\Users\Venki\AppData\Local\TEXASI~1\CCS\ccs1031\0\dmp\, --ccsVersion=10.4.0.00006, --tirexPluginVersion=1.0.0.202105121547, --startInOfflineMode=true]
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-09-07 22:13:35.065
+!MESSAGE REX Server launched
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-09-07 22:13:35.066
+!MESSAGE REX Wait server to alive
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-09-07 22:13:35.066
+!MESSAGE REX Server alive
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-09-07 22:13:35.845
+!MESSAGE REX Setting browser URL to: file:/C:/ti/ccs1031/ccs/eclipse/..\tirex3\ti-rex-core\public\plugin\serverstarting.html
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-09-07 22:13:46.598
+!MESSAGE REX Setting browser URL to: http://127.0.0.1:55432
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-09-07 22:15:09.743
+!MESSAGE REX Launching REX 3.1 (offline)
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-09-07 22:15:09.759
+!MESSAGE REX Launching Browser
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-09-07 22:15:10.984
+!MESSAGE REX Setting browser URL to: http://127.0.0.1:55432
+!SESSION 2021-09-07 22:16:50.274 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product com.ti.ccstudio.branding.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ti.ccstudio.branding.product
+
+!ENTRY com.ti.common.core 1 0 2021-09-07 22:16:57.008
+!MESSAGE path=ccs_base/DebugServer
+
+!ENTRY com.ti.common.core 1 0 2021-09-07 22:16:57.024
+!MESSAGE debugServerDir=C:/ti/ccs1031/ccs/ccs_base/DebugServer
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-07 22:17:16.418
+!MESSAGE constructor
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-07 22:17:16.420
+!MESSAGE done with directories
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-07 22:17:16.421
+!MESSAGE loading ti_logger
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-07 22:17:16.423
+!MESSAGE Platform os: win32
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-07 22:17:16.425
+!MESSAGE loading cToolsIF
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-07 22:17:16.452
+!MESSAGE loading cTools
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-07 22:17:16.494
+!MESSAGE loading TraceFactory
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-07 22:17:16.523
+!MESSAGE loading sqlite3
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-07 22:17:16.535
+!MESSAGE loading CloudTrace
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-07 22:17:16.648
+!MESSAGE CloudTrace interface loaded
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-09-07 22:17:34.270
+!MESSAGE REX Setting browser URL to: http://dev.ti.com/tirex4-desktop
+
+!ENTRY com.ti.ccstudio.project.ui.webcontent 1 0 2021-09-07 22:17:38.227
+!MESSAGE CCS HTTP adapter started! [ccs.port:60929] - Open 'http://localhost:60929/ide' in web browser to see listing of available APIs...
+
+!ENTRY com.ti.common.project.core 4 0 2021-09-07 22:17:44.434
+!MESSAGE Failed to parse product-descriptor file 'C:\ti\tivaware_c_series_2_1_4_178\package.tirex.json'
+!STACK 0
+org.json.JSONException: Duplicate key "devices"
+	at org.json.JSONObject.putOnce(JSONObject.java:1129)
+	at org.json.JSONObject.<init>(JSONObject.java:213)
+	at org.json.JSONTokener.nextValue(JSONTokener.java:363)
+	at org.json.JSONArray.<init>(JSONArray.java:117)
+	at org.json.JSONTokener.nextValue(JSONTokener.java:366)
+	at com.ti.common.project.core.products.reader.ProductDescriptor_JSON.createFrom(ProductDescriptor_JSON.java:52)
+	at com.ti.common.project.core.products.reader.ProductManifestReader.internalReadProductDescriptor(ProductManifestReader.java:247)
+	at com.ti.common.project.core.products.reader.ProductManifestReader.internalReadManifest(ProductManifestReader.java:141)
+	at com.ti.common.project.core.products.reader.ProductManifestReader.readManifest(ProductManifestReader.java:120)
+	at com.ti.common.project.core.internal.tools.ADiscoveryManager.collectSearchPathSubdirectories(ADiscoveryManager.java:409)
+	at com.ti.common.project.core.internal.tools.ADiscoveryManager.collectSearchPathSubdirectories(ADiscoveryManager.java:467)
+	at com.ti.common.project.core.internal.tools.ADiscoveryManager.toSearchPath(ADiscoveryManager.java:379)
+	at com.ti.common.project.core.products.ProductDiscoveryManager.getProductDiscoverySearchPath(ProductDiscoveryManager.java:687)
+	at org.eclipse.rtsc.project.core.extdiscovery.ExtensionSiteDiscoveryManager.discoverExtensionSites_all(ExtensionSiteDiscoveryManager.java:155)
+	at org.eclipse.rtsc.project.core.extdiscovery.ExtensionSiteDiscoveryManager.getAllDiscoveredExtensionSites(ExtensionSiteDiscoveryManager.java:510)
+	at org.eclipse.rtsc.xdctools.managedbuild.core.products.RTSCProductDiscoveryManager.getAllDiscoveredProductDescriptors(RTSCProductDiscoveryManager.java:533)
+	at com.ti.common.project.core.products.ProductDiscoveryManager.getAllDiscoveredProductDescriptors(ProductDiscoveryManager.java:1030)
+	at com.ti.ccstudio.project.ui.webcontent.internal.servlets.IDEServlet$4.handle(IDEServlet.java:233)
+	at com.ti.ccstudio.project.ui.webcontent.internal.common.BaseApiServlet.doGet(BaseApiServlet.java:176)
+	at com.ti.ccstudio.project.ui.webcontent.internal.common.BaseApiServlet.handle(BaseApiServlet.java:162)
+	at com.ti.ccstudio.project.ui.webcontent.internal.ProjectWebcontentRouteProvider.handle(ProjectWebcontentRouteProvider.java:107)
+	at com.ti.ccstudio.webcontent.internal.RouteHandler.handle(RouteHandler.java:61)
+	at com.ti.ccstudio.webcontent.internal.HttpServerHandlerManager.handle(HttpServerHandlerManager.java:40)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:500)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:270)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.ti.ccstudio.ui 1 0 2021-09-07 22:17:49.351
+!MESSAGE CCS IDE session started!
+	CCS build: 10.4.0.00006
+	CCS location: C:/ti/ccs1031/ccs
+	Workspace location: E:/TI/MSP432/MSP432_CSS_WorkSpace
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2021-09-07 22:20:11.899
+!MESSAGE No remedy found
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2021-09-07 22:20:11.999
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2021-09-07 22:20:11.999
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2021-09-07 22:20:11.999
+!MESSAGE Software being installed: ARM Compiler Tools 20.2.4 (com.ti.cgt.tms470.19.win32.feature.group 20.2.4)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2021-09-07 22:20:11.999
+!MESSAGE Software currently installed: ARM Compiler Tools 20.2.5 (com.ti.cgt.tms470.19.win32.feature.group 20.2.5)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-09-07 22:20:11.999
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-09-07 22:20:11.999
+!MESSAGE ARM Compiler Tools 20.2.4 (com.ti.cgt.tms470.19.win32.feature.jar 20.2.4)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-09-07 22:20:11.999
+!MESSAGE ARM Compiler Tools 20.2.5 (com.ti.cgt.tms470.19.win32.feature.jar 20.2.5)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-09-07 22:20:11.999
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-09-07 22:20:11.999
+!MESSAGE From: ARM Compiler Tools 20.2.4 (com.ti.cgt.tms470.19.win32.feature.group 20.2.4)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-09-07 22:20:11.999
+!MESSAGE To: org.eclipse.equinox.p2.iu; com.ti.cgt.tms470.19.win32.feature.jar [20.2.4,20.2.4]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-09-07 22:20:11.999
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-09-07 22:20:11.999
+!MESSAGE From: ARM Compiler Tools 20.2.5 (com.ti.cgt.tms470.19.win32.feature.group 20.2.5)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-09-07 22:20:11.999
+!MESSAGE To: org.eclipse.equinox.p2.iu; com.ti.cgt.tms470.19.win32.feature.jar [20.2.5,20.2.5]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2021-09-07 22:20:12.240
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2021-09-07 22:20:12.240
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2021-09-07 22:20:12.240
+!MESSAGE Software being installed: ARM Compiler Tools 20.2.4 (com.ti.cgt.tms470.19.win32.feature.group 20.2.4)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2021-09-07 22:20:12.241
+!MESSAGE Software currently installed: ARM Compiler Tools 20.2.5 (com.ti.cgt.tms470.19.win32.feature.group 20.2.5)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-09-07 22:20:12.241
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-09-07 22:20:12.241
+!MESSAGE ARM Compiler Tools 20.2.4 (com.ti.cgt.tms470.19.win32.feature.jar 20.2.4)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-09-07 22:20:12.241
+!MESSAGE ARM Compiler Tools 20.2.5 (com.ti.cgt.tms470.19.win32.feature.jar 20.2.5)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-09-07 22:20:12.241
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-09-07 22:20:12.241
+!MESSAGE From: ARM Compiler Tools 20.2.4 (com.ti.cgt.tms470.19.win32.feature.group 20.2.4)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-09-07 22:20:12.241
+!MESSAGE To: org.eclipse.equinox.p2.iu; com.ti.cgt.tms470.19.win32.feature.jar [20.2.4,20.2.4]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-09-07 22:20:12.241
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-09-07 22:20:12.241
+!MESSAGE From: ARM Compiler Tools 20.2.5 (com.ti.cgt.tms470.19.win32.feature.group 20.2.5)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-09-07 22:20:12.241
+!MESSAGE To: org.eclipse.equinox.p2.iu; com.ti.cgt.tms470.19.win32.feature.jar [20.2.5,20.2.5]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2021-09-07 22:20:13.132
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2021-09-07 22:20:13.132
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2021-09-07 22:20:13.132
+!MESSAGE Software being installed: ARM Compiler Tools 20.2.4 (com.ti.cgt.tms470.19.win32.feature.group 20.2.4)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2021-09-07 22:20:13.132
+!MESSAGE Software currently installed: ARM Compiler Tools 20.2.5 (com.ti.cgt.tms470.19.win32.feature.group 20.2.5)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-09-07 22:20:13.132
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-09-07 22:20:13.132
+!MESSAGE ARM Compiler Tools 20.2.4 (com.ti.cgt.tms470.19.win32.feature.jar 20.2.4)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-09-07 22:20:13.132
+!MESSAGE ARM Compiler Tools 20.2.5 (com.ti.cgt.tms470.19.win32.feature.jar 20.2.5)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-09-07 22:20:13.132
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-09-07 22:20:13.132
+!MESSAGE From: ARM Compiler Tools 20.2.4 (com.ti.cgt.tms470.19.win32.feature.group 20.2.4)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-09-07 22:20:13.132
+!MESSAGE To: org.eclipse.equinox.p2.iu; com.ti.cgt.tms470.19.win32.feature.jar [20.2.4,20.2.4]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-09-07 22:20:13.132
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-09-07 22:20:13.132
+!MESSAGE From: ARM Compiler Tools 20.2.5 (com.ti.cgt.tms470.19.win32.feature.group 20.2.5)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-09-07 22:20:13.132
+!MESSAGE To: org.eclipse.equinox.p2.iu; com.ti.cgt.tms470.19.win32.feature.jar [20.2.5,20.2.5]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2021-09-07 22:20:13.136
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2021-09-07 22:20:13.136
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2021-09-07 22:20:13.136
+!MESSAGE Software being installed: ARM Compiler Tools 20.2.4 (com.ti.cgt.tms470.19.win32.feature.group 20.2.4)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2021-09-07 22:20:13.136
+!MESSAGE Software currently installed: ARM Compiler Tools 20.2.5 (com.ti.cgt.tms470.19.win32.feature.group 20.2.5)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-09-07 22:20:13.136
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-09-07 22:20:13.136
+!MESSAGE ARM Compiler Tools 20.2.4 (com.ti.cgt.tms470.19.win32.feature.jar 20.2.4)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-09-07 22:20:13.136
+!MESSAGE ARM Compiler Tools 20.2.5 (com.ti.cgt.tms470.19.win32.feature.jar 20.2.5)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-09-07 22:20:13.136
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-09-07 22:20:13.136
+!MESSAGE From: ARM Compiler Tools 20.2.4 (com.ti.cgt.tms470.19.win32.feature.group 20.2.4)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-09-07 22:20:13.136
+!MESSAGE To: org.eclipse.equinox.p2.iu; com.ti.cgt.tms470.19.win32.feature.jar [20.2.4,20.2.4]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2021-09-07 22:20:13.136
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-09-07 22:20:13.136
+!MESSAGE From: ARM Compiler Tools 20.2.5 (com.ti.cgt.tms470.19.win32.feature.group 20.2.5)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2021-09-07 22:20:13.136
+!MESSAGE To: org.eclipse.equinox.p2.iu; com.ti.cgt.tms470.19.win32.feature.jar [20.2.5,20.2.5]
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-09-07 22:22:48.024
+!MESSAGE REX Launching REX 3.1 (offline)
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-09-07 22:22:48.130
+!MESSAGE REX Launching Browser
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-09-07 22:22:48.411
+!MESSAGE REX Launching server with: [C:\ti\ccs1031\ccs\tirex3/node.exe, app.js, C:\ti\ccs1031\ccs\tirex3\ti-rex-core/dinfra-desktop/dinfra.js, C:\ti\ccs1031\ccs\tirex3\ti-rex-core/config/dconfig_localserver.json, C:\ti\ccs1031\ccs\tirex3\ti-rex-core/config/app_localserver_win.json, --ccs_port=60929, --myHttpPort=55432, --logsDirUncaughtException=C:\Users\Venki\AppData\Local\TEXASI~1\CCS\ccs1031\0\dmp\, --ccsVersion=10.4.0.00006, --tirexPluginVersion=1.0.0.202105121547, --startInOfflineMode=true]
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-09-07 22:22:48.466
+!MESSAGE REX Server launched
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-09-07 22:22:48.494
+!MESSAGE REX Wait server to alive
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-09-07 22:22:48.634
+!MESSAGE REX Server alive
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-09-07 22:22:48.712
+!MESSAGE REX Setting browser URL to: file:/C:/ti/ccs1031/ccs/eclipse/..\tirex3\ti-rex-core\public\plugin\serverstarting.html
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-09-07 22:22:51.946
+!MESSAGE REX Setting browser URL to: http://127.0.0.1:55432
+
+!ENTRY org.eclipse.core.jobs 4 2 2021-09-07 22:23:26.616
+!MESSAGE An internal error occurred during: "Searching for local changes".
+!STACK 0
+java.lang.NullPointerException
+	at com.ti.common.project.core.util.CTIProjectCoreUtils.getToolChainPropertyProvider(CTIProjectCoreUtils.java:546)
+	at com.ti.common.project.core.util.CTIProjectCoreUtils.getConfigurationSettings(CTIProjectCoreUtils.java:1531)
+	at com.ti.common.project.core.util.CTIProjectCoreUtils.getProducts(CTIProjectCoreUtils.java:1756)
+	at com.ti.common.project.core.variables.ProductPathVariableResolver.doGetValue(ProductPathVariableResolver.java:84)
+	at com.ti.common.project.core.variables.APathVariableResolver.getValue(APathVariableResolver.java:76)
+	at org.eclipse.core.internal.resources.ProjectVariableProviderManager$Descriptor.getValue(ProjectVariableProviderManager.java:65)
+	at org.eclipse.core.internal.resources.ProjectPathVariableManager.internalGetValue(ProjectPathVariableManager.java:160)
+	at org.eclipse.core.internal.resources.ProjectPathVariableManager.resolveVariable(ProjectPathVariableManager.java:233)
+	at org.eclipse.core.internal.resources.ProjectPathVariableManager.resolveVariable(ProjectPathVariableManager.java:218)
+	at org.eclipse.core.internal.resources.ProjectPathVariableManager.resolveURI(ProjectPathVariableManager.java:291)
+	at org.eclipse.core.internal.localstore.FileStoreRoot.createStore(FileStoreRoot.java:128)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.getStore(FileSystemResourceManager.java:534)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.fastIsSynchronized(FileSystemResourceManager.java:455)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.isSynchronized(FileSystemResourceManager.java:729)
+	at org.eclipse.core.internal.resources.Resource.isSynchronized(Resource.java:1416)
+	at org.eclipse.core.internal.refresh.PollingMonitor.poll(PollingMonitor.java:180)
+	at org.eclipse.core.internal.refresh.PollingMonitor.run(PollingMonitor.java:139)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2021-09-07 22:28:23.902 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product com.ti.ccstudio.branding.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ti.ccstudio.branding.product
+
+!ENTRY com.ti.common.core 1 0 2021-09-07 22:28:37.527
+!MESSAGE path=ccs_base/DebugServer
+
+!ENTRY com.ti.common.core 1 0 2021-09-07 22:28:37.527
+!MESSAGE debugServerDir=C:/ti/ccs1031/ccs/ccs_base/DebugServer
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-07 22:28:45.916
+!MESSAGE constructor
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-07 22:28:45.916
+!MESSAGE done with directories
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-07 22:28:45.916
+!MESSAGE loading ti_logger
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-07 22:28:45.916
+!MESSAGE Platform os: win32
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-07 22:28:45.916
+!MESSAGE loading cToolsIF
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-07 22:28:45.916
+!MESSAGE loading cTools
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-07 22:28:45.932
+!MESSAGE loading TraceFactory
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-07 22:28:45.932
+!MESSAGE loading sqlite3
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-07 22:28:45.932
+!MESSAGE loading CloudTrace
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-07 22:28:45.963
+!MESSAGE CloudTrace interface loaded
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-09-07 22:28:51.732
+!MESSAGE REX Setting browser URL to: http://dev.ti.com/tirex4-desktop
+
+!ENTRY com.ti.ccstudio.project.ui.webcontent 1 0 2021-09-07 22:28:53.811
+!MESSAGE CCS HTTP adapter started! [ccs.port:55011] - Open 'http://localhost:55011/ide' in web browser to see listing of available APIs...
+
+!ENTRY com.ti.ccstudio.ui 1 0 2021-09-07 22:28:58.558
+!MESSAGE CCS IDE session started!
+	CCS build: 10.4.0.00006
+	CCS location: C:/ti/ccs1031/ccs
+	Workspace location: E:/TI/MSP432/MSP432_CSS_WorkSpace
+
+!ENTRY java.util.HashMap$HashIterator 4 4 2021-09-07 22:29:12.398
+!MESSAGE Error during DVT action: null.
+!STACK 0
+java.util.ConcurrentModificationException
+	at java.util.HashMap$HashIterator.nextNode(Unknown Source)
+	at java.util.HashMap$KeyIterator.next(Unknown Source)
+	at com.ti.chromium.browser.internal.jxbrowser.BrowserFunctionAdapter.addJsFunctionsToFrame(BrowserFunctionAdapter.java:68)
+	at com.ti.chromium.browser.internal.jxbrowser.BrowserFunctionAdapter.injectJsCallback(BrowserFunctionAdapter.java:42)
+	at com.ti.chromium.browser.JxBrowser.lambda$1(JxBrowser.java:329)
+	at com.teamdev.jxbrowser.frame.internal.FrameImpl.lambda$processCallback$2(FrameImpl.java:204)
+	at java.util.Optional.map(Unknown Source)
+	at com.teamdev.jxbrowser.frame.internal.FrameImpl.processCallback(FrameImpl.java:204)
+	at com.teamdev.jxbrowser.internal.rpc.stream.CallbackStream.process(CallbackStream.java:178)
+	at com.teamdev.jxbrowser.internal.rpc.stream.Stream$StreamObserver.lambda$onNext$0(Stream.java:164)
+	at com.teamdev.jxbrowser.internal.BrowserThread$TaskRunner.processTasks(BrowserThread.java:139)
+	at com.teamdev.jxbrowser.internal.rpc.transport.RpcThreadCallExecutor.execute(RpcThreadCallExecutor.java:38)
+	at com.teamdev.jxbrowser.internal.rpc.ServiceConnectionImpl.invoke(ServiceConnectionImpl.java:214)
+	at com.teamdev.jxbrowser.frame.internal.FrameImpl.executeJavaScript(FrameImpl.java:574)
+	at com.teamdev.jxbrowser.frame.internal.FrameImpl.executeJavaScript(FrameImpl.java:544)
+	at com.ti.chromium.browser.internal.jxbrowser.BrowserFunctionAdapter.addJsFunctionsToFrame(BrowserFunctionAdapter.java:69)
+	at com.ti.chromium.browser.internal.jxbrowser.BrowserFunctionAdapter.injectJsCallback(BrowserFunctionAdapter.java:42)
+	at com.ti.chromium.browser.JxBrowser.lambda$1(JxBrowser.java:329)
+	at com.teamdev.jxbrowser.frame.internal.FrameImpl.lambda$processCallback$2(FrameImpl.java:204)
+	at java.util.Optional.map(Unknown Source)
+	at com.teamdev.jxbrowser.frame.internal.FrameImpl.processCallback(FrameImpl.java:204)
+	at com.teamdev.jxbrowser.internal.rpc.stream.CallbackStream.process(CallbackStream.java:178)
+	at com.teamdev.jxbrowser.internal.rpc.stream.Stream$StreamObserver.lambda$onNext$0(Stream.java:164)
+	at com.teamdev.jxbrowser.internal.BrowserThread$TaskRunner.processTasks(BrowserThread.java:139)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.ti.common.project.core 4 0 2021-09-07 22:29:13.398
+!MESSAGE Failed to parse product-descriptor file 'C:\ti\tivaware_c_series_2_1_4_178\package.tirex.json'
+!STACK 0
+org.json.JSONException: Duplicate key "devices"
+	at org.json.JSONObject.putOnce(JSONObject.java:1129)
+	at org.json.JSONObject.<init>(JSONObject.java:213)
+	at org.json.JSONTokener.nextValue(JSONTokener.java:363)
+	at org.json.JSONArray.<init>(JSONArray.java:117)
+	at org.json.JSONTokener.nextValue(JSONTokener.java:366)
+	at com.ti.common.project.core.products.reader.ProductDescriptor_JSON.createFrom(ProductDescriptor_JSON.java:52)
+	at com.ti.common.project.core.products.reader.ProductManifestReader.internalReadProductDescriptor(ProductManifestReader.java:247)
+	at com.ti.common.project.core.products.reader.ProductManifestReader.internalReadManifest(ProductManifestReader.java:141)
+	at com.ti.common.project.core.products.reader.ProductManifestReader.readManifest(ProductManifestReader.java:120)
+	at com.ti.common.project.core.internal.tools.ADiscoveryManager.collectSearchPathSubdirectories(ADiscoveryManager.java:409)
+	at com.ti.common.project.core.internal.tools.ADiscoveryManager.collectSearchPathSubdirectories(ADiscoveryManager.java:467)
+	at com.ti.common.project.core.internal.tools.ADiscoveryManager.toSearchPath(ADiscoveryManager.java:379)
+	at com.ti.common.project.core.products.ProductDiscoveryManager.getProductDiscoverySearchPath(ProductDiscoveryManager.java:687)
+	at org.eclipse.rtsc.project.core.extdiscovery.ExtensionSiteDiscoveryManager.discoverExtensionSites_all(ExtensionSiteDiscoveryManager.java:155)
+	at org.eclipse.rtsc.project.core.extdiscovery.ExtensionSiteDiscoveryManager.getAllDiscoveredExtensionSites(ExtensionSiteDiscoveryManager.java:510)
+	at org.eclipse.rtsc.xdctools.managedbuild.core.products.RTSCProductDiscoveryManager.getAllDiscoveredProductDescriptors(RTSCProductDiscoveryManager.java:533)
+	at com.ti.common.project.core.products.ProductDiscoveryManager.getAllDiscoveredProductDescriptors(ProductDiscoveryManager.java:1030)
+	at com.ti.ccstudio.project.ui.webcontent.internal.servlets.IDEServlet$4.handle(IDEServlet.java:233)
+	at com.ti.ccstudio.project.ui.webcontent.internal.common.BaseApiServlet.doGet(BaseApiServlet.java:176)
+	at com.ti.ccstudio.project.ui.webcontent.internal.common.BaseApiServlet.handle(BaseApiServlet.java:162)
+	at com.ti.ccstudio.project.ui.webcontent.internal.ProjectWebcontentRouteProvider.handle(ProjectWebcontentRouteProvider.java:107)
+	at com.ti.ccstudio.webcontent.internal.RouteHandler.handle(RouteHandler.java:61)
+	at com.ti.ccstudio.webcontent.internal.HttpServerHandlerManager.handle(HttpServerHandlerManager.java:40)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:500)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:270)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-09-07 22:29:46.088
+!MESSAGE REX Launching REX 3.1 (offline)
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-09-07 22:29:46.103
+!MESSAGE REX Setting browser URL to: file:/C:/ti/ccs1031/ccs/eclipse/..\tirex3\ti-rex-core\public\plugin\serverstarting.html
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-09-07 22:29:46.318
+!MESSAGE REX Launching server with: [C:\ti\ccs1031\ccs\tirex3/node.exe, app.js, C:\ti\ccs1031\ccs\tirex3\ti-rex-core/dinfra-desktop/dinfra.js, C:\ti\ccs1031\ccs\tirex3\ti-rex-core/config/dconfig_localserver.json, C:\ti\ccs1031\ccs\tirex3\ti-rex-core/config/app_localserver_win.json, --ccs_port=55011, --myHttpPort=55432, --logsDirUncaughtException=C:\Users\Venki\AppData\Local\TEXASI~1\CCS\ccs1031\0\dmp\, --ccsVersion=10.4.0.00006, --tirexPluginVersion=1.0.0.202105121547, --startInOfflineMode=true]
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-09-07 22:29:46.353
+!MESSAGE REX Server launched
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-09-07 22:29:46.355
+!MESSAGE REX Wait server to alive
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-09-07 22:29:46.357
+!MESSAGE REX Server alive
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-09-07 22:29:46.444
+!MESSAGE REX Setting browser URL to: file:/C:/ti/ccs1031/ccs/eclipse/..\tirex3\ti-rex-core\public\plugin\serverstarting.html
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-09-07 22:29:49.040
+!MESSAGE REX Setting browser URL to: http://127.0.0.1:55432
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-09-07 22:31:07.344
+!MESSAGE REX Error: Server process is not running
+
+!ENTRY org.eclipse.core.jobs 4 2 2021-09-07 22:31:07.531
+!MESSAGE An internal error occurred during: "Searching for local changes".
+!STACK 0
+java.lang.NullPointerException
+	at com.ti.common.project.core.internal.settings.AConfigurationSettings.<init>(AConfigurationSettings.java:178)
+	at com.ti.ccstudio.project.core.internal.settings.CCSConfigurationSettings.<init>(CCSConfigurationSettings.java:53)
+	at com.ti.ccstudio.project.core.util.ProjectCoreUtils.getCodegenVersion(ProjectCoreUtils.java:711)
+	at com.ti.ccstudio.project.core.util.ProjectCoreUtils.getCodegenVersion(ProjectCoreUtils.java:704)
+	at com.ti.ccstudio.project.core.util.ProjectCoreUtils.getCodegenVersion(ProjectCoreUtils.java:697)
+	at com.ti.ccstudio.project.core.util.ProjectCoreUtils.isUsingTIToolChain(ProjectCoreUtils.java:768)
+	at com.ti.ccstudio.project.core.util.ProjectCoreUtils.getTICompilerTool(ProjectCoreUtils.java:1436)
+	at com.ti.ccstudio.project.core.internal.build.CCSMakefileGenerator.doInitialize(CCSMakefileGenerator.java:277)
+	at com.ti.ccstudio.project.core.internal.build.CCSMakefileGenerator.initialize(CCSMakefileGenerator.java:252)
+	at org.eclipse.cdt.managedbuilder.internal.core.Builder.getDefaultBuildPath(Builder.java:1825)
+	at org.eclipse.cdt.managedbuilder.internal.core.Builder.getBuildPath(Builder.java:1795)
+	at org.eclipse.cdt.managedbuilder.internal.dataprovider.BuildBuildData.getBuilderCWD(BuildBuildData.java:42)
+	at org.eclipse.cdt.core.settings.model.extension.impl.CDefaultBuildData.copySettingsFrom(CDefaultBuildData.java:56)
+	at org.eclipse.cdt.internal.core.settings.model.CBuildSettingCache.<init>(CBuildSettingCache.java:45)
+	at org.eclipse.cdt.internal.core.settings.model.CConfigurationDescriptionCache.copyBuildData(CConfigurationDescriptionCache.java:247)
+	at org.eclipse.cdt.core.settings.model.extension.impl.CDefaultConfigurationData.copySettingsFrom(CDefaultConfigurationData.java:110)
+	at org.eclipse.cdt.internal.core.settings.model.CConfigurationDescriptionCache.loadData(CConfigurationDescriptionCache.java:154)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescription.loadDatas(CProjectDescription.java:199)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.loadProjectDescription(XmlProjectDescriptionStorage.java:512)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.getProjectDescription(XmlProjectDescriptionStorage.java:240)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescriptionInternal(CProjectDescriptionManager.java:426)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:408)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:402)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:395)
+	at org.eclipse.cdt.core.model.CoreModel.getProjectDescription(CoreModel.java:1436)
+	at org.eclipse.cdt.managedbuilder.internal.core.ManagedBuildInfo.findExistingDefaultConfiguration(ManagedBuildInfo.java:272)
+	at org.eclipse.cdt.managedbuilder.internal.core.ManagedBuildInfo.getDefaultConfiguration(ManagedBuildInfo.java:258)
+	at com.ti.common.project.core.util.CTIProjectCoreUtils.getActiveBuildConfiguration(CTIProjectCoreUtils.java:479)
+	at com.ti.common.project.core.variables.ProductPathVariableResolver.doGetValue(ProductPathVariableResolver.java:82)
+	at com.ti.common.project.core.variables.APathVariableResolver.getValue(APathVariableResolver.java:76)
+	at org.eclipse.core.internal.resources.ProjectVariableProviderManager$Descriptor.getValue(ProjectVariableProviderManager.java:65)
+	at org.eclipse.core.internal.resources.ProjectPathVariableManager.internalGetValue(ProjectPathVariableManager.java:160)
+	at org.eclipse.core.internal.resources.ProjectPathVariableManager.resolveVariable(ProjectPathVariableManager.java:233)
+	at org.eclipse.core.internal.resources.ProjectPathVariableManager.resolveVariable(ProjectPathVariableManager.java:218)
+	at org.eclipse.core.internal.resources.ProjectPathVariableManager.resolveURI(ProjectPathVariableManager.java:291)
+	at org.eclipse.core.internal.localstore.FileStoreRoot.createStore(FileStoreRoot.java:128)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.getStore(FileSystemResourceManager.java:534)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.fastIsSynchronized(FileSystemResourceManager.java:455)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.isSynchronized(FileSystemResourceManager.java:729)
+	at org.eclipse.core.internal.resources.Resource.isSynchronized(Resource.java:1416)
+	at org.eclipse.core.internal.refresh.PollingMonitor.poll(PollingMonitor.java:180)
+	at org.eclipse.core.internal.refresh.PollingMonitor.run(PollingMonitor.java:139)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2021-09-08 21:23:56.011 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product com.ti.ccstudio.branding.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ti.ccstudio.branding.product
+
+!ENTRY com.ti.common.core 1 0 2021-09-08 21:24:07.512
+!MESSAGE path=ccs_base/DebugServer
+
+!ENTRY com.ti.common.core 1 0 2021-09-08 21:24:07.527
+!MESSAGE debugServerDir=C:/ti/ccs1031/ccs/ccs_base/DebugServer
+
+!ENTRY org.eclipse.core.resources 4 567 2021-09-08 21:24:09.246
+!MESSAGE Workspace restored, but some problems occurred.
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2021-09-08 21:24:09.246
+!MESSAGE Could not read metadata for '1.8inch_TFT_LCD'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/1.8inch_TFT_LCD)[567]: java.lang.Exception: The project description file (.project) for '1.8inch_TFT_LCD' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:907)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:888)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:868)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:724)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1555)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2452)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2210)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:489)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:842)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:834)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:791)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:603)
+	at org.eclipse.osgi.container.Module.start(Module.java:467)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:571)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:346)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:472)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+!SUBENTRY 2 org.eclipse.core.resources 4 567 2021-09-08 21:24:09.277
+!MESSAGE The project description file (.project) for '1.8inch_TFT_LCD' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+!STACK 0
+java.lang.Exception: The project description file (.project) for '1.8inch_TFT_LCD' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:907)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:888)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:868)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:724)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1555)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2452)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2210)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:489)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:842)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:834)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:791)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:603)
+	at org.eclipse.osgi.container.Module.start(Module.java:467)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:571)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:346)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:472)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2021-09-08 21:24:09.277
+!MESSAGE Could not read metadata for 'SG90_ServoMotor'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/SG90_ServoMotor)[567]: java.lang.Exception: The project description file (.project) for 'SG90_ServoMotor' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:907)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:888)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:868)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:724)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1555)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2452)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2210)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:489)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:842)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:834)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:791)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:603)
+	at org.eclipse.osgi.container.Module.start(Module.java:467)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:571)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:346)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:472)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+!SUBENTRY 2 org.eclipse.core.resources 4 567 2021-09-08 21:24:09.277
+!MESSAGE The project description file (.project) for 'SG90_ServoMotor' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+!STACK 0
+java.lang.Exception: The project description file (.project) for 'SG90_ServoMotor' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:907)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:888)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:868)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:724)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1555)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2452)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2210)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:489)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:842)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:834)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:791)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:603)
+	at org.eclipse.osgi.container.Module.start(Module.java:467)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:571)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:346)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:472)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2021-09-08 21:24:09.277
+!MESSAGE Could not read metadata for 'pwmled2_MSP_EXP432P401R_nortos_ccs'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/pwmled2_MSP_EXP432P401R_nortos_ccs)[567]: java.lang.Exception: The project description file (.project) for 'pwmled2_MSP_EXP432P401R_nortos_ccs' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:907)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:888)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:868)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:724)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1555)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2452)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2210)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:489)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:842)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:834)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:791)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:603)
+	at org.eclipse.osgi.container.Module.start(Module.java:467)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:571)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:346)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:472)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+!SUBENTRY 2 org.eclipse.core.resources 4 567 2021-09-08 21:24:09.277
+!MESSAGE The project description file (.project) for 'pwmled2_MSP_EXP432P401R_nortos_ccs' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+!STACK 0
+java.lang.Exception: The project description file (.project) for 'pwmled2_MSP_EXP432P401R_nortos_ccs' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:907)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:888)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:868)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:724)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1555)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2452)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2210)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:489)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:842)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:834)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:791)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:603)
+	at org.eclipse.osgi.container.Module.start(Module.java:467)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:571)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:346)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:472)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY com.ti.ccstudio.ui 1 0 2021-09-08 21:24:48.493
+!MESSAGE CCS IDE session started!
+	CCS build: 10.4.0.00006
+	CCS location: C:/ti/ccs1031/ccs
+	Workspace location: E:/TI/MSP432/MSP432_CSS_WorkSpace
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-08 21:24:52.931
+!MESSAGE constructor
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-08 21:24:52.931
+!MESSAGE done with directories
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-08 21:24:52.931
+!MESSAGE loading ti_logger
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-08 21:24:52.931
+!MESSAGE Platform os: win32
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-08 21:24:52.931
+!MESSAGE loading cToolsIF
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-08 21:24:53.072
+!MESSAGE loading cTools
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-08 21:24:53.322
+!MESSAGE loading TraceFactory
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-08 21:24:53.462
+!MESSAGE loading sqlite3
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-08 21:24:53.572
+!MESSAGE loading CloudTrace
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-08 21:24:57.322
+!MESSAGE CloudTrace interface loaded
+
+!ENTRY com.ti.ccstudio.project.ui.webcontent 1 0 2021-09-08 21:24:58.947
+!MESSAGE CCS HTTP adapter started! [ccs.port:53928] - Open 'http://localhost:53928/ide' in web browser to see listing of available APIs...
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-09-08 21:55:00.433
+!MESSAGE Indexed '1.8inch_TFT_LED' (4 sources, 56 headers) in 6.45 sec: 3,826 declarations; 7,668 references; 0 unresolved inclusions; 0 syntax errors; 10 unresolved names (0.087%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-09-08 22:36:12.386
+!MESSAGE Indexed 'SG90_ServoMotor' (3 sources, 17 headers) in 0.35 sec: 303 declarations; 484 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+!SESSION 2021-09-09 20:42:34.139 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product com.ti.ccstudio.branding.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ti.ccstudio.branding.product
+
+!ENTRY com.ti.common.core 1 0 2021-09-09 20:42:47.170
+!MESSAGE path=ccs_base/DebugServer
+
+!ENTRY com.ti.common.core 1 0 2021-09-09 20:42:47.217
+!MESSAGE debugServerDir=C:/ti/ccs1031/ccs/ccs_base/DebugServer
+
+!ENTRY com.ti.ccstudio.ui 1 0 2021-09-09 20:43:38.365
+!MESSAGE CCS IDE session started!
+	CCS build: 10.4.0.00006
+	CCS location: C:/ti/ccs1031/ccs
+	Workspace location: E:/TI/MSP432/MSP432_CSS_WorkSpace
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-09 20:43:43.972
+!MESSAGE constructor
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-09 20:43:43.972
+!MESSAGE done with directories
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-09 20:43:43.972
+!MESSAGE loading ti_logger
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-09 20:43:43.987
+!MESSAGE Platform os: win32
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-09 20:43:43.987
+!MESSAGE loading cToolsIF
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-09 20:43:44.065
+!MESSAGE loading cTools
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-09 20:43:44.128
+!MESSAGE loading TraceFactory
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-09 20:43:44.269
+!MESSAGE loading sqlite3
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-09 20:43:44.378
+!MESSAGE loading CloudTrace
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-09-09 20:43:45.175
+!MESSAGE CloudTrace interface loaded
+
+!ENTRY com.ti.ccstudio.project.ui.webcontent 1 0 2021-09-09 20:43:49.581
+!MESSAGE CCS HTTP adapter started! [ccs.port:59463] - Open 'http://localhost:59463/ide' in web browser to see listing of available APIs...
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-09-09 20:45:20.645
+!MESSAGE Indexed '1.8inch_TFT_LCD' (5 sources, 53 headers) in 2.75 sec: 3,095 declarations; 6,641 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-09-09 20:46:07.282
+!MESSAGE Indexed 'SD_Card' (3 sources, 17 headers) in 0.157 sec: 303 declarations; 484 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-09-09 20:47:10.178
+!MESSAGE REX Launching REX 4.1 (online)
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-09-09 20:47:12.309
+!MESSAGE REX Setting browser URL to: http://dev.ti.com/tirex4-desktop
+
+!ENTRY com.ti.common.project.core 4 0 2021-09-09 20:47:30.344
+!MESSAGE Failed to parse product-descriptor file 'C:\ti\tivaware_c_series_2_1_4_178\package.tirex.json'
+!STACK 0
+org.json.JSONException: Duplicate key "devices"
+	at org.json.JSONObject.putOnce(JSONObject.java:1129)
+	at org.json.JSONObject.<init>(JSONObject.java:213)
+	at org.json.JSONTokener.nextValue(JSONTokener.java:363)
+	at org.json.JSONArray.<init>(JSONArray.java:117)
+	at org.json.JSONTokener.nextValue(JSONTokener.java:366)
+	at com.ti.common.project.core.products.reader.ProductDescriptor_JSON.createFrom(ProductDescriptor_JSON.java:52)
+	at com.ti.common.project.core.products.reader.ProductManifestReader.internalReadProductDescriptor(ProductManifestReader.java:247)
+	at com.ti.common.project.core.products.reader.ProductManifestReader.internalReadManifest(ProductManifestReader.java:141)
+	at com.ti.common.project.core.products.reader.ProductManifestReader.readManifest(ProductManifestReader.java:120)
+	at com.ti.common.project.core.internal.tools.ADiscoveryManager.collectSearchPathSubdirectories(ADiscoveryManager.java:409)
+	at com.ti.common.project.core.internal.tools.ADiscoveryManager.collectSearchPathSubdirectories(ADiscoveryManager.java:467)
+	at com.ti.common.project.core.internal.tools.ADiscoveryManager.toSearchPath(ADiscoveryManager.java:379)
+	at com.ti.common.project.core.products.ProductDiscoveryManager.getProductDiscoverySearchPath(ProductDiscoveryManager.java:687)
+	at org.eclipse.rtsc.project.core.extdiscovery.ExtensionSiteDiscoveryManager.discoverExtensionSites_all(ExtensionSiteDiscoveryManager.java:155)
+	at org.eclipse.rtsc.project.core.extdiscovery.ExtensionSiteDiscoveryManager.getAllDiscoveredExtensionSites(ExtensionSiteDiscoveryManager.java:510)
+	at org.eclipse.rtsc.xdctools.managedbuild.core.products.RTSCProductDiscoveryManager.getAllDiscoveredProductDescriptors(RTSCProductDiscoveryManager.java:533)
+	at com.ti.common.project.core.products.ProductDiscoveryManager.getAllDiscoveredProductDescriptors(ProductDiscoveryManager.java:1030)
+	at com.ti.ccstudio.project.ui.webcontent.internal.servlets.IDEServlet$4.handle(IDEServlet.java:233)
+	at com.ti.ccstudio.project.ui.webcontent.internal.common.BaseApiServlet.doGet(BaseApiServlet.java:176)
+	at com.ti.ccstudio.project.ui.webcontent.internal.common.BaseApiServlet.handle(BaseApiServlet.java:162)
+	at com.ti.ccstudio.project.ui.webcontent.internal.ProjectWebcontentRouteProvider.handle(ProjectWebcontentRouteProvider.java:107)
+	at com.ti.ccstudio.webcontent.internal.RouteHandler.handle(RouteHandler.java:61)
+	at com.ti.ccstudio.webcontent.internal.HttpServerHandlerManager.handle(HttpServerHandlerManager.java:40)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:500)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:270)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:388)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-09-09 20:51:43.026
+!MESSAGE Indexed 'fatsd_MSP_EXP432P401R_nortos_ccs' (2 sources, 29 headers) in 0.75 sec: 1,181 declarations; 1,597 references; 1 unresolved inclusions; 0 syntax errors; 4 unresolved names (0.14%)
