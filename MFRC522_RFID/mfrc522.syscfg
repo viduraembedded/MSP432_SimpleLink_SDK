@@ -1,0 +1,76 @@
+/**
+ * These arguments were used when this file was generated. They will be automatically applied on subsequent loads
+ * via the GUI or CLI. Run CLI with '--help' for additional information on how to override these arguments.
+ * @cliArgs --board "/ti/boards/MSP_EXP432P401R" --product "simplelink_msp432p4_sdk@3.40.01.02"
+ * @versions {"tool":"1.9.0+2015","templates":null}
+ */
+
+/**
+ * Import the modules used in this configuration.
+ */
+const GPIO  = scripting.addModule("/ti/drivers/GPIO", {}, false);
+const GPIO1 = GPIO.addInstance();
+const GPIO2 = GPIO.addInstance();
+const GPIO3 = GPIO.addInstance();
+const GPIO4 = GPIO.addInstance();
+const GPIO5 = GPIO.addInstance();
+const GPIO6 = GPIO.addInstance();
+const GPIO7 = GPIO.addInstance();
+const RTOS  = scripting.addModule("/ti/drivers/RTOS");
+const SPI   = scripting.addModule("/ti/drivers/SPI", {}, false);
+const SPI1  = SPI.addInstance();
+
+/**
+ * Write custom configuration values to the imported modules.
+ */
+GPIO1.$name           = "CONFIG_GPIO_RS_PIN";
+GPIO1.mode            = "Output";
+GPIO1.gpioPin.$assign = "boosterpack.24";
+
+GPIO2.$name           = "CONFIG_GPIO_EN_PIN";
+GPIO2.mode            = "Output";
+GPIO2.gpioPin.$assign = "boosterpack.5";
+
+GPIO3.$name           = "CONFIG_GPIO_D4_PIN";
+GPIO3.mode            = "Output";
+GPIO3.gpioPin.$assign = "boosterpack.26";
+
+GPIO4.$name           = "CONFIG_GPIO_D5_PIN";
+GPIO4.mode            = "Output";
+GPIO4.gpioPin.$assign = "boosterpack.27";
+
+GPIO5.$name           = "CONFIG_GPIO_D6_PIN";
+GPIO5.mode            = "Output";
+GPIO5.gpioPin.$assign = "boosterpack.8";
+
+GPIO6.$name           = "CONFIG_GPIO_D7_PIN";
+GPIO6.mode            = "Output";
+GPIO6.gpioPin.$assign = "boosterpack.28";
+
+GPIO7.$name           = "CONFIG_GPIO_CS_PIN";
+GPIO7.mode            = "Output";
+GPIO7.gpioPin.$assign = "boosterpack.13";
+
+const Power                   = scripting.addModule("/ti/drivers/Power", {}, false);
+Power.performanceLevel3.$name = "ti_drivers_power_PowerMSP432PerfLevels0";
+Power.performanceLevel2.$name = "ti_drivers_power_PowerMSP432PerfLevels1";
+Power.performanceLevel1.$name = "ti_drivers_power_PowerMSP432PerfLevels2";
+Power.performanceLevel0.$name = "ti_drivers_power_PowerMSP432PerfLevels3";
+
+RTOS.name = "NoRTOS";
+
+SPI1.$name = "CONFIG_SPI_0";
+
+/**
+ * Pinmux solution for unlocked pins/peripherals. This ensures that minor changes to the automatic solver in a future
+ * version of the tool will not impact the pinmux you originally saw.  These lines can be completely deleted in order to
+ * re-solve from scratch.
+ */
+RTOS.timer0.resource.$suggestSolution        = "Timer_A0";
+SPI1.spi.$suggestSolution                    = "EUSCI_B0";
+SPI1.spi.sclkPin.$suggestSolution            = "boosterpack.7";
+SPI1.spi.misoPin.$suggestSolution            = "boosterpack.14";
+SPI1.spi.mosiPin.$suggestSolution            = "boosterpack.15";
+SPI1.spi.dmaRxChannel.$suggestSolution       = "DMA_CH1";
+SPI1.spi.dmaTxChannel.$suggestSolution       = "DMA_CH0";
+SPI1.spi.dmaInterruptNumber.$suggestSolution = "DMA_INT0";

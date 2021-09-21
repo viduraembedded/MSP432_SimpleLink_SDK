@@ -2,7 +2,7 @@ LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
 activeLaunchTarget=null\:---
-configDescList=org.eclipse.launchbar.core.descriptorType.default\:Blink,org.eclipse.launchbar.core.descriptorType.default\:fatsd_MSP_EXP432P401R_nortos_ccs
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:Blink,org.eclipse.launchbar.core.descriptorType.default\:MFRC522_RFID,org.eclipse.launchbar.core.descriptorType.default\:LCD16x02
 eclipse.preferences.version=1
 org.eclipse.launchbar.core.descriptorType.default\:1.8inch_TFT_LCD/activeLaunchMode=debug
 org.eclipse.launchbar.core.descriptorType.default\:1.8inch_TFT_LCD/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
@@ -15,6 +15,8 @@ org.eclipse.launchbar.core.descriptorType.default\:Blink/activeLaunchMode=debug
 org.eclipse.launchbar.core.descriptorType.default\:Blink/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
 org.eclipse.launchbar.core.descriptorType.default\:Button/activeLaunchMode=run
 org.eclipse.launchbar.core.descriptorType.default\:Button_Polling/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:LCD16_02/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:LCD16x02/activeLaunchMode=run
 org.eclipse.launchbar.core.descriptorType.default\:MPU6050/activeLaunchMode=debug
 org.eclipse.launchbar.core.descriptorType.default\:Nokia5110/activeLaunchMode=run
 org.eclipse.launchbar.core.descriptorType.default\:Nokia5110_LCD/activeLaunchMode=debug

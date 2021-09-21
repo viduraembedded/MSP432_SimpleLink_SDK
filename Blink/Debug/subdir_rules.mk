@@ -8,7 +8,7 @@ SHELL = cmd.exe
 build-1837383711: ../Blink.syscfg
 	@echo 'Building file: "$<"'
 	@echo 'Invoking: SysConfig'
-	"C:/ti/ccs1031/ccs/utils/sysconfig_1.8.1/sysconfig_cli.bat" -s "C:/ti/simplelink_msp432p4_sdk_3_40_01_02/.metadata/product.json" --script "E:/TI/MSP432/MSP432_CSS_WorkSpace/Blink/Blink.syscfg" -o "syscfg"
+	"C:/ti/ccs1031/ccs/utils/sysconfig_1.9.0/sysconfig_cli.bat" -s "C:/ti/simplelink_msp432p4_sdk_3_40_01_02/.metadata/product.json" --script "E:/TI/MSP432/MSP432_CSS_WorkSpace/Blink/Blink.syscfg" -o "syscfg" --compiler ccs
 	@echo 'Finished building: "$<"'
 	@echo ' '
 
